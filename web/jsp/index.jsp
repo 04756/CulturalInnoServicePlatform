@@ -11,7 +11,6 @@
     <title>$Title$</title>
   </head>
   <body>
-  $END$
-  asgdfgf
+  登录成功界面
   </body>
 </html>

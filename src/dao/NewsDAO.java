@@ -150,10 +150,10 @@ public class NewsDAO {
         }
     }
 
-    public Boolean setAsPass(News validatedNews) {
+    public Boolean setAsPass(String newsId) {
         SessionMgr.getSession(cfg, sf, hsession, ts);
         try{
-            hsession.createQuery("update News set News .isPass='1'");
+            hsession.createQuery("update News set News .isPass='1' where News .id = :newsId");
 
             SessionMgr.releaseConnect(sf, hsession);
             return true;

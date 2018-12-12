@@ -1,15 +1,19 @@
 package spring.controller;
 
+import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import com.google.gson.Gson;
 import dao.UserDAO;
 import dao.UserInfoDAO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.portlet.ModelAndView;
+import org.springframework.stereotype.Service;
+
 import po.User;
 import po.UserInfo;
 
@@ -28,13 +32,14 @@ public class LoginController {
     }
 
     @RequestMapping(value = "login.action", method = RequestMethod.POST)
-    public String validateLogin(@ModelAttribute("user")User user, HttpServletRequest request){
+    public String validateLogin(@ModelAttribute("User")User user, HttpServletRequest request, Model model){
         System.out.println(user.getUserId());
         UserDAO ud = new UserDAO();
         if( ud.validateUser(user.getUserId(),user.getPassword()) == true ){
             return "index";
         }
         this.message = "”√ªß√˚/√‹¬Î¥ÌŒÛ";
+        model.addAttribute("message",message);
         return "redirect:/Login.html";
     }
 

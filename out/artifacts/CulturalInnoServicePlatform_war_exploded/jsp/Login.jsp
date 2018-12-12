@@ -12,6 +12,7 @@
 </head>
 <body>
 <h1>登录界面</h1>
+    <h1>${message}</h1>
     <form action="login.action" method="POST">
         用户名:<input name="userId" type="text">
         密码:  <input name="password" type="text">

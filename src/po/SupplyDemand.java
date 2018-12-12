@@ -7,7 +7,7 @@ import java.sql.Timestamp;
 import java.util.Objects;
 
 @Entity
-@Table(name = "supply_demand", schema = "service_platform_db", catalog = "")
+@Table(name = "supply_demand", schema = "service_platform_db")
 public class SupplyDemand
 {
     private String sdId;
@@ -19,6 +19,12 @@ public class SupplyDemand
     private Integer hits;
     private byte isPass;
     private String type;
+
+    public SupplyDemand(){}
+
+//    public SupplyDemand(){
+//
+//    }
 
     @Id
     @Column(name = "sdID")

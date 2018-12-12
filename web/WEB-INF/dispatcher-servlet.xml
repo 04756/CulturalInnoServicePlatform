@@ -12,6 +12,8 @@
         <property name="prefix" value="jsp/" />
         <property name="suffix" value=".jsp" />
     </bean>
+
+
     <!--&lt;!&ndash; 配置静态文件拦截 &ndash;&gt;-->
     <mvc:resources mapping="/images/**" location="images/" />
     <mvc:resources mapping="/js/**" location="js/" />

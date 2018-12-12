@@ -12,7 +12,7 @@
       <introspection-schemas>*:@</introspection-schemas>
     </data-source>
     <data-source name="hibernate.cfg.xml/Hibernate" uuid="bed1f1ab-2f4a-4129-845d-075ca875a1d7">
-      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="MYSQL" exact-version="0" />
     </data-source>
   </component>
 </project>

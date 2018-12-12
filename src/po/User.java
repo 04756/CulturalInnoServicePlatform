@@ -1,6 +1,7 @@
 package po;
 
 import org.springframework.context.annotation.Bean;
+import org.springframework.stereotype.Component;
 
 import javax.persistence.Basic;
 import javax.persistence.Column;
