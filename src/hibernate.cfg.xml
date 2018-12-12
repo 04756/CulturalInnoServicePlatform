@@ -7,9 +7,10 @@
     <property name="connection.url">jdbc:mysql://localhost:3306/service_platform_db?useSSL=true&amp;serverTimezone=GMT</property>
     <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
     <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
-    <property name="hibernate.connection.username">root</property>
-    <property name="hibernate.connection.password"/>
+    <property name="connection.username">root</property>
+    <property name="connection.password">mysql</property>
     <property name="show_sql">true</property>
+
     <mapping resource="po/Collection.hbm.xml"/>
     <mapping class="po.Collection"/>
     <mapping class="po.Exhibition"/>

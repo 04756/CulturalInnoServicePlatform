@@ -16,16 +16,6 @@ public class Order
     private Timestamp establishTime;
     private int count;
 
-    public Order(){
-
-    }
-
-    public Order( String userId, String proId){
-        this.count = count;
-        this.proId = proId;
-        this.userId = userId;
-    }
-
     @Id
     @Column(name = "orderID")
     public String getOrderId()

@@ -6,9 +6,8 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
-import org.hibernate.query.Query;
+import org.hibernate.Query;
 import po.Order;
-import java.util.UUID;
 
 public class OrderDAO {
 
@@ -18,26 +17,11 @@ public class OrderDAO {
 	private Transaction ts=null;
 	private int maxEssayNum = 12;
 
-	public void getSession() {
-		try {
-			this.cfg = new Configuration().configure();
-			this.sf = cfg.buildSessionFactory();
-			this.hsession = sf.openSession();
-			this.ts = hsession.beginTransaction();
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-
-	}
-
 	public Order addOrder(Order newOrder) {
-		this.getSession();
+		SessionMgr.getSession(cfg, sf, hsession, ts);
 		try {
 
 			//hsession.add(newOrder);
-			UUID uuid=UUID.randomUUID();
-			System.out.println(uuid.toString());
-			newOrder.setOrderId(uuid.toString());
 			hsession.save(newOrder);
 
             SessionMgr.releaseConnect(sf, hsession);
@@ -51,7 +35,7 @@ public class OrderDAO {
 	}
 	
 	public List getUserOrders(String userId) {
-		this.getSession();
+		SessionMgr.getSession(cfg, sf, hsession, ts);
 		try {
 
 			Query hquery = hsession.createQuery("from Order o where o.userId=?");
@@ -68,9 +52,13 @@ public class OrderDAO {
 		}
 	}
 	
-
+	/**
+	 * 分页获取List，获取（Page-1）*maxEssayNum -- page*maxEssayNum 间的内容
+	 * @param page 页数
+	 * @return List
+	 */
 	public List getOrdersByPage(int page) {
-		this.getSession();
+		SessionMgr.getSession(cfg, sf, hsession, ts);
 		try {
 
 //			Query hquery = hsession.createQuery("from Order o limit ?,?");
@@ -79,17 +67,14 @@ public class OrderDAO {
 //          List<Order> list = hquery.list();
 //          return list;
 
-			/*Query hQuery=hsession.createQuery("from Order");
+			Query hQuery=hsession.createQuery("from Order");
 			hQuery.setFirstResult((page-1)*maxEssayNum);
 			hQuery.setMaxResults(maxEssayNum);
 			List<Order> orderList=hQuery.list();
 
-            SessionMgr.releaseConnect(sf, hsession);*/
-			org.hibernate.query.Query q = hsession.createQuery("select '*' from Order limit "+(page-1)*maxEssayNum+","+page*maxEssayNum);
-			List t = q.list();
-
-			SessionMgr.releaseConnect(sf, hsession);
-			return t;
+            SessionMgr.releaseConnect(sf, hsession);
+	
+			return orderList;
 			}catch(Exception e) {
 			e.printStackTrace();
 //			SessionMgr.releaseConnect(sf, hsession);

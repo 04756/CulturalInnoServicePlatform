@@ -6,117 +6,154 @@ import java.util.List;
 import java.util.UUID;
 
 import org.hibernate.*;
-import org.hibernate.cfg.Configuration;
 import org.hibernate.query.Query;
 import po.*;
 
 public class UserDAO
 {
+    private Session hs =null;
+    private Transaction ts=null;
 
-    private Configuration cfg;
-    private SessionFactory sf = null;
-    private Session hs = null;
-    private Transaction ts = null;
+    private void getSession()
+    {
+        //ä»SessionMgrè·å–Sessionå’ŒTransaction
+        Object[] connectionList=SessionMgr.getSession();
+        hs =(Session)connectionList[0];
+        ts=(Transaction)connectionList[1];
+    }
 
+    private void releaseSession()
+    {
+        SessionMgr.releaseConnect(hs,ts);
+    }
+
+
+    /**
+     * æµ‹è¯•é€šè¿‡
+     * @param newUser
+     * @return
+     */
     public Boolean addUser(User newUser)
     {
         try
         {
-            SessionMgr.getSession(cfg, sf, hs, ts);
+            getSession();
 
             hs.save(newUser);
 
-            SessionMgr.releaseConnect(sf, hs);
+            releaseSession();
             return true;
         }
         catch(HibernateException he)
         {
             he.printStackTrace();
-            SessionMgr.releaseConnect(sf, hs);
+            releaseSession();
         }
         return false;
     }
 
+    /**
+     * æµ‹è¯•é€šè¿‡
+     * @param userId
+     * @return
+     */
     public Boolean delUser(String userId)
     {
         try
         {
-            SessionMgr.getSession(cfg, sf, hs, ts);
+           getSession();
 
             User toDel = (User) hs.get(User.class, userId);
-            //É¾³ıÍ·Ïñ
-            String getPortraitHql="from Image where originId=?";
+            //åˆ é™¤å¤´åƒ
+            String getPortraitHql="from Image where originId=?1";
             Query getPortraitQuery=hs.createQuery(getPortraitHql);
-            getPortraitQuery.setParameter(0,toDel.getUserId());
+            getPortraitQuery.setParameter(1,toDel.getUserId());
             List<Image> portraitList=getPortraitQuery.list();
             for(Image i:portraitList)
                 hs.delete(i);
 
-            //É¾³ıÏêÏ¸ĞÅÏ¢
+            //åˆ é™¤è¯¦ç»†ä¿¡æ¯
             UserInfo infoToDel=(UserInfo)hs.get(UserInfo.class,toDel.getUserId());
-            hs.delete(infoToDel);
+            if(infoToDel!=null)
+                hs.delete(infoToDel);
 
-            //×îºóÉ¾³ıÓÃ»§ĞÅÏ¢
+            //æœ€ååˆ é™¤ç”¨æˆ·ä¿¡æ¯
             hs.delete(toDel);
 
-            SessionMgr.releaseConnect(sf, hs);
+            releaseSession();
             return true;
         }
         catch (HibernateException he)
         {
             he.printStackTrace();
-            SessionMgr.releaseConnect(sf, hs);
+            releaseSession();
         }
         return false;
     }
 
+    /**
+     * æµ‹è¯•é€šè¿‡
+     * @param userId
+     * @return
+     */
     public User getUser(String userId)
     {
         try
         {
-            SessionMgr.getSession(cfg, sf, hs, ts);
+           getSession();
 
             User user=hs.get(User.class,userId);
 
-            SessionMgr.releaseConnect(sf, hs);
+            releaseSession();
             return user;
         }
         catch(HibernateException he)
         {
             he.printStackTrace();
-            SessionMgr.releaseConnect(sf, hs);
+            releaseSession();
         }
         return null;
     }
 
-    public List getAllUser()
+    /**
+     * æµ‹è¯•é€šè¿‡
+     * @return
+     */
+    public List<User> getAllUser()
     {
         try
         {
-            SessionMgr.getSession(cfg, sf, hs, ts);
+           getSession();
 
             String getAllUserHql="from User";
             Query getAllUserQuery=hs.createQuery(getAllUserHql);
-            List allUserList=getAllUserQuery.list();
+            List<User> allUserList=getAllUserQuery.list();
 
-            SessionMgr.releaseConnect(sf, hs);
+            releaseSession();
             return allUserList;
         }
         catch (HibernateException he)
         {
             he.printStackTrace();
-            SessionMgr.releaseConnect(sf, hs);
+            releaseSession();
         }
         return null;
     }
 
+    /**
+     * æµ‹è¯•é€šè¿‡
+     * @param userId
+     * @param productId
+     * @param num
+     * @return
+     */
     public Boolean purchaseProduct(String userId, String productId, int num)
     {
         try
         {
-            SessionMgr.getSession(cfg, sf, hs, ts);
+           getSession();
 
-            //´´½¨ĞÂ¶©µ¥
+            //åˆ›å»ºæ–°è®¢å•
             Order newOrder=new Order();
             newOrder.setOrderId(UUID.randomUUID().toString().replace("-",""));
             newOrder.setUserId(userId);
@@ -126,30 +163,36 @@ public class UserDAO
 
             hs.save(newOrder);
 
-            //Ôö¼Ó²úÆ·µÄ¹ºÂòÊıÁ¿
+            //å¢åŠ äº§å“çš„è´­ä¹°æ•°é‡
             Product hasBought=(Product)hs.get(Product.class,productId);
             hasBought.setPurchase(hasBought.getPurchase()+num);
 
             hs.save(hasBought);
-            SessionMgr.releaseConnect(sf, hs);
+            releaseSession();
         }
         catch(HibernateException he)
         {
             he.printStackTrace();
-            SessionMgr.releaseConnect(sf, hs);
+            releaseSession();
         }
         return false;
     }
 
+    /**
+     * æµ‹è¯•é€šè¿‡
+     * @param userId
+     * @param password
+     * @return
+     */
     public boolean validateUser(String userId, String password)
     {
         try
         {
-            SessionMgr.getSession(cfg, sf, hs, ts);
+            getSession();
 
-            User registeredUser=hs.get(User.class,userId);
+            User registeredUser=(User)hs.get(User.class,userId);
 
-            SessionMgr.releaseConnect(sf, hs);
+            releaseSession();
 
             if(registeredUser!=null&&registeredUser.getPassword().equals(password))
                 return true;
@@ -157,7 +200,7 @@ public class UserDAO
         catch(HibernateException he)
         {
             he.printStackTrace();
-            SessionMgr.releaseConnect(sf, hs);
+            releaseSession();
         }
         return false;
     }

@@ -9,69 +9,86 @@ import po.Collection;
 import po.Image;
 import po.SupplyDemand;
 
-public class SupplyDemandDAO {
-	
-	private Configuration cfg;
-	private SessionFactory sf=null;
-	private Session hs =null;
-	private Transaction ts=null;
-	private final int pageCapacity = 3;
+public class SupplyDemandDAO
+{
+    private Configuration cfg;
+    private SessionFactory sf=null;
+
+    private Session hs;
+    private Transaction ts;
+    private final int pageCapacity = 3;
+
+    private void getSession()
+    {
+        //从SessionMgr获取Session和Transaction
+        Object[] connectionList=SessionMgr.getSession();
+        hs =(Session)connectionList[0];
+        ts=(Transaction)connectionList[1];
+    }
+
+    private void releaseSession()
+    {
+        SessionMgr.releaseConnect(hs,ts);
+    }
 
 
-//	public Supply addSupply(Supply newSupply)
-//	{
-//		SessionMgr.getSession(cfg, sf, hs, ts);
-//		try
-//		{
-//            SupplyDemand newSD=(SupplyDemand)newSupply;
-//            hs.save(newSD);
-//
-//			SessionMgr.releaseConnect(sf, hs);
-//			return newSupply;
-//		}
-//		catch (Exception e)
-//		{
-//			e.printStackTrace();
-//			return null;
-//		}
-//	}
-//
-//    public Demand addDemand(Demand newDemand)
+
+	public Supply addSupply(Supply newSupply)
+	{
+        getSession();
+		try
+		{
+            SupplyDemand newSD=newSupply.toSupplyDemand();
+            hs.save(newSD);
+
+            releaseSession();
+			return newSupply;
+		}
+		catch (Exception e)
+		{
+			e.printStackTrace();
+            releaseSession();
+		}
+        return null;
+	}
+
+    public Demand addDemand(Demand newDemand)
+    {
+        getSession();
+        try
+        {
+            SupplyDemand newSD=newDemand.toSupplyDemand();
+            hs.save(newSD);
+
+            releaseSession();
+            return newDemand;
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+            releaseSession();
+        }
+        return null;
+    }
+
+//    //上面两个函数可以合成这一个函数
+//    public SupplyDemand addSD(SupplyDemand newSD)
 //    {
-//        SessionMgr.getSession(cfg, sf, hs, ts);
+//        getSession();
 //        try
 //        {
-//            SupplyDemand newSD=(SupplyDemand)newDemand;
 //            hs.save(newSD);
 //
-//            SessionMgr.releaseConnect(sf, hs);
-//            return newDemand;
+//            releaseSession();
+//            return newSD;
 //        }
 //        catch (Exception e)
 //        {
 //            e.printStackTrace();
-//
-//            return null;
+//            releaseSession();
 //        }
+//        return null;
 //    }
-
-    //上面两个函数是否可以合成这一个函数
-    public SupplyDemand addSD(SupplyDemand newSD)
-    {
-        SessionMgr.getSession(cfg, sf, hs, ts);
-        try
-        {
-            hs.save(newSD);
-
-            SessionMgr.releaseConnect(sf, hs);
-            return newSD;
-        }
-        catch (Exception e) {
-            e.printStackTrace();
-            SessionMgr.releaseConnect(sf, hs);
-            return null;
-        }
-    }
 
 //    public Boolean delSupply(String supplyId)
 //    {

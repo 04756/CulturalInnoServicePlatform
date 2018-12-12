@@ -1,5 +1,7 @@
 package po;
 
+import com.sun.istack.NotNull;
+
 import javax.persistence.*;
 import java.sql.Timestamp;
 import java.util.Objects;
@@ -31,6 +33,7 @@ public class SupplyDemand
     }
 
     @Basic
+    @NotNull
     @Column(name = "userID")
     public String getUserId()
     {
