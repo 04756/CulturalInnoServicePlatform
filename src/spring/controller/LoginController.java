@@ -4,6 +4,7 @@ import javax.servlet.http.HttpServletRequest;
 import com.google.gson.Gson;
 import dao.UserDAO;
 import dao.UserInfoDAO;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,6 +15,7 @@ import po.UserInfo;
 
 @Controller
 public class LoginController {
+
     private String message;
 
     public String getMessage(){
@@ -27,7 +29,9 @@ public class LoginController {
 
     @RequestMapping(value = "login.action", method = RequestMethod.POST)
     public String validateLogin(@ModelAttribute("user")User user, HttpServletRequest request){
-        if( new UserDAO().validateUser(user.getUserId(),user.getPassword()) ){
+        System.out.println(user.getUserId());
+        UserDAO ud = new UserDAO();
+        if( ud.validateUser(user.getUserId(),user.getPassword()) == true ){
             return "index";
         }
         this.message = "”√ªß√˚/√‹¬Î¥ÌŒÛ";

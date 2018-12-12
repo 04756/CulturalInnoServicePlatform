@@ -61,7 +61,7 @@ public class UserDAO
     {
         try
         {
-           getSession();
+            getSession();
 
             User toDel = (User) hs.get(User.class, userId);
             //删除头像
@@ -100,7 +100,7 @@ public class UserDAO
     {
         try
         {
-           getSession();
+            getSession();
 
             User user=hs.get(User.class,userId);
 
@@ -123,7 +123,7 @@ public class UserDAO
     {
         try
         {
-           getSession();
+            getSession();
 
             String getAllUserHql="from User";
             Query getAllUserQuery=hs.createQuery(getAllUserHql);
@@ -151,7 +151,7 @@ public class UserDAO
     {
         try
         {
-           getSession();
+            getSession();
 
             //创建新订单
             Order newOrder=new Order();
@@ -180,9 +180,8 @@ public class UserDAO
 
     /**
      * 测试通过
-     * @param userId
-     * @param password
-     * @return
+     * @param userId yonghum
+     * @param password mima
      */
     public boolean validateUser(String userId, String password)
     {
