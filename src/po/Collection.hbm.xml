@@ -5,7 +5,7 @@
 <hibernate-mapping>
 
     <class name="po.Collection" table="collection" schema="service_platform_db">
-        <composite-id mapped="true" class="po.CollectionPK">
+        <composite-id>
             <key-property name="userId" column="userID"/>
             <key-property name="originId" column="originID"/>
         </composite-id>

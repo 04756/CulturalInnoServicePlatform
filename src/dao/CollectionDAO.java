@@ -64,7 +64,7 @@ public class CollectionDAO {
     public List getCompareUserCollectionByType(String userId, String colltype) {
         SessionMgr.getSession(cfg, sf, hsession, ts);
         try {
-            Query q = hsession.createQuery("from Collection  where Collection .producttype = :colltype");
+            Query q = hsession.createQuery("from Collection  where Collection.productType = :colltype");
             List t = q.list();
 
             SessionMgr.releaseConnect(sf,hsession);
@@ -96,11 +96,6 @@ public class CollectionDAO {
         }
     }
 
-    /**
-     * ��ҳ��ȡ�ղ�List����ȡ��Page-1��*maxEssayNum -- page*maxEssayNum �������
-     * @param page ҳ��
-     * @return List
-     */
     public List getCollectionByPage(int page) {
         SessionMgr.getSession(cfg, sf, hsession, ts);
         try {

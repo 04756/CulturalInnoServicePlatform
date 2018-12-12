@@ -12,5 +12,6 @@
         <property name="hits" column="hits"/>
         <property name="purchase" column="purchase"/>
         <property name="isPass" column="isPass"/>
+        <property name="productType" column="productType"/>
     </class>
 </hibernate-mapping>

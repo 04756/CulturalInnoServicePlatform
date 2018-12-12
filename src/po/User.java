@@ -13,6 +13,14 @@ public class User
     private String password;
     private int type;
 
+    public User(){}
+
+    public User(String userId,String password, int type){
+        this.userId = userId;
+        this.password = password;
+        this.type = type;
+    }
+
     @Id
     @Column(name = "userID")
     public String getUserId()

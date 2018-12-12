@@ -66,12 +66,11 @@ public class SupplyDemandDAO {
             SessionMgr.releaseConnect(sf, hs);
             return newSD;
         }
-        catch (Exception e)
-        {
+        catch (Exception e) {
             e.printStackTrace();
             SessionMgr.releaseConnect(sf, hs);
+            return null;
         }
-        return null;
     }
 
 //    public Boolean delSupply(String supplyId)

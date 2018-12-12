@@ -147,7 +147,7 @@ public class UserDAO
         {
             SessionMgr.getSession(cfg, sf, hs, ts);
 
-            User registeredUser=(User)hs.get(User.class,userId);
+            User registeredUser=hs.get(User.class,userId);
 
             SessionMgr.releaseConnect(sf, hs);
 

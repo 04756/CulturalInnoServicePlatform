@@ -32,12 +32,7 @@ public class ImageDAO {
 			return false;
 		}
 	}
-	
-	/**
-	 * 返回用户或文章的图片
-	 * 
-	 * @param id 用户或文章的id
-	 */
+
 	public List getImageById(String id) {
 		SessionMgr.getSession(cfg, sf, hsession, ts);
 		try {

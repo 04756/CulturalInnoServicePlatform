@@ -44,11 +44,6 @@ public class ProductDAO {
         }
     }
 
-    /**
-     * ��ҳ��ȡList����ȡ��Page-1��*maxEssayNum -- page*maxEssayNum �������
-     * @param page ҳ��
-     * @return List
-     */
     public List getProductByPage(int page) {
         SessionMgr.getSession(cfg, sf, hsession, ts);
         try {
@@ -84,11 +79,6 @@ public class ProductDAO {
         }
     }
 
-    /**
-     * ��ȡĳ����Ʒ����ϸ��Ϣ
-     * @param productId ��ƷId
-     * @return 指定id的产品
-     */
     public Product getProducById(String productId) {
         SessionMgr.getSession(cfg, sf, hsession, ts);
         try {
@@ -103,10 +93,6 @@ public class ProductDAO {
         }
     }
 
-    /**
-     * ģ����ѯ
-     * @param keyword �ؼ���
-     */
     public List getProductByKeyword(String keyword) {
         SessionMgr.getSession(cfg, sf, hsession, ts);
         try {
@@ -122,10 +108,6 @@ public class ProductDAO {
         }
     }
 
-    /**
-     * ��ȷ��ѯ
-     * @param keyword �ؼ���
-     */
     public List getProductByTitle(String keyword) {
         SessionMgr.getSession(cfg, sf, hsession, ts);
         try {
@@ -142,11 +124,6 @@ public class ProductDAO {
         }
     }
 
-    /**
-     * ��������ȡ��Ʒ
-     * @param ptype ��Ʒ���
-     * @return List
-     */
     public List getProductByType(String ptype) {
         SessionMgr.getSession(cfg, sf, hsession, ts);
         try {
