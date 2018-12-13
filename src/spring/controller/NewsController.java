@@ -50,7 +50,7 @@ public class NewsController {
     }
 
     @ModelAttribute("pageNewsList")
-    @RequestMapping(value = "/getNew.action")
+    @RequestMapping(value = "/getNewByPage.action")
     @ResponseBody
     public List getNewsByPage(@RequestParam("page")String page, HttpServletRequest request){
         //第一个参数存用户id，第二个参数存page

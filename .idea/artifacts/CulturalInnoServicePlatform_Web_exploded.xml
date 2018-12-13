@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
-  <artifact type="exploded-war" name="CulturalInnoServicePlatform">
-    <output-path>$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform</output-path>
+  <artifact type="exploded-war" name="CulturalInnoServicePlatform:Web exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded</output-path>
     <root id="root">
       <element id="javaee-facet-resources" facet="CulturalInnoServicePlatform/web/Web" />
       <element id="directory" name="WEB-INF">

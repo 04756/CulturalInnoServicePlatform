@@ -7,56 +7,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57aee6de-58ca-47a1-8b08-ad8372572e5e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/dao/AO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/spring/controller/CollectionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/spring/controller/ExhibitionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/spring/controller/MessageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/spring/controller/NewsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/spring/controller/OrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/spring/controller/ProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/spring/controller/SDController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/CulturalInnoServicePlatform_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/CulturalInnoServicePlatform.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/CulturalInnoServicePlatform.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/CulturalInnoServicePlatform_Web_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_war_exploded/WEB-INF/classes/Test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_war_exploded/WEB-INF/classes/dao/CollectionDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_war_exploded/WEB-INF/classes/dao/CollectionDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_war_exploded/WEB-INF/classes/dao/Demand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_war_exploded/WEB-INF/classes/dao/Demand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_war_exploded/WEB-INF/classes/dao/ImageDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_war_exploded/WEB-INF/classes/dao/ImageDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_war_exploded/WEB-INF/classes/dao/OrderDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_war_exploded/WEB-INF/classes/dao/OrderDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_war_exploded/WEB-INF/classes/dao/ProductDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_war_exploded/WEB-INF/classes/dao/ProductDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_war_exploded/WEB-INF/classes/dao/SessionMgr.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_war_exploded/WEB-INF/classes/dao/SessionMgr.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_war_exploded/WEB-INF/classes/dao/Supply.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_war_exploded/WEB-INF/classes/dao/Supply.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_war_exploded/WEB-INF/classes/dao/SupplyDemandDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_war_exploded/WEB-INF/classes/dao/SupplyDemandDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_war_exploded/WEB-INF/classes/dao/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_war_exploded/WEB-INF/classes/dao/UserDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_war_exploded/WEB-INF/classes/dao/UserInfoDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_war_exploded/WEB-INF/classes/dao/UserInfoDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_war_exploded/WEB-INF/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_war_exploded/WEB-INF/classes/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_war_exploded/WEB-INF/classes/po/Collection.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_war_exploded/WEB-INF/classes/po/Collection.hbm.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_war_exploded/WEB-INF/classes/po/Exhibition.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_war_exploded/WEB-INF/classes/po/Exhibition.hbm.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_war_exploded/WEB-INF/classes/po/Image.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_war_exploded/WEB-INF/classes/po/Image.hbm.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_war_exploded/WEB-INF/classes/po/Message.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_war_exploded/WEB-INF/classes/po/Message.hbm.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_war_exploded/WEB-INF/classes/po/News.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_war_exploded/WEB-INF/classes/po/News.hbm.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_war_exploded/WEB-INF/classes/po/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_war_exploded/WEB-INF/classes/po/Order.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_war_exploded/WEB-INF/classes/po/Order.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_war_exploded/WEB-INF/classes/po/Order.hbm.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_war_exploded/WEB-INF/classes/po/Product.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_war_exploded/WEB-INF/classes/po/Product.hbm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CulturalInnoServicePlatform.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CulturalInnoServicePlatform.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform/WEB-INF/classes/dao/NewsDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform/WEB-INF/classes/dao/NewsDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform/WEB-INF/classes/dao/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform/WEB-INF/classes/dao/UserDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform/WEB-INF/classes/po/SupplyDemand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform/WEB-INF/classes/po/SupplyDemand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform/WEB-INF/classes/po/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform/WEB-INF/classes/po/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform/WEB-INF/classes/spring/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform/WEB-INF/classes/spring/controller/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform/WEB-INF/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform/jsp/Login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform/jsp/Login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform/jsp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform/jsp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/WEB-INF/classes/dao/NewsDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/WEB-INF/classes/dao/NewsDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/WEB-INF/classes/po/SupplyDemand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/WEB-INF/classes/po/SupplyDemand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/WEB-INF/classes/spring/controller/ExhibitionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/WEB-INF/classes/spring/controller/ExhibitionController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/WEB-INF/classes/spring/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/WEB-INF/classes/spring/controller/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/WEB-INF/classes/spring/controller/NewsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/WEB-INF/classes/spring/controller/NewsController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/WEB-INF/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_war_exploded/WEB-INF/classes/dao/NewsDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_war_exploded/WEB-INF/classes/dao/NewsDAO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_war_exploded/WEB-INF/classes/po/SupplyDemand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_war_exploded/WEB-INF/classes/po/SupplyDemand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_war_exploded/WEB-INF/classes/po/SupplyDemand.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_war_exploded/WEB-INF/classes/po/SupplyDemand.hbm.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_war_exploded/WEB-INF/classes/po/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_war_exploded/WEB-INF/classes/po/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_war_exploded/WEB-INF/classes/po/User.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_war_exploded/WEB-INF/classes/po/User.hbm.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_war_exploded/WEB-INF/classes/po/UserInfo.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_war_exploded/WEB-INF/classes/po/UserInfo.hbm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_war_exploded/WEB-INF/classes/spring/controller/ExhibitionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_war_exploded/WEB-INF/classes/spring/controller/ExhibitionController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_war_exploded/WEB-INF/classes/spring/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_war_exploded/WEB-INF/classes/spring/controller/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_war_exploded/WEB-INF/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_war_exploded/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_war_exploded/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_war_exploded/jsp/Login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_war_exploded/jsp/Login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CulturalInnoServicePlatform/po/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CulturalInnoServicePlatform/po/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CulturalInnoServicePlatform/dao/NewsDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CulturalInnoServicePlatform/dao/NewsDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CulturalInnoServicePlatform/po/SupplyDemand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CulturalInnoServicePlatform/po/SupplyDemand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CulturalInnoServicePlatform/spring/controller/ExhibitionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CulturalInnoServicePlatform/spring/controller/ExhibitionController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CulturalInnoServicePlatform/spring/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CulturalInnoServicePlatform/spring/controller/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/NewsDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/NewsDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/po/SupplyDemand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/po/SupplyDemand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/po/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/po/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CulturalInnoServicePlatform/spring/controller/NewsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CulturalInnoServicePlatform/spring/controller/NewsController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/hibernate.cfg.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/spring/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spring/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/spring/controller/MessageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spring/controller/MessageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/spring/controller/NewsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spring/controller/NewsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/spring/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spring/controller/OrderController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/jsp/Login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/jsp/Login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/jsp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/jsp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/jsp/Login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/Login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/jsp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/index.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -87,54 +73,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/spring/controller/NewsController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="34" column="43" lean-forward="true" selection-start-line="34" selection-start-column="43" selection-end-line="34" selection-end-column="43" />
+            <state relative-caret-position="-363">
+              <caret line="53" column="17" selection-start-line="53" selection-start-column="17" selection-end-line="53" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/spring/controller/SDController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="75" column="8" selection-start-line="75" selection-start-column="8" selection-end-line="75" selection-end-column="8" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#532#533#0" expanded="true" />
-                <element signature="e#562#563#0" expanded="true" />
-                <element signature="e#608#609#0" expanded="true" />
-                <element signature="e#646#647#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/spring/controller/ExhibitionController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="31" column="29" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/spring/controller/ProductController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-494">
-              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#440#441#0" expanded="true" />
-                <element signature="e#470#471#0" expanded="true" />
-                <element signature="e#516#517#0" expanded="true" />
-                <element signature="e#554#555#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -143,8 +85,64 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/spring/controller/OrderController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="29" column="33" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
+            <state relative-caret-position="75">
+              <caret line="35" column="38" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="12" column="43" lean-forward="true" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/applicationContext.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-10">
+              <caret line="19" column="22" lean-forward="true" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dao/UserDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-7">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/spring/controller/LoginController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="80">
+              <caret line="37" selection-start-line="37" selection-end-line="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dao/SessionMgr.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="80">
+              <caret line="26" selection-start-line="26" selection-end-line="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -153,26 +151,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/spring/controller/MessageController.java">
+        <entry file="file://$PROJECT_DIR$/src/hibernate.cfg.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="60" column="55" selection-start-line="60" selection-start-column="55" selection-end-line="60" selection-end-column="55" />
+            <state relative-caret-position="145">
+              <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#546#547#0" expanded="true" />
-                <element signature="e#576#577#0" expanded="true" />
-                <element signature="e#622#623#0" expanded="true" />
-                <element signature="e#660#661#0" expanded="true" />
+                <element signature="e#338#343#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dao/MessageDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1858">
-              <caret line="106" column="9" lean-forward="true" selection-start-line="106" selection-start-column="9" selection-end-line="106" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -180,20 +165,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/spring/controller/CollectionController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dao/ExhibitionDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="90" column="34" lean-forward="true" selection-start-line="90" selection-start-column="34" selection-end-line="90" selection-end-column="34" />
+            <state relative-caret-position="-317">
+              <caret line="28" selection-start-line="28" selection-end-line="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -248,7 +221,6 @@
         <option value="$PROJECT_DIR$/src/dao/SessionMgr.java" />
         <option value="$PROJECT_DIR$/src/dao/UserInfoDAO.java" />
         <option value="$PROJECT_DIR$/src/po/Order.hbm.xml" />
-        <option value="$PROJECT_DIR$/src/hibernate.cfg.xml" />
         <option value="$PROJECT_DIR$/src/dao/Demand.java" />
         <option value="$PROJECT_DIR$/src/dao/Supply.java" />
         <option value="$PROJECT_DIR$/src/Test.java" />
@@ -256,22 +228,23 @@
         <option value="$PROJECT_DIR$/src/spring/controller/ExhibinationController.java" />
         <option value="$PROJECT_DIR$/src/dao/AO.java" />
         <option value="$PROJECT_DIR$/web/jsp/index.jsp" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/po/User.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml" />
         <option value="$PROJECT_DIR$/web/jsp/Login.jsp" />
-        <option value="$PROJECT_DIR$/src/spring/controller/LoginController.java" />
         <option value="$PROJECT_DIR$/src/spring/controller/CollectionDAO.java" />
         <option value="$PROJECT_DIR$/src/po/SupplyDemand.java" />
         <option value="$PROJECT_DIR$/src/dao/SupplyDemandDAO.java" />
         <option value="$PROJECT_DIR$/src/spring/controller/SDController.java" />
         <option value="$PROJECT_DIR$/src/spring/controller/ExhibitionController.java" />
         <option value="$PROJECT_DIR$/src/dao/NewsDAO.java" />
-        <option value="$PROJECT_DIR$/src/spring/controller/NewsController.java" />
         <option value="$PROJECT_DIR$/src/spring/controller/ProductController.java" />
-        <option value="$PROJECT_DIR$/src/spring/controller/MessageController.java" />
-        <option value="$PROJECT_DIR$/src/spring/controller/OrderController.java" />
         <option value="$PROJECT_DIR$/src/spring/controller/CollectionController.java" />
+        <option value="$PROJECT_DIR$/src/spring/controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/src/spring/controller/MessageController.java" />
+        <option value="$PROJECT_DIR$/src/spring/controller/NewsController.java" />
+        <option value="$PROJECT_DIR$/src/spring/controller/OrderController.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/hibernate.cfg.xml" />
       </list>
     </option>
   </component>
@@ -288,7 +261,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-26" />
     <option name="width" value="978" />
     <option name="height" value="788" />
@@ -340,7 +313,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -356,37 +329,19 @@
             <path>
               <item name="CulturalInnoServicePlatform" type="b2602c69:ProjectViewProjectNode" />
               <item name="CulturalInnoServicePlatform" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CulturalInnoServicePlatform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CulturalInnoServicePlatform" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="po" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CulturalInnoServicePlatform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CulturalInnoServicePlatform" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CulturalInnoServicePlatform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CulturalInnoServicePlatform" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CulturalInnoServicePlatform" type="b2602c69:ProjectViewProjectNode" />
               <item name="CulturalInnoServicePlatform" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="jsp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -394,7 +349,7 @@
     <property name="JPA.DatabaseSchemaImportDialog" value="80bcada0-a82a-415c-bc26-37ba50dd934c" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544631276399" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544631319713" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/mysql-connector-java-8.0.13.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -404,17 +359,18 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Custom" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\user0\IdeaProjects\CulturalInnoServicePlatform\lib" />
-      <recent name="C:\Users\user0\IdeaProjects\CulturalInnoServicePlatform\src\dao" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\yhy\作业\软件工程A\课设\CulturalInnoServicePlatform\web\WEB-INF" />
+      <recent name="C:\Users\user0\IdeaProjects\CulturalInnoServicePlatform\src" />
+      <recent name="C:\Users\user0\IdeaProjects\CulturalInnoServicePlatform\src\spring" />
     </key>
     <key name="ImportMappingsDialog.RecentPackages">
       <recent name="po" />
       <recent name="" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\user0\IdeaProjects\CulturalInnoServicePlatform\src" />
-      <recent name="C:\Users\user0\IdeaProjects\CulturalInnoServicePlatform\src\spring" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\user0\IdeaProjects\CulturalInnoServicePlatform\lib" />
+      <recent name="C:\Users\user0\IdeaProjects\CulturalInnoServicePlatform\src\dao" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -438,13 +394,13 @@
       </method>
     </configuration>
     <configuration name="Tomcat 8.0.20" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.0.20" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:1999/CulturalInnoServicePlatform/" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:1999/CulturalInnoServicePlatform_Web_exploded/" />
       <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="CulturalInnoServicePlatform">
+        <artifact name="CulturalInnoServicePlatform:Web exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/CulturalInnoServicePlatform" />
+            <option name="CONTEXT_PATH" value="/CulturalInnoServicePlatform_Web_exploded" />
           </settings>
         </artifact>
       </deployment>
@@ -506,7 +462,7 @@
       </ConfigurationWrapper>
       <method v="2">
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="CulturalInnoServicePlatform" />
+          <artifact name="CulturalInnoServicePlatform:Web exploded" />
         </option>
         <option name="Make" enabled="true" />
       </method>
@@ -538,7 +494,10 @@
       <workItem from="1544591423086" duration="9053000" />
       <workItem from="1544605669866" duration="3845000" />
       <workItem from="1544615167101" duration="6971000" />
-      <workItem from="1544623534321" duration="7654000" />
+      <workItem from="1544623534321" duration="8187000" />
+      <workItem from="1544672461119" duration="87000" />
+      <workItem from="1544672788890" duration="81000" />
+      <workItem from="1544673106495" duration="3550000" />
     </task>
     <task id="LOCAL-00001" summary="v1.2  魔改SessionMgr 测试通过UserInfoDAO  UserDAO order表改为ordertable表">
       <created>1544595344168</created>
@@ -558,7 +517,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67698000" />
+    <option name="totallyTimeSpent" value="71949000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -570,7 +529,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-26" y="0" width="978" height="788" extended-state="1" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
@@ -580,8 +539,8 @@
       <window_info id="Capture Tool" order="4" />
       <window_info id="Web" order="5" side_tool="true" />
       <window_info id="Persistence" order="6" sideWeight="0.39194632" side_tool="true" weight="0.20183486" />
-      <window_info active="true" content_ui="combo" id="Project" order="7" sideWeight="0.6080537" visible="true" weight="0.27668846" />
-      <window_info id="Structure" order="8" sideWeight="0.39194632" side_tool="true" weight="0.18489768" />
+      <window_info active="true" content_ui="combo" id="Project" order="7" sideWeight="0.7180451" visible="true" weight="0.28971255" />
+      <window_info id="Structure" order="8" sideWeight="0.28195488" side_tool="true" visible="true" weight="0.28971255" />
       <window_info anchor="bottom" id="Spring" order="0" weight="0.32839838" />
       <window_info anchor="bottom" id="Terminal" order="1" weight="0.32786885" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
@@ -592,8 +551,8 @@
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32459018" />
       <window_info anchor="bottom" id="Message" order="8" />
       <window_info anchor="bottom" id="Find" order="9" weight="0.32884097" />
-      <window_info anchor="bottom" id="Run" order="10" visible="true" weight="0.36557376" />
-      <window_info anchor="bottom" id="Debug" order="11" weight="0.40327868" />
+      <window_info anchor="bottom" id="Run" order="10" weight="0.36557376" />
+      <window_info anchor="bottom" id="Debug" order="11" visible="true" weight="0.56393445" />
       <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="14" weight="0.32885906" />
@@ -691,13 +650,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/po/CollectionPK.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="39" column="19" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/po/Exhibition.hbm.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -784,16 +736,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/SessionMgr.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/po/SupplyDemand.hbm.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -864,22 +806,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/jsp/index.jsp">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
           <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="14" lean-forward="true" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="jar://D:/apache-tomcat-8.0.20/lib/servlet-api.jar!/javax/servlet/http/HttpServletRequest.class">
       <provider selected="true" editor-type-id="text-editor">
@@ -895,17 +827,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/hibernate.cfg.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="13" column="47" lean-forward="true" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
-          <folding>
-            <element signature="e#338#343#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/jsp/Login.jsp">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/Login.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="217">
           <caret line="14" column="16" lean-forward="true" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
@@ -915,27 +837,10 @@
     <entry file="file://$PROJECT_DIR$/web/index.jsp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/po/Exhibition.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="15" column="26" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/spring/controller/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-257">
-          <caret line="29" column="30" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -970,20 +875,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/spring/controller/SDController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="75" column="8" selection-start-line="75" selection-start-column="8" selection-end-line="75" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#532#533#0" expanded="true" />
-            <element signature="e#562#563#0" expanded="true" />
-            <element signature="e#608#609#0" expanded="true" />
-            <element signature="e#646#647#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/dao/NewsDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="237">
@@ -999,13 +890,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/UserDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="162" lean-forward="true" selection-start-line="162" selection-end-line="162" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/dao/ProductDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
@@ -1013,27 +897,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/ExhibitionDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/spring/controller/SDController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="90" column="34" lean-forward="true" selection-start-line="90" selection-start-column="34" selection-end-line="90" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/MessageDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1858">
-          <caret line="106" column="9" lean-forward="true" selection-start-line="106" selection-start-column="9" selection-end-line="106" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/spring/controller/OrderController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="29" column="33" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
+        <state relative-caret-position="1102">
+          <caret line="75" column="8" selection-start-line="75" selection-start-column="8" selection-end-line="75" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1042,18 +909,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/spring/controller/ExhibitionController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
+        <state relative-caret-position="266">
           <caret line="31" column="29" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/spring/controller/CollectionController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1062,38 +919,128 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/spring/controller/ProductController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-494">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        <state relative-caret-position="228">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#440#441#0" expanded="true" />
-            <element signature="e#470#471#0" expanded="true" />
-            <element signature="e#516#517#0" expanded="true" />
-            <element signature="e#554#555#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dao/MessageDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1881">
+          <caret line="106" column="9" selection-start-line="106" selection-start-column="9" selection-end-line="106" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dao/ExhibitionDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1539">
+          <caret line="90" column="34" selection-start-line="90" selection-start-column="34" selection-end-line="90" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/po/Image.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/spring/controller/MessageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-209">
+          <caret line="37" column="49" selection-start-line="37" selection-start-column="49" selection-end-line="37" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/spring/controller/CollectionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-317">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/spring/controller/NewsController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="34" column="43" lean-forward="true" selection-start-line="34" selection-start-column="43" selection-end-line="34" selection-end-column="43" />
+        <state relative-caret-position="-363">
+          <caret line="53" column="17" selection-start-line="53" selection-start-column="17" selection-end-line="53" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/spring/controller/MessageController.java">
+    <entry file="file://$PROJECT_DIR$/src/spring/controller/OrderController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="60" column="55" selection-start-line="60" selection-start-column="55" selection-end-line="60" selection-end-column="55" />
+        <state relative-caret-position="75">
+          <caret line="35" column="38" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#546#547#0" expanded="true" />
-            <element signature="e#576#577#0" expanded="true" />
-            <element signature="e#622#623#0" expanded="true" />
-            <element signature="e#660#661#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="43" lean-forward="true" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-10">
+          <caret line="19" column="22" lean-forward="true" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dao/UserDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dao/SessionMgr.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/spring/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hibernate.cfg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
+          <folding>
+            <element signature="e#338#343#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1104,7 +1051,7 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>CulturalInnoServicePlatform</last-edited>
+          <last-edited>CulturalInnoServicePlatform:Web exploded</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1152,7 +1099,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>CulturalInnoServicePlatform</last-edited>
+          <last-edited>Web|CulturalInnoServicePlatform</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

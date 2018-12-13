@@ -9,7 +9,7 @@
     <!--&lt;!&ndash; 配置视图解析器：InternalResourceViewResolver解析出真正的物理视图 后台返回逻辑视图：index 解析出真正的物理视图：前缀＋逻辑视图＋后缀===/WEB-INF/jsp/index.jsp &ndash;&gt;-->
 
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-        <property name="prefix" value="jsp/" />
+        <property name="prefix" value="/WEB-INF/jsp/"/>
         <property name="suffix" value=".jsp" />
     </bean>
 

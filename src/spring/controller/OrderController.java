@@ -33,7 +33,7 @@ public class OrderController {
 
 
     @ModelAttribute("pageOrderList")
-    @RequestMapping(value = "/getCollectionByPage.action")
+    @RequestMapping(value = "/getOrderByPage.action")
     @ResponseBody
     public List getOrderByPage(@RequestBody String json){
         //第一个参数存用户id，第二个参数存page

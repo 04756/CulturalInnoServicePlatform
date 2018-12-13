@@ -32,10 +32,10 @@ public class LoginController {
     }
 
     @RequestMapping(value = "login.action", method = RequestMethod.POST)
-    public String validateLogin(@ModelAttribute("User")User user, HttpServletRequest request, Model model){
+    public String validateLogin(@ModelAttribute("user")User user, HttpServletRequest request, Model model){
         System.out.println(user.getUserId());
         UserDAO ud = new UserDAO();
-        if( ud.validateUser(user.getUserId(),user.getPassword()) == true ){
+        if( ud.validateUser(user.getUserId(),user.getPassword()) ){
             return "index";
         }
         this.message = "”√ªß√˚/√‹¬Î¥ÌŒÛ";

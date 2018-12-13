@@ -33,7 +33,7 @@ public class MessageController {
     }
 
     @ModelAttribute("pageMessageList")
-    @RequestMapping(value = "/getCollectionByPage.action")
+    @RequestMapping(value = "/getMessageByPage.action")
     @ResponseBody
     public List getMessageByPage(@RequestBody String json){
         //第一个参数为id，第二个为页数
