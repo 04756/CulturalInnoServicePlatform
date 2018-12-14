@@ -15,10 +15,10 @@
     <%--<title>Title</title>--%>
 <%--</head>--%>
 <body>
-<div class="row">
-    <div style="padding: 50px;padding-left: 80px;padding-right: 150px">Designed and built with all the love in the world by @mdo and @fat. Maintained by the core team with the help of our contributors.
+    <div class="row" style="text-align: left;background-color: black;color: white;margin-top: 40px;">
+        <div style="padding: 50px;padding-left: 80px;padding-right: 150px">Designed and built with all the love in the world by @mdo and @fat. Maintained by the core team with the help of our contributors.
 
-        本项目源码受 MIT开源协议保护，文档受 CC BY 3.0 开源协议保护。</div>
-</div>
+            本项目源码受 MIT开源协议保护，文档受 CC BY 3.0 开源协议保护。</div>
+    </div>
 </body>
 </html>

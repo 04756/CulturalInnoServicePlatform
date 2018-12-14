@@ -46,61 +46,27 @@
     </style>
 </head>
 <body>
-<div class="container-fluid">
-    <div class="row log">
-        <h1 style="width: auto;">文化创意中心</h1>
+    <div class="container-fluid">
+        <jsp:include page="headder.jsp"/>
 
-    </div>
-    <div class="row">
-        <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #1e50ae;font-weight: bold;width:100%;">
-            <!-- Brand/logo -->
-            <a class="navbar-brand" href="#">Logo</a>
-
-            <!-- Links -->
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#" >供求</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">展会</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">资讯</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                        产品
-                    </a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">书画</a>
-                        <a class="dropdown-item" href="#">文化服饰</a>
-                        <a class="dropdown-item" href="#">器物</a>
-                    </div>
-                </li>
-            </ul>
-        </nav>
-    </div>
-    <div style="margin: 0 auto;margin-left:auto;width: 1200px;margin-top: 30px;">
-        <div style="display: block;text-align: center;"><h2>${exhi.first}</h2></div>
-        <div style="display: block;">
-            <div class="essayInfo"  style="display: block;text-align: center;">
-                <small>发布人:${exhi.second}</small>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                <small>发布时间：${exhi.third}</small>
+        <div style="margin: 0 auto;margin-left:auto;width: 1200px;margin-top: 30px;">
+            <div style="display: block;text-align: center;"><h2>${exhi.first}</h2></div>
+            <div style="display: block;">
+                <div class="essayInfo"  style="display: block;text-align: center;">
+                    <small>发布人:${exhi.second}</small>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    <small>发布时间：${exhi.third}</small>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="row essayContain" style="margin: 0 auto;">
-        <p>
-            ${exhi.fourth}</p>
-        <p>
-            然而，时至今日，转型文创园的发展却并非尽如人意。红专厂文化创意产业园所在区域早在2013年已经确定被规划为金融中心，面临拆迁。消息一出，“红专厂”到底何去何从，引发社会各界强烈关注。“红专厂”全称为“广州红专厂文化创意产业园”，曾一度被认为是城市工业遗产更新的成功案例，然而时至今日，已建成8年之久的它面临要再次搬迁的窘境。以小窥大，这集中反映了城市工业遗产更新，特别是转型文创园产生的诸多问题。</p>
-    </div>
+        <div class="row essayContain" style="margin: 0 auto;">
+            <p>
+                ${exhi.fourth}</p>
+            <p>
+                然而，时至今日，转型文创园的发展却并非尽如人意。红专厂文化创意产业园所在区域早在2013年已经确定被规划为金融中心，面临拆迁。消息一出，“红专厂”到底何去何从，引发社会各界强烈关注。“红专厂”全称为“广州红专厂文化创意产业园”，曾一度被认为是城市工业遗产更新的成功案例，然而时至今日，已建成8年之久的它面临要再次搬迁的窘境。以小窥大，这集中反映了城市工业遗产更新，特别是转型文创园产生的诸多问题。</p>
+        </div>
 
-    <div class="row" style="text-align: left;background-color: black;color: white;margin-top: 40px;justify-content: center;">
-        <div style="padding: 50px;padding-left: 80px;padding-right: 150px">Designed and built with all the love in the world by @mdo and @fat. Maintained by the core team with the help of our contributors.
+        <jsp:include page="footer.jsp"/>
 
-            本项目源码受 MIT开源协议保护，文档受 CC BY 3.0 开源协议保护。</div>
     </div>
-</div>
 </body>
 </html>

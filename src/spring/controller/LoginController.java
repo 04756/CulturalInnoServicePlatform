@@ -38,6 +38,11 @@ public class LoginController {
         return new ModelAndView("Login","command",this);
     }
 
+    @RequestMapping(value = "/index.html")
+    public ModelAndView initindex(HttpServletRequest request){
+        return new ModelAndView("index","command",this);
+    }
+
     @RequestMapping(value = "login.action", method = RequestMethod.POST)
     public String validateLogin(@ModelAttribute("user")User user, HttpServletRequest request,HttpSession session, Model model)
     {

@@ -11,16 +11,12 @@
 <script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
 <script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
 <html>
-<%--<head>--%>
-    <%--<title>Title</title>--%>
-<%--</head>--%>
-<body>
 <div class="row log">
     <h1 style="width: auto;">文化创意中心</h1>
 
 </div>
 <div class="row">
-    <nav class="navbar navbar-expand-sm navbar-dark">
+    <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #1e50ae;font-weight: bold;width:100%;">
         <!-- Brand/logo -->
         <a class="navbar-brand" href="#">Logo</a>
 
@@ -40,7 +36,6 @@
                     产品
                 </a>
                 <div class="dropdown-menu">
-                    <a class="dropdown-item" href="/Product.html">所有产品列表</a>
                     <a class="dropdown-item" href="#">书画</a>
                     <a class="dropdown-item" href="#">文化服饰</a>
                     <a class="dropdown-item" href="#">器物</a>
@@ -49,5 +44,7 @@
         </ul>
     </nav>
 </div>
+<body>
+
 </body>
 </html>
