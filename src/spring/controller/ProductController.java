@@ -3,6 +3,7 @@ package spring.controller;
 import com.google.gson.Gson;
 import dao.AO;
 import dao.ProductDAO;
+import dao.ProductType;
 import dao.UserDAO;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -13,6 +14,7 @@ import po.User;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.swing.text.ParagraphView;
+import java.util.ArrayList;
 import java.util.List;
 
 @Controller
@@ -28,9 +30,71 @@ public class ProductController {
         this.message = message;
     }
 
+    @RequestMapping(value = "/getAllProduct.action")
+    @ResponseBody
+//    @ModelAttribute("allProductList")
+    public List<Product> getAllProduct(HttpServletRequest request)
+    {
+        ProductDAO pDAO=new ProductDAO();
+        System.out.println("allProductListallProductListallProductListallProductList");
+        List<Product> l=pDAO.getAllProducts();
+        request.setAttribute("allProductList",l);
+        return l;
+    }
+
+    @RequestMapping(value = "/getAllPassedProduct.action")
+    @ResponseBody
+//    @ModelAttribute("allPassedProductList")
+    public List<Product> getAllPassedProduct(HttpServletRequest request)
+    {
+        ProductDAO pDAO =new ProductDAO();
+        List<Product> list=pDAO.getAllProducts();
+        List<Product> passedList=new ArrayList<>();
+        System.out.println("allPassedProductListallPassedProductListallPassedProductList");
+        for(Product p:list)
+            if(p.getIsPass()==(byte)1)
+                passedList.add(p);
+        request.setAttribute("passedList",passedList);
+        return passedList;
+    }
+
     @RequestMapping(value = "/Product.html")
-    public ModelAndView initProductPage(Model model){
-        return new ModelAndView("Exhibition","command",this);
+    public ModelAndView initProductPage(Model model,HttpServletRequest request){
+        getAllPassedProduct(request);
+        List<Product> passedList=(List<Product>)request.getAttribute("passedList");
+        List<Product> calliList=new ArrayList<>();
+        List<Product> paintList=new ArrayList<>();
+        List<Product> musicList=new ArrayList<>();
+        List<Product> garmentList=new ArrayList<>();
+        for(Product p:passedList)
+        {
+
+            if(p.getProductType().equals(ProductType.CALLIGRAPHY.name))
+                calliList.add(p);
+            else
+                if(p.getProductType().equals(ProductType.PAINTING.name))
+                    paintList.add(p);
+                else
+                    if(p.getProductType().equals(ProductType.MUSINSTRU.name))
+                        musicList.add(p);
+                        else
+                            garmentList.add(p);
+        }
+        System.out.println("ProductProductProduct");
+        model.addAttribute("calliList",calliList);
+        model.addAttribute("paintList",paintList);
+        model.addAttribute("musicList",musicList);
+        model.addAttribute("garmentList",garmentList);
+        return new ModelAndView("Product","command",this);
+    }
+
+    @RequestMapping(value = "getProductById.html", method = RequestMethod.GET)
+    @ResponseBody
+    public ModelAndView getProductById(@RequestParam("productId") String productId,Model model)
+    {
+        ProductDAO pDAO=new ProductDAO();
+        model.addAttribute("product",pDAO.getProducById(productId));
+        return new ModelAndView("ProductDetail","command",this);
     }
 
     @ModelAttribute("pageProductList")
@@ -105,10 +169,16 @@ public class ProductController {
     public ProductController purchaseProduct(@RequestBody String json , HttpServletRequest request){
         //第一个参数为用户Id，第二个参数为产品Id,第三个参数为场频数量
         AO temp = new Gson().fromJson(json, AO.class);
-        if(new UserDAO().purchaseProduct(temp.getFirst(), temp.getSecond(), Integer.parseInt(temp.getThird())))
-            this.setMessage("订单成功");
-        else
+        try
+        {
+            if (new UserDAO().purchaseProduct(temp.getFirst(), temp.getSecond(), Integer.parseInt(temp.getThird())))
+                this.setMessage("订单成功");
+        }
+        catch(Exception e)
+        {
             this.setMessage("订单失败");
+        }
         return this;
     }
+
 }

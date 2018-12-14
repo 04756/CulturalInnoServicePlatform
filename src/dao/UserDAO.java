@@ -27,13 +27,18 @@ public class UserDAO
         SessionMgr.releaseConnect(hs,ts);
     }
 
+    private void releaseSession(Session hs)
+    {
+        SessionMgr.releaseConnect(hs);
+    }
+
 
     /**
      * 测试通过
      * @param newUser
      * @return
      */
-    public Boolean addUser(User newUser)
+    public Boolean addUser(User newUser) throws Exception
     {
         try
         {
@@ -44,12 +49,12 @@ public class UserDAO
             releaseSession();
             return true;
         }
-        catch(HibernateException he)
+        catch(Exception e)
         {
-            he.printStackTrace();
-            releaseSession();
+            releaseSession(hs);
+            throw e;
         }
-        return false;
+//        return false;
     }
 
     /**
@@ -57,11 +62,11 @@ public class UserDAO
      * @param userId
      * @return
      */
-    public Boolean delUser(String userId)
+    public Boolean delUser(String userId)  throws Exception
     {
         try
         {
-            getSession();
+           getSession();
 
             User toDel = (User) hs.get(User.class, userId);
             //删除头像
@@ -83,12 +88,12 @@ public class UserDAO
             releaseSession();
             return true;
         }
-        catch (HibernateException he)
+        catch (Exception e)
         {
-            he.printStackTrace();
-            releaseSession();
+            releaseSession(hs);
+            throw e;
         }
-        return false;
+        //return false;
     }
 
     /**
@@ -96,34 +101,34 @@ public class UserDAO
      * @param userId
      * @return
      */
-    public User getUser(String userId)
+    public User getUser(String userId)  throws Exception
     {
         try
         {
-            getSession();
+           getSession();
 
             User user=hs.get(User.class,userId);
 
             releaseSession();
             return user;
         }
-        catch(HibernateException he)
+        catch(Exception e)
         {
-            he.printStackTrace();
-            releaseSession();
+            releaseSession(hs);
+            throw e;
         }
-        return null;
+        //return null;
     }
 
     /**
      * 测试通过
      * @return
      */
-    public List<User> getAllUser()
+    public List<User> getAllUser()  throws Exception
     {
         try
         {
-            getSession();
+           getSession();
 
             String getAllUserHql="from User";
             Query getAllUserQuery=hs.createQuery(getAllUserHql);
@@ -132,12 +137,12 @@ public class UserDAO
             releaseSession();
             return allUserList;
         }
-        catch (HibernateException he)
+        catch (Exception e)
         {
-            he.printStackTrace();
-            releaseSession();
+           releaseSession(hs);
+           throw e;
         }
-        return null;
+//        return null;
     }
 
     /**
@@ -147,11 +152,11 @@ public class UserDAO
      * @param num
      * @return
      */
-    public Boolean purchaseProduct(String userId, String productId, int num)
+    public Boolean purchaseProduct(String userId, String productId, int num)  throws Exception
     {
         try
         {
-            getSession();
+           getSession();
 
             //创建新订单
             Order newOrder=new Order();
@@ -170,20 +175,21 @@ public class UserDAO
             hs.save(hasBought);
             releaseSession();
         }
-        catch(HibernateException he)
+        catch(Exception e)
         {
-            he.printStackTrace();
-            releaseSession();
+            releaseSession(hs);
+            throw e;
         }
         return false;
     }
 
     /**
      * 测试通过
-     * @param userId yonghum
-     * @param password mima
+     * @param userId
+     * @param password
+     * @return
      */
-    public boolean validateUser(String userId, String password)
+    public boolean validateUser(String userId, String password)  throws Exception
     {
         try
         {
@@ -196,10 +202,10 @@ public class UserDAO
             if(registeredUser!=null&&registeredUser.getPassword().equals(password))
                 return true;
         }
-        catch(HibernateException he)
+        catch(Exception e)
         {
-            he.printStackTrace();
-            releaseSession();
+            releaseSession(hs);
+            throw e;
         }
         return false;
     }

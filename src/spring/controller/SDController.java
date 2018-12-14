@@ -1,7 +1,6 @@
 package spring.controller;
 
 import com.google.gson.Gson;
-import com.sun.tracing.dtrace.Attributes;
 import dao.AO;
 import dao.SupplyDemandDAO;
 import org.springframework.stereotype.Controller;

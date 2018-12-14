@@ -8,7 +8,9 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.portlet.ModelAndView;
 import po.News;
 
+import javax.lang.model.element.NestingKind;
 import javax.servlet.http.HttpServletRequest;
+import java.util.ArrayList;
 import java.util.List;
 
 @Controller
@@ -24,8 +26,40 @@ public class NewsController {
         this.message = message;
     }
 
+    @RequestMapping(value = "/getAllNews.action")
+    @ResponseBody
+    @ModelAttribute("allNewsList")
+    public List<News> getAllNews(HttpServletRequest request)
+    {
+        NewsDAO nDAO=new NewsDAO();
+        System.out.println("allNewsListallNewsListallNewsList");
+        List<News> allNewsList=nDAO.getAllNews();
+        request.setAttribute("allNewsList",allNewsList);
+        return allNewsList;
+    }
+
+    @RequestMapping(value = "/getAllPassedNews.action")
+    @ResponseBody
+    @ModelAttribute("allPassedNewsList")
+    public List<News> getAllPassedNews(HttpServletRequest request)
+    {
+        NewsDAO nDAO=new NewsDAO();
+        List<News> l=nDAO.getAllNews();
+        List<News> passedList=new ArrayList<>();
+        for(News n:l)
+            if(n.getIsPass()==(byte)1)
+                passedList.add(n);
+        System.out.println("allPassedNewsListallPassedNewsListallPassedNewsList");
+        request.setAttribute("allPassedNewsList",passedList);
+        return passedList;
+    }
+
     @RequestMapping(value = "/News.html")
-    public ModelAndView initNewsPage(){
+    public ModelAndView initNewsPage(HttpServletRequest request)
+    {
+
+        getAllNews(request);
+        System.out.println("NewsNewsNewsNews");
         return new ModelAndView("News","command",this);
     }
 
