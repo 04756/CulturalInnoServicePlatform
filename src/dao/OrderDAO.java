@@ -63,7 +63,7 @@ public class OrderDAO
         try
         {
 
-            Query hquery = hsession.createQuery("from Order where Order .userId=?1");
+            Query hquery = hsession.createQuery("from Order o where o.userId=?1");
             hquery.setParameter(1, userId);
             List<Order> list = hquery.list();
 

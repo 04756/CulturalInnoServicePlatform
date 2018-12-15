@@ -38,6 +38,7 @@ public class OrderController {
         //利用AO 将订单和商品信息拼在一起 这样就可以同时显示同时显示
         List<AO> orderInfoList=new ArrayList<>();
 
+        if(orderList != null)
         for(Order o:orderList)
         {
             Product p=pDAO.getProducById(o.getProId());

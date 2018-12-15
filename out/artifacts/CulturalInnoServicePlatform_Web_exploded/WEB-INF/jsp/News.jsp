@@ -10,11 +10,11 @@
     <!-- <script src="http://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>  -->
     <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/base.css">
     <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
     <script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
     <script src="js/page.js"></script>
+    <link rel="stylesheet" href="css/base.css">
 
 </head>
 <body>
@@ -22,16 +22,21 @@
         <jsp:include page="headder.jsp"/>
 
         <div class="row">
-            <div style="width: 1100px;justify-content: center;margin-top: 30px;margin-left: 50px;">
+            <div style="width: 1100px;justify-content: center;margin:0 auto;margin-top: 80px;border: 1px solid #eee;">
                 <ul id="lists">
                     <c:forEach items="${allNewsList}" var="news">
+                        <div class="listOuter">
                         <li>
-                            <a href="#">
+                            <a href="#" style="color: black;">
                                     ${news.title}
-                                    ${news.establishTime}
-                                    ${news.hits}
+                                    <div class="subTitle"> ${news.establishTime}</div>
+                                    <%--<div style="display: inline-block;font-size: 12px;color: #eeeeee">点击量:</div><div class="subTitle">${news.hits}</div>--%>
                             </a>
+                            <%----%>
                         </li>
+                            <%--<hr style="border: 0.5px solid #eee;padding-top：13px;margin-bottom: -3px;">--%>
+                        </div>
+
                     </c:forEach>
                 </ul>
             </div>

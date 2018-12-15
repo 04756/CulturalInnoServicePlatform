@@ -2,11 +2,11 @@ $(document).ready(function(){
 
     function gopage(cur){
 
-        var lidtcontain = $("#lists").children("li");//所有数据
+        var lidtcontain = $("#lists").children();//所有数据
         var maxlist = 12;
         var curpage = cur;
         var maxpage;
-        var num = $("#lists").children("li").length;
+        var num = $("#lists").children().length;
 
         if((num / maxlist) > parseInt(num / maxlist))
             maxpage = parseInt(num / maxlist) + 1;
@@ -20,7 +20,7 @@ $(document).ready(function(){
         var endrows = curpage * maxlist - 1;
         endrows = (endrows > num)? num : endrows;
 
-        if(startrows  >= 0 || endrows <= num)
+        if((startrows  >= 0 || endrows <= num) && (curpage <= maxpage && curpage > 0))
             for (var i = 0; i < num; ++i){
                 var irow = lidtcontain[i];
                 if(i >= startrows && i<= endrows)
@@ -55,6 +55,14 @@ $(document).ready(function(){
         console.log("当前页："+curpage);
         curpage += 1;
         gopage(curpage)
+    });
+
+    $(".listOuter").mouseover(function(){
+        $(this).css("background-color","#eeeeee");
+    });
+
+    $(".listOuter").mouseout(function(){
+        $(this).css("background-color","white");
     });
 
 });

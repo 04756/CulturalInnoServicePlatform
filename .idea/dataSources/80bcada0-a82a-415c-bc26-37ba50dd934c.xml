@@ -1135,7 +1135,7 @@
       <Comment>资讯表</Comment>
       <Collation>utf8mb4_0900_ai_ci</Collation>
     </table>
-    <table id="286" parent="9" name="order">
+    <table id="286" parent="9" name="ordertable">
       <Comment>订单表</Comment>
       <Collation>utf8mb4_0900_ai_ci</Collation>
     </table>

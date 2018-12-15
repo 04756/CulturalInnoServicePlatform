@@ -8,6 +8,9 @@ $(document).ready(function(){
         var maxpage;
         var num = $(node).children(".card").length;
 
+        if(num == 0)
+            return;
+
         if((num / maxlist) > parseInt(num / maxlist))
             maxpage = parseInt(num / maxlist) + 1;
         else
@@ -37,8 +40,50 @@ $(document).ready(function(){
 
     }
 
+
+    function goOrderpage(cur, node, curPageNode){
+
+        var lidtcontain = $(node).children(".card");//所有数据
+        var maxlist = 2;
+        var curpage = cur;
+        var maxpage;
+        var num = $(node).children(".card").length;
+
+        if(num == 0)
+            return;
+
+        if((num / maxlist) > parseInt(num / maxlist))
+            maxpage = parseInt(num / maxlist) + 1;
+        else
+            maxpage = parseInt(num / maxlist);
+
+        if(maxpage == null)
+            maxpage = 1;
+
+        var startrows = (curpage-1) * maxlist;
+        var endrows = curpage * maxlist - 1;
+        endrows = (endrows > num)? num : endrows;
+
+        if((startrows  >= 0 || endrows <= num) && (curpage <= maxpage && curpage > 0))
+            for (var i = 0; i < num; ++i){
+                var irow = lidtcontain[i];
+                if(i >= startrows && i<= endrows)
+                    $(irow).css("display","grid");
+                else
+                    $(irow).css("display","none");
+                console.log(num);
+                $(curPageNode).text(curpage);
+            }
+        else
+            alert("到头!");
+
+        /*var pageEnd = $("#pageEnd").text();*/
+
+    }
+
+
     gocalligraphypage("1",$("#v-pills-calligraphy"),$("#curPage"));
-    gocalligraphypage("1",$("#orderLists"),$("#ordercurPage"));
+    goOrderpage("1",$(".orderLists"),$("#ordercurPage"));
 
     $("#pre").click(function(){
         var curpage = parseInt($("#curPage").text());
@@ -100,14 +145,14 @@ $(document).ready(function(){
         var curpage = parseInt($("#ordercurPage").text());
         console.log("当前页："+curpage);
         curpage -= 1;
-        gocalligraphypage(curpage,$("#orderLists"),$("#ordercurPage"));
+        goOrderpage(curpage,$(".orderLists"),$("#ordercurPage"));
     });
 
     $("#ordernext").click(function(){
         var curpage = parseInt($("#ordercurPage").text());
         console.log("当前页："+curpage);
         curpage += 1;
-        gocalligraphypage(curpage,$("#orderLists"),$("#ordercurPage"));
+        goOrderpage(curpage,$(".orderLists"),$("#ordercurPage"));
     });
 
 });
