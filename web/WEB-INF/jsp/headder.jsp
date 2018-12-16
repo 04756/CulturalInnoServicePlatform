@@ -20,7 +20,7 @@
 <div class="log">
     <h1 style="width: auto;display: inline-block;">文化创意中心</h1>
     <div class="portrait">
-        <a href="" class="portrait"><img src="http://static.runoob.com/images/mix/img_fjords_wide.jpg"></a>
+        <a href="Manage/index.html" class="portrait"><img src="http://static.runoob.com/images/mix/img_fjords_wide.jpg"></a>
     </div>
 </div>
 <div class="row">

@@ -17,6 +17,7 @@ public class Product
     private Integer purchase;
     private byte isPass;
     private String productType;
+    private String info;
 
     @Id
     @Column(name = "proID")
@@ -114,6 +115,18 @@ public class Product
         this.productType = productType;
     }
 
+    @Basic
+    @Column(name = "content")
+    public String getInfo()
+    {
+        return info;
+    }
+
+    public void setInfo(String info)
+    {
+        this.info = info;
+    }
+
     @Override
     public boolean equals(Object o)
     {
@@ -123,16 +136,16 @@ public class Product
         return Double.compare(product.price, price) == 0 &&
                 isPass == product.isPass &&
                 Objects.equals(proId, product.proId) &&
-                Objects.equals(userId, product.userId) &&
                 Objects.equals(proName, product.proName) &&
                 Objects.equals(hits, product.hits) &&
                 Objects.equals(purchase, product.purchase) &&
-                Objects.equals(productType, product.productType);
+                Objects.equals(productType, product.productType) &&
+                Objects.equals(info, product.info);
     }
 
     @Override
     public int hashCode()
     {
-        return Objects.hash(proId, userId, proName, price, hits, purchase, isPass, productType);
+        return Objects.hash(proId, proName, price, hits, purchase, isPass, productType, info);
     }
 }

@@ -4,6 +4,10 @@ import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.hibernate.query.Query;
 
+import java.sql.Timestamp;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 import po.Collection;
@@ -28,6 +32,11 @@ public class CollectionDAO
         SessionMgr.releaseConnect(hs, ts);
     }
 
+    private void releaseSession(Session hs)
+    {
+        SessionMgr.releaseConnect(hs);
+    }
+
 
     /**
      * 测试通过
@@ -35,7 +44,7 @@ public class CollectionDAO
      * @param originId
      * @return
      */
-    public Boolean delFromCollection(String userId,String originId)
+    public Boolean delFromCollection(String userId,String originId) throws Exception
     {
         getSession();
         try
@@ -60,9 +69,9 @@ public class CollectionDAO
         }
         catch (Exception e)
         {
-            e.printStackTrace();
-            releaseSession();
-            return false;
+            releaseSession(hs);
+            throw e;
+//            return false;
         }
     }
 
@@ -71,11 +80,16 @@ public class CollectionDAO
      * @param coll
      * @return
      */
-    public Collection addToCollection(Collection coll)
+    public Collection addToCollection(Collection coll) throws Exception
     {
         getSession();
         try
         {
+            if(coll.getEstablishTime() == null) {
+                Date dnow = new Date();
+//                DateFormat df = new SimpleDateFormat("YYYY-MM-DD hh:mm:ss");
+                coll.setEstablishTime(new Timestamp(dnow.getTime()));
+            }
             hs.save(coll);
 
             releaseSession();
@@ -84,9 +98,10 @@ public class CollectionDAO
         }
         catch (Exception e)
         {
-            e.printStackTrace();
-            releaseSession();
-            return null;
+            releaseSession(hs);
+
+            throw e;
+//            return null;
         }
     }
 
@@ -116,7 +131,7 @@ public class CollectionDAO
      * @param colltype
      * @return
      */
-    public List<Collection> getUserCollectionByType(String userId, String colltype)
+    public List<Collection> getUserCollectionByType(String userId, String colltype) throws Exception
     {
         getSession();
         try
@@ -131,9 +146,9 @@ public class CollectionDAO
         }
         catch (Exception e)
         {
-            e.printStackTrace();
-            releaseSession();
-            return null;
+            releaseSession(hs);
+            throw e;
+//            return null;
         }
     }
 
@@ -144,7 +159,7 @@ public class CollectionDAO
      * @param userId 用户的id
      * @return 用户的所有收藏列表
      */
-    public List<Collection> getUserCollection(String userId)
+    public List<Collection> getUserCollection(String userId) throws Exception
     {
         getSession();
         try
@@ -158,9 +173,9 @@ public class CollectionDAO
         }
         catch (Exception e)
         {
-            e.printStackTrace();
-            releaseSession();
-            return null;
+            releaseSession(hs);
+            throw e;
+//            return null;
         }
     }
 
@@ -171,7 +186,7 @@ public class CollectionDAO
      * @param page 获取第几页的内容
      * @return List 获取的结果
      */
-    public List<Collection> getCollectionByPage(String userId, int page)
+    public List<Collection> getCollectionByPage(String userId, int page) throws Exception
     {
         getSession();
         try
@@ -187,9 +202,9 @@ public class CollectionDAO
         }
         catch (Exception e)
         {
-            e.printStackTrace();
-            releaseSession();
-            return null;
+            releaseSession(hs);
+            throw e;
+//            return null;
         }
     }
 }

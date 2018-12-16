@@ -38,12 +38,15 @@ public class LoginController {
         return new ModelAndView("Login","command",this);
     }
 
-    @RequestMapping(value = "/index.html")
-    public ModelAndView initindex(HttpServletRequest request){
-        return new ModelAndView("index","command",this);
+    @RequestMapping(value = "/Manage/index.html")
+    public String initManageIndex(HttpServletRequest request){
+        if (request.getSession().getAttribute("user") == null)
+            return "redirect:/Login.html";
+        else
+            return "index";
     }
 
-    @RequestMapping(value = "login.action", method = RequestMethod.POST)
+    @RequestMapping(value = "/login.action", method = RequestMethod.POST)
     public String validateLogin(@ModelAttribute("user")User user, HttpServletRequest request,HttpSession session, Model model)
     {
         System.out.println(user.getUserId());
@@ -63,7 +66,7 @@ public class LoginController {
             this.message = "用户名/密码错误";
             model.addAttribute("message",message);
         }
-        return null;
+        return "redirect:/Login.html";
     }
 
     @RequestMapping(value = "/Register.html")

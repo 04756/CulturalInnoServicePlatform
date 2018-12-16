@@ -1,8 +1,5 @@
 package po;
 
-import org.springframework.context.annotation.Bean;
-import org.springframework.stereotype.Component;
-
 import javax.persistence.Basic;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -67,10 +64,5 @@ public class User
     public int hashCode()
     {
         return Objects.hash(userId, password, type);
-    }
-
-    @Bean
-    public User User (){
-        return new User();
     }
 }

@@ -57,7 +57,7 @@
                                 <div class="card-body" style="width: 100%;height: 150px;">
                                     <h4 class="card-title"
                                         style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;width: 100%;">${product.proName}</h4>
-                                    <a href="" class="card-text productTitle"
+                                    <a href="/CulturalInnoServicePlatform_Web_exploded/getProductById?productId=${product.proId}" class="card-text productTitle"
                                        style="width: 100%;height:80px;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 4;-webkit-box-orient: vertical;">${product.productType}</a>
                                     <h5 style="display: inline-block;color: #FF0000">$${product.price}</h5>
                                     <small class="text-muted text-right" style="float:right;margin-top: 5px;">
@@ -88,7 +88,7 @@
                                 <div class="card-body" style="width: 100%;height: 150px;">
                                     <h4 class="card-title"
                                         style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;width: 100%;">${product.proName}</h4>
-                                    <a href="" class="card-text productTitle"
+                                    <a href="/CulturalInnoServicePlatform_Web_exploded/getProductById.html?productId=${product.proId}" class="card-text productTitle"
                                        style="width: 100%;height:80px;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 4;-webkit-box-orient: vertical;">${product.productType}</a>
                                     <h5 style="display: inline-block;color: #FF0000">$${product.price}</h5>
                                     <small class="text-muted text-right" style="float:right;margin-top: 5px;">
@@ -118,7 +118,7 @@
                                 <div class="card-body" style="width: 100%;height: 150px;">
                                     <h4 class="card-title"
                                         style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;width: 100%;">${product.proName}</h4>
-                                    <a href="" class="card-text productTitle"
+                                    <a href="/CulturalInnoServicePlatform_Web_exploded/getProductById?productId=${product.proId}" class="card-text productTitle"
                                        style="width: 100%;height:80px;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 4;-webkit-box-orient: vertical;">${product.productType}</a>
                                     <h5 style="display: inline-block;color: #FF0000">$${product.price}</h5>
                                     <small class="text-muted text-right" style="float:right;margin-top: 5px;">
@@ -147,7 +147,7 @@
                                 <div class="card-body" style="width: 100%;height: 150px;">
                                     <h4 class="card-title"
                                         style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;width: 100%;">${product.proName}</h4>
-                                    <a href="" class="card-text productTitle"
+                                    <a href="/CulturalInnoServicePlatform_Web_exploded/getProductById?productId=${product.proId}" class="card-text productTitle"
                                        style="width: 100%;height:80px;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 4;-webkit-box-orient: vertical;">${product.productType}</a>
                                     <h5 style="display: inline-block;color: #FF0000">$${product.price}</h5>
                                     <small class="text-muted text-right" style="float:right;margin-top: 5px;">

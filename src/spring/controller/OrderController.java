@@ -5,14 +5,12 @@ import dao.OrderDAO;
 import dao.ProductDAO;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.portlet.ModelAndView;
 import po.Order;
 import po.Product;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -34,22 +32,28 @@ public class OrderController {
     {
         OrderDAO oDAO=new OrderDAO();
         ProductDAO pDAO=new ProductDAO();
-        List<Order> orderList=oDAO.getUserOrders("13051205197");
-        //利用AO 将订单和商品信息拼在一起 这样就可以同时显示同时显示
-        List<AO> orderInfoList=new ArrayList<>();
-
-        if(orderList != null)
-        for(Order o:orderList)
+        try
         {
-            Product p=pDAO.getProducById(o.getProId());
-            AO a=new AO();
-            a.setFirst(o.getOrderId());
-            a.setSecond(p.getProName());
-            a.setThird(Integer.toString(o.getCount()));
-            a.setFourth(Double.toString(p.getPrice()));
-            orderInfoList.add(a);
+            List<Order> orderList=oDAO.getUserOrders("13051205197");
+            //利用AO 将订单和商品信息拼在一起 这样就可以同时显示同时显示
+            List<AO> orderInfoList=new ArrayList<>();
+            for(Order o:orderList)
+            {
+                Product p=pDAO.getProducById(o.getProId());
+                AO a=new AO();
+                a.setFirst(o.getOrderId());
+                a.setSecond(p.getProName());
+                a.setThird(Integer.toString(o.getCount()));
+                a.setFourth(Double.toString(p.getPrice()));
+                a.setFifth(o.getEstablishTime().toString());
+                orderInfoList.add(a);
+            }
+            return orderInfoList;
         }
-        return orderInfoList;
+        catch (Exception e)
+        {
+            return null;
+        }
     }
 
     @RequestMapping(value = "/Order.html")
@@ -68,5 +72,6 @@ public class OrderController {
         //return t;
         return null;
     }
+
 
 }

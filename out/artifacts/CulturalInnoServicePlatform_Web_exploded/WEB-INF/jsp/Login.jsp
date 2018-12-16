@@ -26,7 +26,7 @@
         <h2>Login</h2>
         <hr/>
         ${message}
-        <form style="width: 300px;" method="post" action="/login.action">
+        <form style="width: 300px;" method="post" action="/CulturalInnoServicePlatform_Web_exploded/login.action">
             <div class="form-group">
                 <label for="email">Phone:</label>
                 <input type="text" class="form-control" name="userId" id="email" placeholder="Enter Phone">
