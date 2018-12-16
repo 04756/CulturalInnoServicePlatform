@@ -51,17 +51,7 @@
                 </div>
             </li>
         </ul>
-        <form class="navbar-form navbar-right" style="margin-left: 600px;">
-            <div class="form-group">
-                <div class="input-group">
-                    <div class="input-group-addon">
-                        <i class="glyphicon glyphicon-search"></i>
-                    </div>
-                    <input type="text" class="form-control" placeholder="搜索" />
-                    <button type="button" class="btn btn-default" style="display: inline-block;">搜索</button>
-                </div>
-            </div>
-        </form>
+        <a href="search.html"><img src="images/search.jpg" style="width: 30px;height: 30px;margin-left: 680px;"></a>
     </nav>
 </div>
 
