@@ -6,49 +6,30 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<!DOCTYPE HTML>
-<html lang="en-US">
-
+<!DOCTYPE html>
+<html>
 <head>
     <meta charset="UTF-8">
-    <title>ueditor demo</title>
+    <title>wangEditor demo</title>
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
 </head>
-
 <body>
-<!-- 加载编辑器的容器 -->
-<script id="container" name="content" type="text/plain">
-        这里写你的初始化内容
-    </script>
-<!-- 配置文件 -->
-<script type="text/javascript" src="js/ueditor.config.js"></script>
-<!-- 编辑器源码文件 -->
-<script type="text/javascript" src="js/ueditor.all.js"></script>
+<div id="editor">
+    <p>欢迎使用 <b>wangEditor</b> 富文本编辑器</p>
+</div>
 
-<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
-
-<!-- 实例化编辑器 -->
+<!-- 注意， 只需要引用 JS，无需引用任何 CSS ！！！-->
+<script type="text/javascript" src="js/wangEditor.min.js"></script>
 <script type="text/javascript">
-    var ue = UE.getEditor('container');
-    ue.ready(function() {
-        //设置编辑器的内容
-        ue.setContent('hello');
-
-        //获取纯文本内容，返回: hello
-        var txt = ue.getContentTxt();
-    });
-    $(document).ready(function(){
-        $("#publish").click(function(){
-            //获取html内容，返回: <p>hello</p>
-            var html = ue.getContent();
-            alert(html);
-        });
+    var E = window.wangEditor
+    var editor = new E('#editor')
+    // 或者 var editor = new E( document.getElementById('editor') )
+    editor.create();
+    $("#btn1").click(function () {
+        // 读取 html
+        alert(editor.txt.html())
     });
 </script>
-<style type="text/css">
-    #container{
-        margin-top:100px;
-        margin-left: 150px;
-    }
-</style>
+<button id="btn1">获取html</button>
 </body>
 </html>

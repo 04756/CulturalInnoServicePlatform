@@ -7,16 +7,575 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57aee6de-58ca-47a1-8b08-ad8372572e5e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/commons_codec_1_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/js/ueditor.all.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/js/ueditor.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/js/ueditor.parse.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/demo.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/spring/controller/UeditorController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/js/wangEditor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/js/wangEditor.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CulturalInnoServicePlatform.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CulturalInnoServicePlatform.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/WEB-INF/classes/spring/controller/SearchController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/WEB-INF/classes/spring/controller/SearchController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CulturalInnoServicePlatform/spring/controller/SearchController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CulturalInnoServicePlatform/spring/controller/SearchController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/spring/controller/SearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spring/controller/SearchController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/WEB-INF/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/WEB-INF/jsp/demo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/WEB-INF/jsp/demo.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/anchor/anchor.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/attachment/attachment.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/attachment/attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/attachment/attachment.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/attachment/fileTypeImages/icon_chm.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/attachment/fileTypeImages/icon_default.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/attachment/fileTypeImages/icon_doc.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/attachment/fileTypeImages/icon_exe.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/attachment/fileTypeImages/icon_jpg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/attachment/fileTypeImages/icon_mp3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/attachment/fileTypeImages/icon_mv.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/attachment/fileTypeImages/icon_pdf.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/attachment/fileTypeImages/icon_ppt.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/attachment/fileTypeImages/icon_psd.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/attachment/fileTypeImages/icon_rar.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/attachment/fileTypeImages/icon_txt.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/attachment/fileTypeImages/icon_xls.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/attachment/images/alignicon.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/attachment/images/alignicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/attachment/images/bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/attachment/images/file-icons.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/attachment/images/file-icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/attachment/images/icons.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/attachment/images/icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/attachment/images/image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/attachment/images/progress.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/attachment/images/success.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/attachment/images/success.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/background/background.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/background/background.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/background/background.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/background/images/bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/background/images/success.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/charts/chart.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/charts/charts.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/charts/charts.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/charts/charts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/charts/images/charts0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/charts/images/charts1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/charts/images/charts2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/charts/images/charts3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/charts/images/charts4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/charts/images/charts5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/emotion/emotion.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/emotion/emotion.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/emotion/emotion.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/emotion/images/0.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/emotion/images/bface.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/emotion/images/cface.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/emotion/images/fface.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/emotion/images/jxface2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/emotion/images/neweditor-tab-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/emotion/images/tface.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/emotion/images/wface.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/emotion/images/yface.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/gmap/gmap.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/help/help.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/help/help.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/help/help.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/image/image.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/image/image.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/image/image.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/image/images/alignicon.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/image/images/bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/image/images/icons.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/image/images/icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/image/images/image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/image/images/progress.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/image/images/success.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/image/images/success.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/insertframe/insertframe.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/internal.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/link/link.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/map/map.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/map/show.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/music/music.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/music/music.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/music/music.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/preview/preview.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/scrawl/images/addimg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/scrawl/images/brush.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/scrawl/images/delimg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/scrawl/images/delimgH.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/scrawl/images/empty.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/scrawl/images/emptyH.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/scrawl/images/eraser.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/scrawl/images/redo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/scrawl/images/redoH.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/scrawl/images/scale.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/scrawl/images/scaleH.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/scrawl/images/size.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/scrawl/images/undo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/scrawl/images/undoH.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/scrawl/scrawl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/scrawl/scrawl.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/scrawl/scrawl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/searchreplace/searchreplace.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/searchreplace/searchreplace.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/snapscreen/snapscreen.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/spechars/spechars.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/spechars/spechars.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/table/dragicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/table/edittable.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/table/edittable.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/table/edittable.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/table/edittd.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/table/edittip.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/template/config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/template/images/bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/template/images/pre0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/template/images/pre1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/template/images/pre2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/template/images/pre3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/template/images/pre4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/template/template.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/template/template.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/template/template.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/video/images/bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/video/images/center_focus.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/video/images/file-icons.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/video/images/file-icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/video/images/icons.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/video/images/icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/video/images/image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/video/images/left_focus.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/video/images/none_focus.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/video/images/progress.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/video/images/right_focus.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/video/images/success.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/video/images/success.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/video/video.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/video/video.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/video/video.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/webapp/webapp.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/wordimage/fClipboard_ueditor.swf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/wordimage/imageUploader.swf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/wordimage/tangram.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/wordimage/wordimage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/dialogs/wordimage/wordimage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/jsp/config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/jsp/controller.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/jsp/lib/commons-codec-1.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/jsp/lib/commons-fileupload-1.3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/jsp/lib/commons-io-2.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/jsp/lib/json.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/jsp/lib/ueditor-1.1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/lang/en/en.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/lang/en/images/addimage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/lang/en/images/alldeletebtnhoverskin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/lang/en/images/alldeletebtnupskin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/lang/en/images/background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/lang/en/images/button.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/lang/en/images/copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/lang/en/images/deletedisable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/lang/en/images/deleteenable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/lang/en/images/listbackground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/lang/en/images/localimage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/lang/en/images/music.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/lang/en/images/rotateleftdisable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/lang/en/images/rotateleftenable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/lang/en/images/rotaterightdisable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/lang/en/images/rotaterightenable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/lang/en/images/upload.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/lang/zh-cn/images/copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/lang/zh-cn/images/localimage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/lang/zh-cn/images/music.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/lang/zh-cn/images/upload.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/lang/zh-cn/zh-cn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/themes/default/css/ueditor.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/themes/default/css/ueditor.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/themes/default/dialogbase.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/themes/default/images/anchor.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/themes/default/images/arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/themes/default/images/arrow_down.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/themes/default/images/arrow_up.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/themes/default/images/button-bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/themes/default/images/cancelbutton.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/themes/default/images/charts.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/themes/default/images/cursor_h.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/themes/default/images/cursor_h.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/themes/default/images/cursor_v.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/themes/default/images/cursor_v.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/themes/default/images/dialog-title-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/themes/default/images/filescan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/themes/default/images/highlighted.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/themes/default/images/icons-all.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/themes/default/images/icons.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/themes/default/images/icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/themes/default/images/loaderror.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/themes/default/images/loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/themes/default/images/lock.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/themes/default/images/neweditor-tab-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/themes/default/images/pagebreak.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/themes/default/images/scale.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/themes/default/images/sortable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/themes/default/images/spacer.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/themes/default/images/sparator_v.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/themes/default/images/table-cell-align.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/themes/default/images/tangram-colorpicker.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/themes/default/images/toolbar_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/themes/default/images/unhighlighted.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/themes/default/images/upload.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/themes/default/images/videologo.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/themes/default/images/word.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/themes/default/images/wordpaste.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/themes/iframe.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/third-party/SyntaxHighlighter/shCore.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/third-party/SyntaxHighlighter/shCoreDefault.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/third-party/codemirror/codemirror.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/third-party/codemirror/codemirror.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/third-party/highcharts/adapters/mootools-adapter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/third-party/highcharts/adapters/mootools-adapter.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/third-party/highcharts/adapters/prototype-adapter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/third-party/highcharts/adapters/prototype-adapter.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/third-party/highcharts/adapters/standalone-framework.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/third-party/highcharts/adapters/standalone-framework.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/third-party/highcharts/highcharts-more.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/third-party/highcharts/highcharts-more.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/third-party/highcharts/highcharts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/third-party/highcharts/highcharts.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/third-party/highcharts/modules/annotations.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/third-party/highcharts/modules/annotations.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/third-party/highcharts/modules/canvas-tools.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/third-party/highcharts/modules/canvas-tools.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/third-party/highcharts/modules/data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/third-party/highcharts/modules/data.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/third-party/highcharts/modules/drilldown.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/third-party/highcharts/modules/drilldown.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/third-party/highcharts/modules/exporting.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/third-party/highcharts/modules/exporting.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/third-party/highcharts/modules/funnel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/third-party/highcharts/modules/funnel.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/third-party/highcharts/modules/heatmap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/third-party/highcharts/modules/heatmap.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/third-party/highcharts/modules/map.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/third-party/highcharts/modules/map.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/third-party/highcharts/modules/no-data-to-display.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/third-party/highcharts/modules/no-data-to-display.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/third-party/highcharts/themes/dark-blue.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/third-party/highcharts/themes/dark-green.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/third-party/highcharts/themes/gray.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/third-party/highcharts/themes/grid.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/third-party/highcharts/themes/skies.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/third-party/jquery-1.10.2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/third-party/jquery-1.10.2.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/third-party/jquery-1.10.2.min.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/third-party/snapscreen/UEditorSnapscreen.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/third-party/video-js/font/vjs.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/third-party/video-js/font/vjs.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/third-party/video-js/font/vjs.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/third-party/video-js/font/vjs.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/third-party/video-js/video-js.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/third-party/video-js/video-js.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/third-party/video-js/video-js.swf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/third-party/video-js/video.dev.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/third-party/video-js/video.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/third-party/webuploader/Uploader.swf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/third-party/webuploader/webuploader.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/third-party/webuploader/webuploader.custom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/third-party/webuploader/webuploader.custom.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/third-party/webuploader/webuploader.flashonly.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/third-party/webuploader/webuploader.flashonly.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/third-party/webuploader/webuploader.html5only.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/third-party/webuploader/webuploader.html5only.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/third-party/webuploader/webuploader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/third-party/webuploader/webuploader.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/third-party/webuploader/webuploader.withoutimage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/third-party/webuploader/webuploader.withoutimage.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/third-party/xss.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/third-party/zeroclipboard/ZeroClipboard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/third-party/zeroclipboard/ZeroClipboard.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/third-party/zeroclipboard/ZeroClipboard.swf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/ueditor.all.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/ueditor.all.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/ueditor.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/ueditor.parse.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/utf8-jsp/ueditor.parse.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/js/ueditor.all.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/js/ueditor.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/js/ueditor.parse.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/demo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/demo.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/anchor/anchor.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/attachment/attachment.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/attachment/attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/attachment/attachment.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/attachment/fileTypeImages/icon_chm.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/attachment/fileTypeImages/icon_default.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/attachment/fileTypeImages/icon_doc.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/attachment/fileTypeImages/icon_exe.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/attachment/fileTypeImages/icon_jpg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/attachment/fileTypeImages/icon_mp3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/attachment/fileTypeImages/icon_mv.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/attachment/fileTypeImages/icon_pdf.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/attachment/fileTypeImages/icon_ppt.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/attachment/fileTypeImages/icon_psd.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/attachment/fileTypeImages/icon_rar.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/attachment/fileTypeImages/icon_txt.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/attachment/fileTypeImages/icon_xls.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/attachment/images/alignicon.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/attachment/images/alignicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/attachment/images/bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/attachment/images/file-icons.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/attachment/images/file-icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/attachment/images/icons.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/attachment/images/icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/attachment/images/image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/attachment/images/progress.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/attachment/images/success.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/attachment/images/success.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/background/background.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/background/background.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/background/background.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/background/images/bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/background/images/success.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/charts/chart.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/charts/charts.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/charts/charts.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/charts/charts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/charts/images/charts0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/charts/images/charts1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/charts/images/charts2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/charts/images/charts3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/charts/images/charts4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/charts/images/charts5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/emotion/emotion.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/emotion/emotion.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/emotion/emotion.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/emotion/images/0.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/emotion/images/bface.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/emotion/images/cface.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/emotion/images/fface.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/emotion/images/jxface2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/emotion/images/neweditor-tab-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/emotion/images/tface.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/emotion/images/wface.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/emotion/images/yface.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/gmap/gmap.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/help/help.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/help/help.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/help/help.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/image/image.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/image/image.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/image/image.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/image/images/alignicon.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/image/images/bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/image/images/icons.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/image/images/icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/image/images/image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/image/images/progress.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/image/images/success.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/image/images/success.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/insertframe/insertframe.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/internal.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/link/link.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/map/map.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/map/show.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/music/music.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/music/music.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/music/music.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/preview/preview.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/scrawl/images/addimg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/scrawl/images/brush.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/scrawl/images/delimg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/scrawl/images/delimgH.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/scrawl/images/empty.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/scrawl/images/emptyH.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/scrawl/images/eraser.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/scrawl/images/redo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/scrawl/images/redoH.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/scrawl/images/scale.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/scrawl/images/scaleH.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/scrawl/images/size.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/scrawl/images/undo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/scrawl/images/undoH.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/scrawl/scrawl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/scrawl/scrawl.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/scrawl/scrawl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/searchreplace/searchreplace.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/searchreplace/searchreplace.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/snapscreen/snapscreen.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/spechars/spechars.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/spechars/spechars.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/table/dragicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/table/edittable.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/table/edittable.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/table/edittable.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/table/edittd.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/table/edittip.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/template/config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/template/images/bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/template/images/pre0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/template/images/pre1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/template/images/pre2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/template/images/pre3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/template/images/pre4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/template/template.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/template/template.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/template/template.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/video/images/bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/video/images/center_focus.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/video/images/file-icons.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/video/images/file-icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/video/images/icons.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/video/images/icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/video/images/image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/video/images/left_focus.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/video/images/none_focus.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/video/images/progress.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/video/images/right_focus.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/video/images/success.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/video/images/success.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/video/video.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/video/video.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/video/video.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/webapp/webapp.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/wordimage/fClipboard_ueditor.swf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/wordimage/imageUploader.swf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/wordimage/tangram.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/wordimage/wordimage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/dialogs/wordimage/wordimage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/jsp/config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/jsp/controller.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/jsp/lib/commons-codec-1.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/jsp/lib/commons-fileupload-1.3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/jsp/lib/commons-io-2.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/jsp/lib/json.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/jsp/lib/ueditor-1.1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/lang/en/en.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/lang/en/images/addimage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/lang/en/images/alldeletebtnhoverskin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/lang/en/images/alldeletebtnupskin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/lang/en/images/background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/lang/en/images/button.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/lang/en/images/copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/lang/en/images/deletedisable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/lang/en/images/deleteenable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/lang/en/images/listbackground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/lang/en/images/localimage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/lang/en/images/music.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/lang/en/images/rotateleftdisable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/lang/en/images/rotateleftenable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/lang/en/images/rotaterightdisable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/lang/en/images/rotaterightenable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/lang/en/images/upload.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/lang/zh-cn/images/copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/lang/zh-cn/images/localimage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/lang/zh-cn/images/music.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/lang/zh-cn/images/upload.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/lang/zh-cn/zh-cn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/themes/default/css/ueditor.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/themes/default/css/ueditor.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/themes/default/dialogbase.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/themes/default/images/anchor.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/themes/default/images/arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/themes/default/images/arrow_down.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/themes/default/images/arrow_up.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/themes/default/images/button-bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/themes/default/images/cancelbutton.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/themes/default/images/charts.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/themes/default/images/cursor_h.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/themes/default/images/cursor_h.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/themes/default/images/cursor_v.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/themes/default/images/cursor_v.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/themes/default/images/dialog-title-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/themes/default/images/filescan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/themes/default/images/highlighted.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/themes/default/images/icons-all.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/themes/default/images/icons.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/themes/default/images/icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/themes/default/images/loaderror.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/themes/default/images/loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/themes/default/images/lock.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/themes/default/images/neweditor-tab-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/themes/default/images/pagebreak.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/themes/default/images/scale.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/themes/default/images/sortable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/themes/default/images/spacer.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/themes/default/images/sparator_v.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/themes/default/images/table-cell-align.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/themes/default/images/tangram-colorpicker.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/themes/default/images/toolbar_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/themes/default/images/unhighlighted.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/themes/default/images/upload.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/themes/default/images/videologo.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/themes/default/images/word.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/themes/default/images/wordpaste.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/themes/iframe.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/third-party/SyntaxHighlighter/shCore.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/third-party/SyntaxHighlighter/shCoreDefault.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/third-party/codemirror/codemirror.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/third-party/codemirror/codemirror.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/third-party/highcharts/adapters/mootools-adapter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/third-party/highcharts/adapters/mootools-adapter.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/third-party/highcharts/adapters/prototype-adapter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/third-party/highcharts/adapters/prototype-adapter.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/third-party/highcharts/adapters/standalone-framework.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/third-party/highcharts/adapters/standalone-framework.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/third-party/highcharts/highcharts-more.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/third-party/highcharts/highcharts-more.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/third-party/highcharts/highcharts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/third-party/highcharts/highcharts.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/third-party/highcharts/modules/annotations.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/third-party/highcharts/modules/annotations.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/third-party/highcharts/modules/canvas-tools.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/third-party/highcharts/modules/canvas-tools.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/third-party/highcharts/modules/data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/third-party/highcharts/modules/data.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/third-party/highcharts/modules/drilldown.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/third-party/highcharts/modules/drilldown.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/third-party/highcharts/modules/exporting.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/third-party/highcharts/modules/exporting.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/third-party/highcharts/modules/funnel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/third-party/highcharts/modules/funnel.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/third-party/highcharts/modules/heatmap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/third-party/highcharts/modules/heatmap.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/third-party/highcharts/modules/map.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/third-party/highcharts/modules/map.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/third-party/highcharts/modules/no-data-to-display.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/third-party/highcharts/modules/no-data-to-display.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/third-party/highcharts/themes/dark-blue.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/third-party/highcharts/themes/dark-green.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/third-party/highcharts/themes/gray.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/third-party/highcharts/themes/grid.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/third-party/highcharts/themes/skies.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/third-party/jquery-1.10.2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/third-party/jquery-1.10.2.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/third-party/jquery-1.10.2.min.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/third-party/snapscreen/UEditorSnapscreen.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/third-party/video-js/font/vjs.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/third-party/video-js/font/vjs.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/third-party/video-js/font/vjs.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/third-party/video-js/font/vjs.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/third-party/video-js/video-js.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/third-party/video-js/video-js.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/third-party/video-js/video-js.swf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/third-party/video-js/video.dev.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/third-party/video-js/video.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/third-party/webuploader/Uploader.swf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/third-party/webuploader/webuploader.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/third-party/webuploader/webuploader.custom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/third-party/webuploader/webuploader.custom.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/third-party/webuploader/webuploader.flashonly.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/third-party/webuploader/webuploader.flashonly.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/third-party/webuploader/webuploader.html5only.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/third-party/webuploader/webuploader.html5only.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/third-party/webuploader/webuploader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/third-party/webuploader/webuploader.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/third-party/webuploader/webuploader.withoutimage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/third-party/webuploader/webuploader.withoutimage.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/third-party/xss.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/third-party/zeroclipboard/ZeroClipboard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/third-party/zeroclipboard/ZeroClipboard.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/third-party/zeroclipboard/ZeroClipboard.swf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/ueditor.all.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/ueditor.all.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/ueditor.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/ueditor.parse.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/utf8-jsp/ueditor.parse.min.js" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -66,20 +625,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/spring/controller/SearchController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="24" column="34" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+            <state relative-caret-position="120">
+              <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/demo.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="24" column="28" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -96,17 +646,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/search.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="40" column="25" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="25" />
+            <state relative-caret-position="180">
+              <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="81" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="das://80bcada0-a82a-415c-bc26-37ba50dd934c/schema/service_platform_db/table/exhibition">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/demo.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="30" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -117,8 +667,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="spring-beans.schema" />
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -147,9 +697,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/jsp/index.jsp" />
-        <option value="$PROJECT_DIR$/src/po/User.java" />
-        <option value="$PROJECT_DIR$/web/jsp/Login.jsp" />
         <option value="$PROJECT_DIR$/src/spring/controller/CollectionDAO.java" />
         <option value="$PROJECT_DIR$/src/po/SupplyDemand.java" />
         <option value="$PROJECT_DIR$/src/dao/SupplyDemandDAO.java" />
@@ -164,7 +711,6 @@
         <option value="$PROJECT_DIR$/src/dao/SessionMgr.java" />
         <option value="$PROJECT_DIR$/src/dao/AO.java" />
         <option value="$PROJECT_DIR$/src/spring/controller/NewsController.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/index.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/footer.jsp" />
@@ -197,6 +743,10 @@
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/search.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/js/base.js" />
         <option value="$PROJECT_DIR$/src/spring/controller/SearchController.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/demo.html" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml" />
+        <option value="$PROJECT_DIR$/src/spring/controller/UeditorController.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/js/ueditor.config.js" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/demo.jsp" />
       </list>
     </option>
@@ -214,7 +764,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="236" />
     <option name="y" value="110" />
     <option name="width" value="978" />
@@ -267,7 +817,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -283,19 +832,7 @@
             <path>
               <item name="CulturalInnoServicePlatform" type="b2602c69:ProjectViewProjectNode" />
               <item name="CulturalInnoServicePlatform" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CulturalInnoServicePlatform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CulturalInnoServicePlatform" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CulturalInnoServicePlatform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CulturalInnoServicePlatform" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="utf8-jsp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CulturalInnoServicePlatform" type="b2602c69:ProjectViewProjectNode" />
@@ -315,6 +852,14 @@
               <item name="CulturalInnoServicePlatform" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="wangEditor.js" type="620a8d5e:NestingTreeNode" />
+            </path>
+            <path>
+              <item name="CulturalInnoServicePlatform" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CulturalInnoServicePlatform" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
               <item name="jsp" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -322,6 +867,7 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -329,7 +875,7 @@
     <property name="JPA.DatabaseSchemaImportDialog" value="80bcada0-a82a-415c-bc26-37ba50dd934c" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544970428230" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544976128900" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../ueditor1_4_3_3-utf8-jsp/utf8-jsp/jsp/lib/ueditor-1.1.2.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -340,19 +886,20 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\yhy\作业\软件工程A\课设\CulturalInnoServicePlatform\web\WEB-INF" />
       <recent name="E:\yhy\作业\软件工程A\课设\CulturalInnoServicePlatform\web\WEB-INF\js" />
-      <recent name="C:\Users\user0\IdeaProjects\CulturalInnoServicePlatform\lib" />
-      <recent name="C:\Users\user0\IdeaProjects\CulturalInnoServicePlatform\src\dao" />
+      <recent name="C:\Users\user0\IdeaProjects\CulturalInnoServicePlatform\src" />
+      <recent name="C:\Users\user0\IdeaProjects\CulturalInnoServicePlatform\src\spring" />
     </key>
     <key name="ImportMappingsDialog.RecentPackages">
       <recent name="po" />
       <recent name="" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\yhy\作业\软件工程A\课设\CulturalInnoServicePlatform\web\WEB-INF" />
-      <recent name="C:\Users\user0\IdeaProjects\CulturalInnoServicePlatform\src" />
-      <recent name="C:\Users\user0\IdeaProjects\CulturalInnoServicePlatform\src\spring" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\yhy\作业\软件工程A\课设\CulturalInnoServicePlatform\web\WEB-INF\js" />
+      <recent name="C:\Users\user0\IdeaProjects\CulturalInnoServicePlatform\lib" />
+      <recent name="C:\Users\user0\IdeaProjects\CulturalInnoServicePlatform\src\dao" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -488,7 +1035,9 @@
       <workItem from="1544869500851" duration="15912000" />
       <workItem from="1544939479088" duration="7962000" />
       <workItem from="1544950226707" duration="13740000" />
-      <workItem from="1544968953285" duration="1316000" />
+      <workItem from="1544968953285" duration="1635000" />
+      <workItem from="1544971072964" duration="4668000" />
+      <workItem from="1544976536692" duration="373000" />
     </task>
     <task id="LOCAL-00001" summary="v1.2  魔改SessionMgr 测试通过UserInfoDAO  UserDAO order表改为ordertable表">
       <created>1544595344168</created>
@@ -508,7 +1057,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="141356000" />
+    <option name="totallyTimeSpent" value="146716000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -523,8 +1072,8 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.67171717" visible="true" weight="0.20045386" />
-      <window_info id="Structure" order="1" sideWeight="0.18543047" side_tool="true" weight="0.1913767" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7790974" visible="true" weight="0.2065053" />
+      <window_info id="Structure" order="1" sideWeight="0.2209026" side_tool="true" weight="0.2065053" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -534,7 +1083,7 @@
       <window_info id="Persistence" order="8" sideWeight="0.32828283" side_tool="true" weight="0.28441754" />
       <window_info anchor="bottom" id="Spring" order="0" weight="0.32839838" />
       <window_info anchor="bottom" id="Terminal" order="1" weight="0.32786885" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.30983606" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.30983606" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.34590164" />
       <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="5" weight="0.6737705" />
@@ -631,66 +1180,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="134" column="89" selection-start-line="134" selection-start-column="34" selection-end-line="134" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/Order.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="885">
-          <caret line="59" column="32" selection-start-line="59" selection-start-column="32" selection-end-line="59" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/css/base.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="30" column="23" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/AO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="5" selection-end-column="25" />
-          <folding>
-            <element signature="e#682#683#0" expanded="true" />
-            <element signature="e#718#719#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/po/Collection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="13" column="30" selection-start-line="11" selection-start-column="19" selection-end-line="13" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/Exhibition.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="69" column="4" selection-start-line="69" selection-start-column="4" selection-end-line="69" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/spring-webmvc-4.3.18.RELEASE.jar!/org/springframework/web/servlet/FrameworkServlet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="407" selection-start-line="407" selection-end-line="407" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/spring-webmvc-4.3.18.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="407" selection-start-line="407" selection-end-line="407" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/lib/spring-webmvc-4.3.18.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="124">
@@ -973,13 +1462,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/js/base.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/js/ueditor.all.js" />
     <entry file="das://80bcada0-a82a-415c-bc26-37ba50dd934c/schema/service_platform_db/table/exhibition">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -987,30 +1470,61 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/js/jsp/controller.jsp" />
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="68" selection-start-line="20" selection-start-column="68" selection-end-line="20" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/spring/controller/UeditorController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="34" column="1" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/js/ueditor.config.js" />
     <entry file="file://$PROJECT_DIR$/src/spring/controller/SearchController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="24" column="34" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+        <state relative-caret-position="120">
+          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/js/ueditor.all.js">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/js/base.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/js/wangEditor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-330" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/js/wangEditor.min.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/search.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="40" column="25" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="25" />
+        <state relative-caret-position="180">
+          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="81" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/demo.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="24" column="28" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
+        <state relative-caret-position="176">
+          <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="30" selection-end-column="7" />
         </state>
       </provider>
     </entry>
