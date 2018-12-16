@@ -22,6 +22,12 @@ public class SearchController {
         return new ModelAndView("search","command",this);
     }
 
+    @RequestMapping(value = "/demo.html")
+    public ModelAndView initdemoPage()
+    {
+        return new ModelAndView("demo","command",this);
+    }
+
     @RequestMapping(value = "/search.action", method = RequestMethod.POST)
     @ResponseBody
     public List searchFunc(@RequestBody String json, HttpServletRequest request)throws Exception {

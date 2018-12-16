@@ -7,12 +7,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57aee6de-58ca-47a1-8b08-ad8372572e5e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/spring/controller/SearchController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/js/base.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/search.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/commons_codec_1_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/js/ueditor.all.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/js/ueditor.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/js/ueditor.parse.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/demo.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/WEB-INF/jsp/headder.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/WEB-INF/jsp/headder.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/headder.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/headder.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CulturalInnoServicePlatform.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CulturalInnoServicePlatform.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/WEB-INF/classes/spring/controller/SearchController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/WEB-INF/classes/spring/controller/SearchController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CulturalInnoServicePlatform/spring/controller/SearchController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CulturalInnoServicePlatform/spring/controller/SearchController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/spring/controller/SearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spring/controller/SearchController.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -59,16 +63,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/spring/controller/SearchController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="31" column="12" lean-forward="true" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
+            <state relative-caret-position="156">
+              <caret line="24" column="34" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#329#330#0" expanded="true" />
-                <element signature="e#396#397#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/demo.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="24" column="28" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -76,11 +87,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/js/base.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
+            <state relative-caret-position="180">
               <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-              <folding>
-                <element signature="n#style#0;n#a#0;n#li#0;n#!!top" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -88,11 +96,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/search.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
+            <state relative-caret-position="600">
               <caret line="40" column="25" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="25" />
-              <folding>
-                <element signature="n#style#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -112,8 +117,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="spring-beans.schema" />
-        <option value="Jsp File" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -142,7 +147,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/spring/controller/ExhibinationController.java" />
         <option value="$PROJECT_DIR$/web/jsp/index.jsp" />
         <option value="$PROJECT_DIR$/src/po/User.java" />
         <option value="$PROJECT_DIR$/web/jsp/Login.jsp" />
@@ -190,9 +194,10 @@
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/SearchList.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/headder.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/seacher.jsp" />
-        <option value="$PROJECT_DIR$/src/spring/controller/SearchController.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/search.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/js/base.js" />
+        <option value="$PROJECT_DIR$/src/spring/controller/SearchController.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/demo.jsp" />
       </list>
     </option>
   </component>
@@ -262,6 +267,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -289,6 +295,12 @@
               <item name="CulturalInnoServicePlatform" type="b2602c69:ProjectViewProjectNode" />
               <item name="CulturalInnoServicePlatform" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="utf8-jsp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CulturalInnoServicePlatform" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CulturalInnoServicePlatform" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -310,7 +322,6 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -318,29 +329,30 @@
     <property name="JPA.DatabaseSchemaImportDialog" value="80bcada0-a82a-415c-bc26-37ba50dd934c" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544966229373" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544970428230" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/jakarta-taglibs-standard-1.1.2/lib/jstl-1.2.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ueditor1_4_3_3-utf8-jsp/utf8-jsp/jsp/lib/ueditor-1.1.2.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.26865673" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\yhy\作业\软件工程A\课设\CulturalInnoServicePlatform\web\WEB-INF" />
-      <recent name="C:\Users\user0\IdeaProjects\CulturalInnoServicePlatform\src" />
-      <recent name="C:\Users\user0\IdeaProjects\CulturalInnoServicePlatform\src\spring" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\yhy\作业\软件工程A\课设\CulturalInnoServicePlatform\web\WEB-INF\js" />
+      <recent name="C:\Users\user0\IdeaProjects\CulturalInnoServicePlatform\lib" />
+      <recent name="C:\Users\user0\IdeaProjects\CulturalInnoServicePlatform\src\dao" />
     </key>
     <key name="ImportMappingsDialog.RecentPackages">
       <recent name="po" />
       <recent name="" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\user0\IdeaProjects\CulturalInnoServicePlatform\lib" />
-      <recent name="C:\Users\user0\IdeaProjects\CulturalInnoServicePlatform\src\dao" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\yhy\作业\软件工程A\课设\CulturalInnoServicePlatform\web\WEB-INF" />
+      <recent name="C:\Users\user0\IdeaProjects\CulturalInnoServicePlatform\src" />
+      <recent name="C:\Users\user0\IdeaProjects\CulturalInnoServicePlatform\src\spring" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -475,7 +487,8 @@
       <workItem from="1544798510665" duration="6326000" />
       <workItem from="1544869500851" duration="15912000" />
       <workItem from="1544939479088" duration="7962000" />
-      <workItem from="1544950226707" duration="13604000" />
+      <workItem from="1544950226707" duration="13740000" />
+      <workItem from="1544968953285" duration="1316000" />
     </task>
     <task id="LOCAL-00001" summary="v1.2  魔改SessionMgr 测试通过UserInfoDAO  UserDAO order表改为ordertable表">
       <created>1544595344168</created>
@@ -495,7 +508,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="139904000" />
+    <option name="totallyTimeSpent" value="141356000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -510,7 +523,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.67171717" visible="true" weight="0.19742814" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.67171717" visible="true" weight="0.20045386" />
       <window_info id="Structure" order="1" sideWeight="0.18543047" side_tool="true" weight="0.1913767" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -521,11 +534,11 @@
       <window_info id="Persistence" order="8" sideWeight="0.32828283" side_tool="true" weight="0.28441754" />
       <window_info anchor="bottom" id="Spring" order="0" weight="0.32839838" />
       <window_info anchor="bottom" id="Terminal" order="1" weight="0.32786885" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.30983606" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.34590164" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.30983606" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.34590164" />
       <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="5" weight="0.6737705" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32885906" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32786885" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" weight="0.32885906" />
       <window_info anchor="bottom" id="Database Changes" order="8" weight="0.32885906" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32786885" />
@@ -564,18 +577,6 @@
           <line>46</line>
           <properties />
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/spring/controller/SearchController.java</url>
-          <line>28</line>
-          <properties />
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/spring/controller/SearchController.java</url>
-          <line>36</line>
-          <properties />
-          <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -630,23 +631,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/po/Order.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="16" column="18" lean-forward="true" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/spring/controller/OrderController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -952,13 +936,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://80bcada0-a82a-415c-bc26-37ba50dd934c/schema/service_platform_db/table/exhibition">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/spring/controller/ExhibitionController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="529">
@@ -996,35 +973,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/search.jsp">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/js/base.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="40" column="25" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="25" />
-          <folding>
-            <element signature="n#style#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="180">
+          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/js/base.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#li#0;n#!!top" expanded="true" />
-          </folding>
+    <entry file="das://80bcada0-a82a-415c-bc26-37ba50dd934c/schema/service_platform_db/table/exhibition">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/spring/controller/SearchController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="31" column="12" lean-forward="true" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
+        <state relative-caret-position="156">
+          <caret line="24" column="34" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#329#330#0" expanded="true" />
-            <element signature="e#396#397#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/js/ueditor.all.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/search.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="40" column="25" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/demo.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="24" column="28" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -1106,7 +1092,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>jstl-1.2</last-edited>
+          <last-edited>commons-codec-1.9</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
