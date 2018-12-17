@@ -71,7 +71,7 @@ public class ProductController {
         }
     }
 
-    @RequestMapping(value = "/Product.html")
+    @RequestMapping(value = "/Product.html", method = RequestMethod.GET)
     public ModelAndView initProductPage(Model model,HttpServletRequest request){
         getAllPassedProduct(request);
         List<Product> passedList=(List<Product>)request.getAttribute("passedList");
@@ -85,13 +85,13 @@ public class ProductController {
             if(p.getProductType().equals(ProductType.CALLIGRAPHY.name))
                 calliList.add(p);
             else
-                if(p.getProductType().equals(ProductType.PAINTING.name))
-                    paintList.add(p);
-                else
-                    if(p.getProductType().equals(ProductType.MUSINSTRU.name))
-                        musicList.add(p);
-                        else
-                            garmentList.add(p);
+            if(p.getProductType().equals(ProductType.PAINTING.name))
+                paintList.add(p);
+            else
+            if(p.getProductType().equals(ProductType.MUSINSTRU.name))
+                musicList.add(p);
+            else
+                garmentList.add(p);
         }
         System.out.println("ProductProductProduct");
         model.addAttribute("calliList",calliList);
@@ -99,6 +99,38 @@ public class ProductController {
         model.addAttribute("musicList",musicList);
         model.addAttribute("garmentList",garmentList);
         return new ModelAndView("Product","command",this);
+    }
+
+    @RequestMapping(value = "/Product",method = RequestMethod.GET)
+    public ModelAndView initProductType(@RequestParam("ptype") String type,Model model,HttpServletRequest request){
+        getAllPassedProduct(request);
+        List<Product> passedList=(List<Product>)request.getAttribute("passedList");
+        List<Product> calliList=new ArrayList<>();
+        List<Product> paintList=new ArrayList<>();
+        List<Product> musicList=new ArrayList<>();
+        List<Product> garmentList=new ArrayList<>();
+        for(Product p:passedList)
+        {
+
+            if(p.getProductType().equals(ProductType.CALLIGRAPHY.name))
+                calliList.add(p);
+            else
+            if(p.getProductType().equals(ProductType.PAINTING.name))
+                paintList.add(p);
+            else
+            if(p.getProductType().equals(ProductType.MUSINSTRU.name))
+                musicList.add(p);
+            else
+                garmentList.add(p);
+        }
+        System.out.println("ProductProductProduct");
+        model.addAttribute("ptype",type);
+        model.addAttribute("calliList",calliList);
+        model.addAttribute("paintList",paintList);
+        model.addAttribute("musicList",musicList);
+        model.addAttribute("garmentList",garmentList);
+        return new ModelAndView("Product","command",this);
+
     }
 
     @RequestMapping(value = "getProductById", method = RequestMethod.GET)

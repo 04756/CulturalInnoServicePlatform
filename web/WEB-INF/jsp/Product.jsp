@@ -34,7 +34,7 @@
             <div class="col-3 center-block">
                 <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                     <a class="nav-link active show" id="v-pills-calligraphy-tab" data-toggle="pill"
-                       href="#v-pills-calligraphy" role="tab" aria-controls="v-pills-hocalligraphyme" aria-selected="true">书法</a>
+                       href="#v-pills-calligraphy" role="tab" aria-controls="v-pills-calligraphy" aria-selected="true">书法</a>
                     <a class="nav-link" id="v-pills-Painting-tab" data-toggle="pill" href="#v-pills-Painting" role="tab"
                        aria-controls="v-pills-Painting" aria-selected="false">绘画</a>
                     <a class="nav-link" id="v-pills-Instrument-tab" data-toggle="pill" href="#v-pills-Instrument" role="tab"
@@ -45,6 +45,7 @@
             </div>
             <!-- 对应标签导航显示的东西 -->
             <div class="col-8 center-block">
+                <div class="curColumn" style="display: none;">${ptype}</div>
                 <div class="tab-content" id="v-pills-tabContent">
                     <%--书法部分--%>
                     <div class="tab-pane fade active show" id="v-pills-calligraphy" role="tabpanel"
@@ -59,8 +60,8 @@
                                         style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;width: 100%;">${product.proName}</h4>
                                     <a href="/CulturalInnoServicePlatform_Web_exploded/getProductById?productId=${product.proId}" class="card-text productTitle"
                                        style="width: 100%;height:80px;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 4;-webkit-box-orient: vertical;">${product.productType}</a>
-                                    <h5 style="display: inline-block;color: #FF0000">$${product.price}</h5>
-                                    <small class="text-muted text-right" style="float:right;margin-top: 5px;">
+                                    <h5 style="display: inline-block;color: #FF0000;margin-top: -5px;">$${product.price}</h5>
+                                    <small class="text-muted text-right" style="float:right;">
                                         点击量：${product.hits}</small>
                                 </div>
                             </div>
@@ -90,8 +91,8 @@
                                         style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;width: 100%;">${product.proName}</h4>
                                     <a href="/CulturalInnoServicePlatform_Web_exploded/getProductById.html?productId=${product.proId}" class="card-text productTitle"
                                        style="width: 100%;height:80px;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 4;-webkit-box-orient: vertical;">${product.productType}</a>
-                                    <h5 style="display: inline-block;color: #FF0000">$${product.price}</h5>
-                                    <small class="text-muted text-right" style="float:right;margin-top: 5px;">
+                                    <h5 style="display: inline-block;color: #FF0000;margin-top: -5px;">$${product.price}</h5>
+                                    <small class="text-muted text-right" style="float:right;">
                                         点击量：${product.hits}</small>
                                 </div>
                             </div>
@@ -120,8 +121,8 @@
                                         style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;width: 100%;">${product.proName}</h4>
                                     <a href="/CulturalInnoServicePlatform_Web_exploded/getProductById?productId=${product.proId}" class="card-text productTitle"
                                        style="width: 100%;height:80px;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 4;-webkit-box-orient: vertical;">${product.productType}</a>
-                                    <h5 style="display: inline-block;color: #FF0000">$${product.price}</h5>
-                                    <small class="text-muted text-right" style="float:right;margin-top: 5px;">
+                                    <h5 style="display: inline-block;color: #FF0000;margin-top: -5px;">$${product.price}</h5>
+                                    <small class="text-muted text-right" style="float:right;">
                                         点击量：${product.hits}</small>
                                 </div>
                             </div>
@@ -149,8 +150,8 @@
                                         style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;width: 100%;">${product.proName}</h4>
                                     <a href="/CulturalInnoServicePlatform_Web_exploded/getProductById?productId=${product.proId}" class="card-text productTitle"
                                        style="width: 100%;height:80px;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 4;-webkit-box-orient: vertical;">${product.productType}</a>
-                                    <h5 style="display: inline-block;color: #FF0000">$${product.price}</h5>
-                                    <small class="text-muted text-right" style="float:right;margin-top: 5px;">
+                                    <h5 style="display: inline-block;color: #FF0000;margin-top: -5px;">$${product.price}</h5>
+                                    <small class="text-muted text-right" style="float:right;">
                                         点击量：${product.hits}</small>
                                 </div>
                             </div>

@@ -155,4 +155,32 @@ $(document).ready(function(){
         goOrderpage(curpage,$(".orderLists"),$("#ordercurPage"));
     });
 
+    $(function () {
+        $("#v-pills-tabContent").children(".tab-pane").each(function () {
+            $(this).removeClass("active");
+            $(this).removeClass("show");
+        });
+        $("#v-pills-tab").children(".nav-link").each(function () {
+            $(this).removeClass("active");
+            $(this).removeClass("show");
+        })
+        if ($(".curColumn").text() == "call"){
+            $("#v-pills-calligraphy").addClass("show active");
+            $("#v-pills-calligraphy-tab").addClass("show active");
+
+        }
+        else if ($(".curColumn").text() == "draw"){
+            $("#v-pills-Painting").addClass("show active");
+            $("#v-pills-Painting-tab").addClass("show active");
+        }
+        else if ($(".curColumn").text() == "ins"){
+            $("#v-pills-Instrument").addClass("show active");
+            $("#v-pills-Instrument-tab").addClass("show active");
+        }
+        else{
+            $("#v-pills-Dress").addClass("show active");
+            $("#v-pills-Dress-tab").addClass("show active");
+        }
+    })
+
 });

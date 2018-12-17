@@ -12,7 +12,7 @@ $(document).ready(function(){
             aurl = "getNewsById?newsId=";
         }
         else if($("#selectType option:selected").val() == "SD"){
-            aurl = "getSDById?SDID=?";
+            aurl = "getSDInfo?sdId=?";
         }
         else if($("#selectType option:selected").val() == "PRODUCT"){
             aurl = "getProductById?productId=";
@@ -46,6 +46,22 @@ $(document).ready(function(){
         });
     }
 
+    function publishMessage(temp){
+        $.ajax({
+            type : "POST",
+            contentType : 'application/json;charset=UTF-8',
+            url : "addMessage.action",
+            data : JSON.stringify(temp),
+            dataType : 'json',
+            success : function(data){
+                alert(data.message);
+            },
+            error : function(){
+                alert("error");
+            }
+        });
+    }
+
     $("#search").click(function () {
         var temp = {
             first : $("#selectType option:selected").val(),
@@ -53,6 +69,14 @@ $(document).ready(function(){
             third : $("#selectMethod option:selected").val()
         }
         search(temp);
+    });
+
+    $("#publishMessage").click(function () {
+        var temp = {
+            originId : $("#oid").text(),
+            content : $("#messageContent").val()
+        }
+        publishMessage(temp);
     });
 
 });

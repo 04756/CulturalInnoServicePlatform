@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.portlet.ModelAndView;
 import po.Order;
 import po.Product;
+import po.User;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.ArrayList;
@@ -57,8 +58,14 @@ public class OrderController {
     }
 
     @RequestMapping(value = "/Order.html")
-    public ModelAndView initOrderPage(Model model){
-        return new ModelAndView("Order","command",this);
+    public String initOrderPage(Model model, HttpServletRequest request){
+        User user = (User)request.getSession().getAttribute("currentUser");
+
+        if(user == null) {
+            return "redirect:/Login.html";
+        }
+
+        return  "Order";
     }
 
 

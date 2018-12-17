@@ -23,17 +23,17 @@
 
         <div class="row">
             <div style="width: 1100px;justify-content: center;margin:0 auto;margin-top: 80px;border: 1px solid #eee;">
-                <ul id="lists">
+                <ul id="lists" class="essayList">
                     <c:forEach items="${allNewsList}" var="news">
                         <div class="listOuter">
-                        <li>
-                            <a href="#" style="color: black;">
-                                    ${news.title}
-                                    <div class="subTitle"> ${news.establishTime}</div>
-                                    <%--<div style="display: inline-block;font-size: 12px;color: #eeeeee">点击量:</div><div class="subTitle">${news.hits}</div>--%>
-                            </a>
-                            <%----%>
-                        </li>
+                            <li>
+                                <a href="getNewsById?newsId=${news.newsId}" style="color: black;">
+                                        ${news.title}
+                                        <div class="subTitle"> ${news.establishTime}</div>
+                                        <%--<div style="display: inline-block;font-size: 12px;color: #eeeeee">点击量:</div><div class="subTitle">${news.hits}</div>--%>
+                                </a>
+                                <%----%>
+                            </li>
                             <%--<hr style="border: 0.5px solid #eee;padding-top：13px;margin-bottom: -3px;">--%>
                         </div>
 
