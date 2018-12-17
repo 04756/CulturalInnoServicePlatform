@@ -31,6 +31,12 @@
                     <select id="selectType">
                         <option value="Exhibition">展会</option>
                         <option value="News">资讯</option>
+                        <option value="SD">供求</option>
+                        <option value="PRODUCT">产品</option>
+                    </select>
+                    <select id="selectMethod">
+                        <option value="MH">模糊查询</option>
+                        <option value="ACU">精确查询</option>
                     </select>
                     <button id="search" type="button" class="btn btn-default" style="display: inline-block;">搜索</button>
                 </div>

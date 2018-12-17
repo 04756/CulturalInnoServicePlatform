@@ -3,9 +3,9 @@ $(document).ready(function(){
     function gocalligraphypage(cur, node, curPageNode){
 
         var lidtcontain = $(node).children(".card");//所有数据
-        var maxlist = 2;
+        var maxlist = 12;
         var curpage = cur;
-        var maxpage;
+        var maxpage = 0;
         var num = $(node).children(".card").length;
 
         if(num == 0)
@@ -16,7 +16,7 @@ $(document).ready(function(){
         else
             maxpage = parseInt(num / maxlist);
 
-        if(maxpage == null)
+        if(maxpage == 0)
             maxpage = 1;
 
         var startrows = (curpage-1) * maxlist;
@@ -44,9 +44,9 @@ $(document).ready(function(){
     function goOrderpage(cur, node, curPageNode){
 
         var lidtcontain = $(node).children(".card");//所有数据
-        var maxlist = 2;
+        var maxlist = 12;
         var curpage = cur;
-        var maxpage;
+        var maxpage = 0;
         var num = $(node).children(".card").length;
 
         if(num == 0)
@@ -57,7 +57,7 @@ $(document).ready(function(){
         else
             maxpage = parseInt(num / maxlist);
 
-        if(maxpage == null)
+        if(maxpage == 0)
             maxpage = 1;
 
         var startrows = (curpage-1) * maxlist;

@@ -2,6 +2,7 @@ package spring.controller;
 
 import com.google.gson.Gson;
 import dao.AO;
+import dao.MessageDAO;
 import dao.SupplyDemandDAO;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -38,6 +39,16 @@ public class SDController {
 //        AO temp = new Gson().fromJson(json, AO.class);
 //        return new SupplyDemandDAO().getSuppliesByPage();
         return null;
+    }
+
+    @RequestMapping(value = "/getSDById", method = RequestMethod.GET)
+    @ResponseBody
+    public String getSDById(@RequestParam("SDID")String sdid, HttpServletRequest request, Model model)throws Exception {
+        SupplyDemand sd = new SupplyDemandDAO().getSDById(sdid);
+        model.addAttribute("title",sd.getTitle());
+        model.addAttribute("content",sd.getContent());
+        model.addAttribute("messageList",new MessageDAO().getMessageById(sd.getSdId(),1));
+        return "SDDetail";
     }
 
     @RequestMapping(value = "/searchSupplyDemand.action", method = RequestMethod.POST)

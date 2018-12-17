@@ -44,14 +44,14 @@
                     产品
                 </a>
                 <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">书画</a>
-                    <a class="dropdown-item" href="#">文化</a>
-                    <a class="dropdown-item" href="#">器物</a>
-                    <a class="dropdown-item" href="#">服饰</a>
+                    <a class="dropdown-item" href="Product.html">书画</a>
+                    <a class="dropdown-item" href="Product.html">文化</a>
+                    <a class="dropdown-item" href="Product.html">器物</a>
+                    <a class="dropdown-item" href="Product.html">服饰</a>
                 </div>
             </li>
         </ul>
-        <a href="search.html"><img src="images/search.jpg" style="width: 30px;height: 30px;margin-left: 680px;"></a>
+        <a href="search.html"><img src="images/search.png" style="width: 30px;height: 30px;margin-left: 680px;"></a>
     </nav>
 </div>
 

@@ -175,7 +175,7 @@ public class NewsController {
         }
     }
 
-    @RequestMapping(value = "getNewsById",method = RequestMethod.GET)
+    @RequestMapping(value = "/getNewsById",method = RequestMethod.GET)
     public String getNewsById(@RequestParam("newsId") String newsId, Model model)
     {
         NewsDAO nDAO=new NewsDAO();

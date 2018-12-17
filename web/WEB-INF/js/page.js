@@ -5,15 +5,18 @@ $(document).ready(function(){
         var lidtcontain = $("#lists").children();//所有数据
         var maxlist = 12;
         var curpage = cur;
-        var maxpage;
+        var maxpage = 0;
         var num = $("#lists").children().length;
+
+        if(num == 0)
+            return;
 
         if((num / maxlist) > parseInt(num / maxlist))
             maxpage = parseInt(num / maxlist) + 1;
         else
             maxpage = parseInt(num / maxlist);
 
-        if(maxpage == null)
+        if(maxpage == 0)
             maxpage = 1;
 
         var startrows = (curpage-1) * maxlist;
