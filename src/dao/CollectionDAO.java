@@ -4,10 +4,6 @@ import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.hibernate.query.Query;
 
-import java.sql.Timestamp;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.List;
 
 import po.Collection;
@@ -85,11 +81,6 @@ public class CollectionDAO
         getSession();
         try
         {
-            if(coll.getEstablishTime() == null) {
-                Date dnow = new Date();
-//                DateFormat df = new SimpleDateFormat("YYYY-MM-DD hh:mm:ss");
-                coll.setEstablishTime(new Timestamp(dnow.getTime()));
-            }
             hs.save(coll);
 
             releaseSession();

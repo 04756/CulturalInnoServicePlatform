@@ -1300,8 +1300,7 @@ originID</ColNames>
     </index>
     <key id="314" parent="283" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
-      <ColNames>imageID
-originID</ColNames>
+      <ColNames>imageID</ColNames>
       <Primary>1</Primary>
     </key>
     <key id="315" parent="283" name="imageID_UNIQUE">
@@ -1329,7 +1328,6 @@ originID</ColNames>
     <column id="319" parent="284" name="originType">
       <Position>4</Position>
       <DataType>varchar(100)|0s</DataType>
-      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="320" parent="284" name="content">
@@ -1557,7 +1555,7 @@ originID</ColNames>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="357" parent="287" name="content">
+    <column id="357" parent="287" name="info">
       <Position>9</Position>
       <Comment>产品详情</Comment>
       <DataType>text|0s</DataType>
@@ -1762,12 +1760,16 @@ originID</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <key id="392" parent="290" name="PRIMARY">
+    <index id="392" parent="290" name="userID">
+      <ColNames>userID</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="393" parent="290" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>userID</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="393" parent="290" name="userID_UNIQUE">
+    <key id="394" parent="290" name="userID_UNIQUE">
       <ColNames>userID</ColNames>
       <UnderlyingIndexName>userID_UNIQUE</UnderlyingIndexName>
     </key>

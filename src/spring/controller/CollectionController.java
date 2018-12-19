@@ -35,11 +35,8 @@ public class CollectionController{
     @RequestMapping(value = "/Collection.html")
     public String initCollectionPage(HttpSession session,Model model){
         User u=(User)session.getAttribute("currentUser");
-
-        if(u == null) {
+        if(u == null)
             return "redirect:/Login.html";
-        }
-
         CollectionDAO cDAO=new CollectionDAO();
         ExhibitionDAO eDAO=new ExhibitionDAO();
         NewsDAO nDAO=new NewsDAO();
@@ -93,7 +90,7 @@ public class CollectionController{
                             productInfoList.add(a);
                         }
                         else
-                            if(c.getOriginType().equals(CollectionType.SUPPLY.name))
+                            if(c.getOriginType().equals(CollectionType.SUPPLYDEMAND.name))
                             {
 //                                supplyCollList.add(c);
                                 Supply s=sdDAO.getSupplyById(c.getOriginId());
@@ -105,18 +102,18 @@ public class CollectionController{
                                 a.setFifth(c.getOriginId());
                                 supplyInfoList.add(a);
                             }
-                            else
-                            {
-//                                demandCollList.add(c);
-                                Demand d=sdDAO.getDemandById(c.getOriginId());
-                                AO a=new AO();
-                                a.setFirst(d.getTitle());
-                                a.setSecond(df.format(d.getStartTime()));
-                                a.setThird(df.format(d.getEndTime()));
-                                a.setFourth(df.format(c.getEstablishTime()));
-                                a.setFifth(c.getOriginId());
-                                demandInfoList.add(a);
-                            }
+//                            else
+//                            {
+////                                demandCollList.add(c);
+//                                Demand d=sdDAO.getDemandById(c.getOriginId());
+//                                AO a=new AO();
+//                                a.setFirst(d.getTitle());
+//                                a.setSecond(df.format(d.getStartTime()));
+//                                a.setThird(df.format(d.getEndTime()));
+//                                a.setFourth(df.format(c.getEstablishTime()));
+//                                a.setFifth(c.getOriginId());
+//                                demandInfoList.add(a);
+//                            }
 
             }
 //            model.addAttribute("exhiList",exhiCollList);
@@ -128,11 +125,12 @@ public class CollectionController{
             model.addAttribute("newsInfoList",newsInfoList);
             model.addAttribute("productInfoList",productInfoList);
             model.addAttribute("supplyInfoList",supplyInfoList);
-            model.addAttribute("demandInfoList",demandInfoList);
+//            model.addAttribute("demandInfoList",demandInfoList);
             return "Collection";
         }
         catch (Exception e)
         {
+            e.printStackTrace();
             return null;
         }
     }

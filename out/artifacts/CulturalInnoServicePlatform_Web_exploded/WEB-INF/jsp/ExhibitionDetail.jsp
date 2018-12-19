@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: user0
@@ -19,6 +20,7 @@
     <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
     <script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="js/base.js"></script>
 </head>
 <body>
 <div class="container-fluid">
@@ -34,6 +36,28 @@
     </div>
     <div class="row essayContain" style="margin: 0 auto;">
         <p>${exhi.content}</p>
+    </div>
+
+    <hr>
+
+    <div class="input-group" style="margin: 0 auto;margin-top: 20px;width: 1000px;">
+        <div class="input-group-prepend">
+            <span class="input-group-text">留言</span>
+        </div>
+        <div id="oid" style="display: none">${exhi.exId}</div>
+        <textarea class="form-control" aria-label="With textarea" id="messageContent"></textarea>
+        <button class="btn btn-light" id="publishMessage">发表留言</button>
+    </div>
+    <div style="margin: 0 auto; width: 1000px;">
+        <br/>
+
+        <c:forEach items="${umList}" var="um">
+            <div class="commentinfo">
+                <h5 class="mt-0">${um.first}</h5>
+                <p>${um.second}</p>
+            </div>
+        </c:forEach>
+
     </div>
 
     <jsp:include page="footer.jsp"/>

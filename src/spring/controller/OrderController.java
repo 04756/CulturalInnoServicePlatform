@@ -1,17 +1,20 @@
 package spring.controller;
 
 import dao.AO;
+import dao.ImageDAO;
 import dao.OrderDAO;
 import dao.ProductDAO;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.portlet.ModelAndView;
+import po.Image;
 import po.Order;
 import po.Product;
 import po.User;
 
 import javax.servlet.http.HttpServletRequest;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -29,30 +32,38 @@ public class OrderController {
     }
 
     @ModelAttribute("orderInfoList")
-    public List<AO> getAllOrderList()
+    public List<AO> getAllOrderList(HttpServletRequest request)
     {
         OrderDAO oDAO=new OrderDAO();
         ProductDAO pDAO=new ProductDAO();
+        ImageDAO iDAO=new ImageDAO();
+        SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         try
         {
-            List<Order> orderList=oDAO.getUserOrders("13051205197");
+            List<Order> orderList=oDAO.getUserOrders(((User)request.getSession().getAttribute("currentUser")).getUserId());
             //利用AO 将订单和商品信息拼在一起 这样就可以同时显示同时显示
             List<AO> orderInfoList=new ArrayList<>();
             for(Order o:orderList)
             {
                 Product p=pDAO.getProducById(o.getProId());
+                String time = df.format(o.getEstablishTime());
                 AO a=new AO();
                 a.setFirst(o.getOrderId());
                 a.setSecond(p.getProName());
                 a.setThird(Integer.toString(o.getCount()));
                 a.setFourth(Double.toString(p.getPrice()));
-                a.setFifth(o.getEstablishTime().toString());
+                a.setFifth(time);
+                Image i=iDAO.getFirstImageOfOriginId(o.getProId());
+                if(i!=null)
+                    a.setSixth(i.getStoreLocation());
+                a.setSeventh(p.getProId());
                 orderInfoList.add(a);
             }
             return orderInfoList;
         }
         catch (Exception e)
         {
+            e.printStackTrace();
             return null;
         }
     }

@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: user0
@@ -19,7 +20,6 @@
     <script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
     <script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
     <script src="js/base.js"></script>
-    <link rel="stylesheet" href="css/base.css">
 </head>
 <body>
 <div class="container-fluid">
@@ -28,7 +28,7 @@
         <div style="display: block;text-align: center;"><h2>${sd.title}</h2></div>
         <div style="display: block;">
             <div class="essayInfo"  style="display: block;text-align: center;">
-                <small>发布人:${ui.nickName}</small>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <small>发布人:${ui.nickName}</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <small>发布时间：${sd.startTime}</small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <small>终止时间：${sd.endTime}</small>
             </div>
@@ -37,6 +37,29 @@
     <div class="row essayContain" style="margin: 0 auto;">
         <p>${sd.content}</p>
     </div>
+
+    <hr>
+
+    <div class="input-group" style="margin: 0 auto;margin-top: 20px;width: 1000px;">
+        <div class="input-group-prepend">
+            <span class="input-group-text">留言</span>
+        </div>
+        <div id="oid" style="display: none">${sd.sdId}</div>
+        <textarea class="form-control" aria-label="With textarea" id="messageContent"></textarea>
+        <button class="btn btn-light" id="publishMessage">发表留言</button>
+    </div>
+    <div style="margin: 0 auto; width: 1000px;">
+        <br/>
+
+        <c:forEach items="${umList}" var="um">
+            <div class="commentinfo">
+                <h5 class="mt-0">${um.first}</h5>
+                <p>${um.second}</p>
+            </div>
+        </c:forEach>
+
+    </div>
+
     <jsp:include page="footer.jsp"/>
 </div>
 </body>

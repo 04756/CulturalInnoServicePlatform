@@ -29,7 +29,7 @@
             <div style="justify-content:left;margin-top: 30px;margin-left:90px;">
                 <ul class="essayList" style="list-style-type: disc;">
                     <c:forEach items="${supplyList}" var="supply">
-                    <li><a href="getSDInfo?sdId=${supply.sdId}"><span class="title">${supply.title}</span><span
+                    <li><a href="/getSDInfo?sdId=${supply.sdId}"><span class="title">${supply.title}</span><span
                             class="newsTime">${supply.startTime}</span><span class="newsTime">${supply.endTime}</span></a></li>
                     </c:forEach>
                 </ul>
@@ -44,7 +44,7 @@
             <div style="justify-content: center;margin-top: 30px;margin-left: 90px;">
                 <ul class="essayList" style="list-style-type:disc;">
                     <c:forEach items="${demandList}" var="demand">
-                    <li><a href="getSDInfo?sdId=${demand.sdId}"><span class="title">${demand.title}</span><span
+                    <li><a href="/getSDInfo?sdId=${demand.sdId}"><span class="title">${demand.title}</span><span
                             class="newsTime">${demand.startTime}</span><span
                         class="newsTime">${demand.endTime}</span></a></li>
                     </c:forEach>

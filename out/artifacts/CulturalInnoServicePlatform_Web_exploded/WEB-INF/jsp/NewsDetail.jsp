@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: user0
@@ -5,7 +6,7 @@
   Time: 11:01
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -44,6 +45,17 @@
         <div id="oid" style="display: none">${news.newsId}</div>
         <textarea class="form-control" aria-label="With textarea" id="messageContent"></textarea>
         <button class="btn btn-light" id="publishMessage">发表留言</button>
+    </div>
+    <div style="margin: 0 auto; width: 1000px;">
+        <br/>
+
+        <c:forEach items="${umList}" var="um">
+            <div class="commentinfo">
+                <h5 class="mt-0">${um.first}</h5>
+                <p>${um.second}</p>
+            </div>
+        </c:forEach>
+
     </div>
     <jsp:include page="footer.jsp"/>
 </div>

@@ -12,11 +12,6 @@
 <script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
 <script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
 <html>
-<style>
-/*    .navbar-nav > li{
-        width: 120px;
-    }*/
-</style>
 <body>
 <div class="log" >
     <a href="" style="display: inline-block;"><img style="margin-top: -10px;margin-left: 30px;width:70px;height: 70px;" src="images/leaf.png"></a>
@@ -28,7 +23,7 @@
 <div class="row">
     <nav class="navbar navbar-expand-sm navbar-dark" style="height:70px;background-color: #1e50ae;font-weight: bold;width:100%;">
         <!-- Brand/logo -->
-        <a class="navbar-brand" href="#">Logo</a>
+        <%--<a class="navbar-brand" href="#">Logo</a>--%>
 
         <!-- Links -->
         <ul class="navbar-nav">

@@ -116,7 +116,7 @@ public class Product
     }
 
     @Basic
-    @Column(name = "content")
+    @Column(name = "info")
     public String getInfo()
     {
         return info;

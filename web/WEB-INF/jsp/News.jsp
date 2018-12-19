@@ -1,4 +1,4 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java"  pageEncoding="UTF-8" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -18,40 +18,40 @@
 
 </head>
 <body>
-    <div class="container-fluid">
-        <jsp:include page="headder.jsp"/>
+<div class="container-fluid">
+    <jsp:include page="headder.jsp"/>
 
-        <div class="row">
-            <div style="width: 1100px;justify-content: center;margin:0 auto;margin-top: 80px;border: 1px solid #eee;">
-                <ul id="lists" class="essayList">
-                    <c:forEach items="${allNewsList}" var="news">
-                        <div class="listOuter">
-                            <li>
-                                <a href="getNewsById?newsId=${news.newsId}" style="color: black;">
-                                        ${news.title}
-                                        <div class="subTitle"> ${news.establishTime}</div>
-                                        <%--<div style="display: inline-block;font-size: 12px;color: #eeeeee">点击量:</div><div class="subTitle">${news.hits}</div>--%>
-                                </a>
+    <div class="row">
+        <div style="width: 1100px;justify-content: center;margin:0 auto;margin-top: 80px;border: 1px solid #eee;">
+            <ul id="lists" class="essayList">
+                <c:forEach items="${allNewsList}" var="news">
+                    <div class="listOuter">
+                        <li>
+                            <a href="getNewsById?newsId=${news.newsId}" style="color: black;">
+                                    ${news.title}
+                                <div class="subTitle"> ${news.establishTime}</div>
+                                    <%--<div style="display: inline-block;font-size: 12px;color: #eeeeee">点击量:</div><div class="subTitle">${news.hits}</div>--%>
+                            </a>
                                 <%----%>
-                            </li>
+                        </li>
                             <%--<hr style="border: 0.5px solid #eee;padding-top：13px;margin-bottom: -3px;">--%>
-                        </div>
+                    </div>
 
-                    </c:forEach>
-                </ul>
-            </div>
-        </div>
-
-        <!-- 分页 -->
-        <div class="row" style="justify-content: center;margin-top: 30px;">
-            <ul class="pagination">
-                <h4 id="curPage">当前页</h4>
-                <li class="page-item"><button class="btn btn-default" id="pre">Previous</button></li>
-                <li class="page-item"><button class="btn btn-default" id="next">Next</button></li>
+                </c:forEach>
             </ul>
         </div>
-
-        <jsp:include page="footer.jsp"/>
     </div>
+
+    <!-- 分页 -->
+    <div class="row" style="justify-content: center;margin-top: 30px;">
+        <ul class="pagination">
+            <h4 id="curPage">当前页</h4>
+            <li class="page-item"><button class="btn btn-default" id="pre">Previous</button></li>
+            <li class="page-item"><button class="btn btn-default" id="next">Next</button></li>
+        </ul>
+    </div>
+
+    <jsp:include page="footer.jsp"/>
+</div>
 </body>
 </html>

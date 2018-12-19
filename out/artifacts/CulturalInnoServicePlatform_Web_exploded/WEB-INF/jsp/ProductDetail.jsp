@@ -126,142 +126,142 @@
 </head>
 
 <body>
-    <div class="container-fluid">
+<div class="container-fluid">
 
-        <jsp:include page="headder.jsp"/>
+    <jsp:include page="headder.jsp"/>
 
-        <div class="top">
-            <div class="row" style="margin-top: 5px; justify-content: center;">
-                <div id="demo" class="carousel slide" data-ride="carousel"
-                     style="width: 380px; display: inline-block; margin-top: 45px;margin-right: 10px;">
+    <div class="top">
+        <div class="row" style="margin-top: 5px; justify-content: center;">
+            <div id="demo" class="carousel slide" data-ride="carousel"
+                 style="width: 380px; display: inline-block; margin-top: 45px;margin-right: 10px;">
 
-                    <!-- 轮播图片 -->
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="http://static.runoob.com/images/mix/img_fjords_wide.jpg">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="http://static.runoob.com/images/mix/img_nature_wide.jpg">
-                        </div>
-                        <div class="carousel-item">
-                            <img
-                                    src="http://static.runoob.com/images/mix/img_mountains_wide.jpg">
-                        </div>
+                <!-- 轮播图片 -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="http://static.runoob.com/images/mix/img_fjords_wide.jpg">
                     </div>
-
-                    <!-- 左右切换按钮 -->
-                    <a class="carousel-control-prev" href="#demo" data-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                    </a> <a class="carousel-control-next" href="#demo" data-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                </a>
-
-                </div>
-                <div class="product">
-
-                    <div class="proDetails">
-                        <div class="proId" style="display: none;">${product.proId}</div>
-                        <div class="proTitle">${product.proName}</div>
-                        <div class="proPrice">¥${product.price}</div>
-
-                        <div class="proHitsandSellcount">
-                            <div class="proHits">浏览量：${product.hits}</div>
-                            <div class="proSellcount">月销量：${product.purchase}</div>
-                        </div>
-
-                        <div class="proButton" role="group" aria-label="Basic example">
-                            <button type="button" class="btn btn-outline-danger" data-toggle="modal" data-target="#myModal">立即购买</button>
-                            <button id="enshrine" type="button" class="btn btn-danger">收藏</button>
-                        </div>
-
-
-
+                    <div class="carousel-item">
+                        <img src="http://static.runoob.com/images/mix/img_nature_wide.jpg">
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                                src="http://static.runoob.com/images/mix/img_mountains_wide.jpg">
                     </div>
                 </div>
+
+                <!-- 左右切换按钮 -->
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a> <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+
             </div>
+            <div class="product">
 
-        </div>
+                <div class="proDetails">
+                    <div class="proId" style="display: none;">${product.proId}</div>
+                    <div class="proTitle">${product.proName}</div>
+                    <div class="proPrice">¥${product.price}</div>
 
-
-
-        <div class="bottom">
-            <nav>
-                <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                    <a
-                            class="nav-item nav-link active" id="nav-home-tab"
-                            data-toggle="tab" href="#nav-home" role="tab"
-                            aria-controls="nav-home" aria-selected="true">
-                        详情
-                    </a>
-                    <a
-                            class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab"
-                            href="#nav-profile" role="tab" aria-controls="nav-profile"
-                            aria-selected="false">
-                        评论
-                    </a>
-                </div>
-            </nav>
-            </nav>
-            <div class="tab-content" id="nav-tabContent">
-
-                <!-- 产品详情  -->
-                <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
-                     aria-labelledby="nav-home-tab"><br>
-                    ${product.info}
-                    <div class="commentinfo" style="margin-top: 20px;margin-bottom: 10px;"></div>
-                    <h3>商品介绍</h3>
-                </div>
-
-                <!-- 产品评论  -->
-                <div class="tab-pane fade" id="nav-profile" role="tabpanel"
-                     aria-labelledby="nav-profile-tab"><br>
-
-                    <c:forEach items="${umList}" var="um">
-                        <div class="commentinfo">
-                            <h5 class="mt-0">${um.first}</h5>
-                            <p>${um.second}</p>
-                        </div>
-                    </c:forEach>
-
-                </div>
-            </div>
-
-        </div>
-
-        <!-- 模态框 -->
-        <div class="modal fade" id="myModal">
-            <div class="modal-dialog">
-                <div class="modal-content" style="width:700px;margin-left: -120px;">
-
-                    <!-- 模态框头部 -->
-                    <div class="modal-header">
-                        <h4 class="modal-title">购买页面</h4>
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <div class="proHitsandSellcount">
+                        <div class="proHits">浏览量：${product.hits}</div>
+                        <div class="proSellcount">月销量：${product.purchase}</div>
                     </div>
 
-                    <!-- 模态框主体 -->
-                    <div class="modal-body">
-                        <img src="http://static.runoob.com/images/mix/img_avatar.png" style="width:400px;height: 400px;">
-                        <div class="input-group mb-3" style="width: 200px;margin-top: 120px;float: right;margin-right: 20px;">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text" >购买数量：</span>
-                            </div>
-                            <input id="purchaseNum" type="text" class="form-control" value="1" name="purchasenum">
-                        </div>
-                        <h4 style="float: right;margin-right: 20px;">单价：<div id="singlePrice" style="display: inline-block;">${product.price}</div></h4>
-                        <h3 style="margin-top: 60px;float: right;margin-right: -160px;">总价：<div id="priceSum" style="display: inline-block">${product.price}</div></h3>
+                    <div class="proButton" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-outline-danger" data-toggle="modal" data-target="#myModal">立即购买</button>
+                        <button id="enshrine" type="button" class="btn btn-danger">收藏</button>
                     </div>
 
-                    <!-- 模态框底部 -->
-                    <div class="modal-footer">
-                        <button id="purchase" type="button" class="btn btn-secondary" data-dismiss="modal">提交</button>
-                    </div>
+
 
                 </div>
             </div>
         </div>
 
-        <jsp:include page="footer.jsp"/>
     </div>
+
+
+
+    <div class="bottom">
+        <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <a
+                        class="nav-item nav-link active" id="nav-home-tab"
+                        data-toggle="tab" href="#nav-home" role="tab"
+                        aria-controls="nav-home" aria-selected="true">
+                    详情
+                </a>
+                <a
+                        class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab"
+                        href="#nav-profile" role="tab" aria-controls="nav-profile"
+                        aria-selected="false">
+                    评论
+                </a>
+            </div>
+        </nav>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+
+            <!-- 产品详情  -->
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
+                 aria-labelledby="nav-home-tab"><br>
+                ${product.info}
+                <div class="commentinfo" style="margin-top: 20px;margin-bottom: 10px;"></div>
+                <h3>商品介绍</h3>
+            </div>
+
+            <!-- 产品评论  -->
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel"
+                 aria-labelledby="nav-profile-tab"><br>
+
+                <c:forEach items="${umList}" var="um">
+                    <div class="commentinfo">
+                        <h5 class="mt-0">${um.first}</h5>
+                        <p>${um.second}</p>
+                    </div>
+                </c:forEach>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- 模态框 -->
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content" style="width:700px;margin-left: -120px;">
+
+                <!-- 模态框头部 -->
+                <div class="modal-header">
+                    <h4 class="modal-title">购买页面</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- 模态框主体 -->
+                <div class="modal-body">
+                    <img src="http://static.runoob.com/images/mix/img_avatar.png" style="width:400px;height: 400px;">
+                    <div class="input-group mb-3" style="width: 200px;margin-top: 120px;float: right;margin-right: 20px;">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" >购买数量：</span>
+                        </div>
+                        <input id="purchaseNum" type="text" class="form-control" value="1" name="purchasenum">
+                    </div>
+                    <h4 style="float: right;margin-right: 20px;">单价：<div id="singlePrice" style="display: inline-block;">${product.price}</div></h4>
+                    <h3 style="margin-top: 60px;float: right;margin-right: -160px;">总价：<div id="priceSum" style="display: inline-block">${product.price}</div></h3>
+                </div>
+
+                <!-- 模态框底部 -->
+                <div class="modal-footer">
+                    <button id="purchase" type="button" class="btn btn-secondary" data-dismiss="modal">提交</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <jsp:include page="footer.jsp"/>
+</div>
 </body>
 </html>

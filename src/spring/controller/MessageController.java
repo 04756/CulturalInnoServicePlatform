@@ -3,18 +3,19 @@ package spring.controller;
 import com.google.gson.Gson;
 import dao.AO;
 import dao.MessageDAO;
+import dao.UserInfoDAO;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.portlet.ModelAndView;
 import po.Message;
 import po.User;
+import po.UserInfo;
 
 import javax.servlet.http.HttpServletRequest;
 import java.sql.Timestamp;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -62,6 +63,7 @@ public class MessageController {
         }
     }
 
+
     @RequestMapping(value = "/addMessage.action")
     @ResponseBody
     public MessageController addMessage(@RequestBody String json, HttpServletRequest request){
@@ -79,14 +81,28 @@ public class MessageController {
         try
         {
             if(new MessageDAO().addMessage(temp) != null)
-               this.setMessage("Success");
-           else
-               this.setMessage("fail");
-           return this;
+                this.setMessage("Success");
+            else
+                this.setMessage("fail");
+
+            MessageDAO mDAO = new MessageDAO();
+            UserInfoDAO uiDAO=new UserInfoDAO();
+            List<Message> mList = mDAO.getMessageById(temp.getOriginId(),-1);
+            List<AO> umList = new ArrayList<>();//存储用户名和留言
+            for (Message m : mList)
+            {
+                UserInfo ui = uiDAO.getUserInfo(m.getUserId());
+                AO a = new AO();
+                a.setFirst(ui.getNickName());
+                a.setSecond(m.getContent());
+                umList.add(a);
+            }
+            request.setAttribute("umList", umList);
+            return this;
         }
         catch(Exception e)
         {
-           return null;
+            return null;
         }
     }
 

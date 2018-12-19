@@ -39,13 +39,13 @@
                 <c:forEach items="${eInfoList}" var="exhiInfo">
                     <div class="listOuter">
                         <li>
-                            <a href="getExhibitionInfo?exhiId=${exhiInfo.fifth}">
+                            <a href="getExhibitionInfo?exhiId=${exhiInfo.fifth}" style="color: black;">
                                 <span class="title">
-                                    ${exhiInfo.first}
+                                        ${exhiInfo.first}
                                 </span>
                                 <span>${exhiInfo.second}</span>
                                 <span class="newsTime">
-                                ${exhiInfo.third}
+                                        ${exhiInfo.third}
                                 </span>
                             </a>
                         </li>
