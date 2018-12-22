@@ -18,6 +18,6 @@
     <mvc:resources mapping="/images/**" location="WEB-INF/images/" />
     <mvc:resources mapping="/js/**" location="WEB-INF/js/" />
     <mvc:resources mapping="/css/**" location="WEB-INF/css/" />
-    <mvc:resources mapping="/utf8-jsp/**" location="WEB-INF/utf8-jsp" />
+    <mvc:resources mapping="/font/**" location="WEB-INF/font/" />
     <mvc:annotation-driven/>
 </beans>

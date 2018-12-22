@@ -6,55 +6,58 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57aee6de-58ca-47a1-8b08-ad8372572e5e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/80bcada0-a82a-415c-bc26-37ba50dd934c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/80bcada0-a82a-415c-bc26-37ba50dd934c.xml" afterDir="false" />
+    <list default="true" id="57aee6de-58ca-47a1-8b08-ad8372572e5e" name="Default Changelist" comment="准备写后台管理端页面，配置模板js、css文件">
+      <change afterPath="$PROJECT_DIR$/.idea/junitgenerator-prj-settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/spring/controller/ManageLoinController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/css/code.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/css/font.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/css/laydate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/css/layui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/css/layui.mobile.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/css/xadmin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/font/iconfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/font/iconfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/font/iconfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/font/iconfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/images/aiwrap.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/images/bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/images/icon-ext.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/images/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/images/layer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/images/loading-0.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/images/loading-1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/images/loading-2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/js/carousel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/js/code.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/js/element.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/js/flow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/js/form.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/js/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/js/laydate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/js/layedit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/js/layer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/js/laypage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/js/laytpl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/js/layui.all.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/js/layui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/js/mobile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/js/table.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/js/tree.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/js/upload.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/js/util.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/js/xadmin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/js/xcity.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/Manage/List.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/Manage/ManageIndex.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/Manage/ManageLogin.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/Manage/ManageWelcome.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/Manage/SDList.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/WEB-INF/classes/spring/controller/MessageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/WEB-INF/classes/spring/controller/MessageController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/WEB-INF/js/productPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/WEB-INF/js/productPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/WEB-INF/jsp/Order.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/WEB-INF/jsp/Order.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CulturalInnoServicePlatform/spring/controller/MessageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CulturalInnoServicePlatform/spring/controller/MessageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/WEB-INF/classes/dao/AO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/WEB-INF/classes/dao/AO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/WEB-INF/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CulturalInnoServicePlatform_Web_exploded/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CulturalInnoServicePlatform/dao/AO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CulturalInnoServicePlatform/dao/AO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dao/AO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/AO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/CollectionDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/CollectionDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/CollectionType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/CollectionType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/Demand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/Demand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/ImageDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/ImageDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/MessageDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/MessageDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/Supply.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/Supply.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/po/Image.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/po/Image.hbm.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/po/Image.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/po/Image.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/po/Product.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/po/Product.hbm.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/po/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/po/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/spring/controller/CollectionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spring/controller/CollectionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/spring/controller/ExhibitionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spring/controller/ExhibitionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/spring/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spring/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/spring/controller/MessageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spring/controller/MessageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/spring/controller/NewsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spring/controller/NewsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/spring/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spring/controller/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/spring/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spring/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/spring/controller/SDController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spring/controller/SDController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/spring/controller/SearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spring/controller/SearchController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/css/base.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/js/productPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/js/productPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/Collection.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/Collection.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/Exhibition.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/Exhibition.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/ExhibitionDetail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/ExhibitionDetail.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/Login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/Login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/News.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/News.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/NewsDetail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/NewsDetail.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/Order.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/Order.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/Product.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/Product.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/ProductDetail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/ProductDetail.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/Register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/Register.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/RegisterUserInfo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/RegisterUserInfo.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/SupplyAndDemand.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/SupplyAndDemand.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/SupplyDemandDetail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/SupplyDemandDetail.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/UserInfo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/UserInfo.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/footer.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/headder.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/headder.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/search.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/search.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -102,100 +105,79 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/Order.jsp">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/Manage/ManageLogin.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="750">
-              <caret line="50" column="46" selection-start-line="50" selection-start-column="46" selection-end-line="50" selection-end-column="46" />
+            <state relative-caret-position="105">
+              <caret line="7" column="56" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
               <folding>
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#2;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/Login.jsp">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/css/layui.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/js/productPage.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="194" column="16" lean-forward="true" selection-start-line="194" selection-start-column="16" selection-end-line="194" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/js/product.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="50" column="13" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/spring/controller/MessageController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="61">
-              <caret line="78" selection-start-line="78" selection-end-line="78" />
+            <state relative-caret-position="113">
+              <caret line="62" column="19" selection-start-line="62" selection-start-column="19" selection-end-line="62" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/css/base.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="175" column="17" lean-forward="true" selection-start-line="175" selection-start-column="17" selection-end-line="175" selection-end-column="17" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/font/iconfont.svg">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/SupplyDemandDetail.jsp">
+        <entry file="file://$PROJECT_DIR$/src/spring/controller/ManageLoinController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-67">
-              <caret line="21" column="38" lean-forward="true" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/hibernate.cfg.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="88" selection-start-line="6" selection-start-column="88" selection-end-line="6" selection-end-column="88" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/spring/controller/LoginController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="101" column="25" lean-forward="true" selection-start-line="101" selection-start-column="25" selection-end-line="101" selection-end-column="25" />
+            <state relative-caret-position="1266">
+              <caret line="93" selection-start-line="93" selection-end-line="93" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#390#391#0" expanded="true" />
+                <element signature="e#420#421#0" expanded="true" />
+                <element signature="e#466#467#0" expanded="true" />
+                <element signature="e#504#505#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/po/User.java">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/Order.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="22">
+              <caret line="43" column="34" lean-forward="true" selection-start-line="43" selection-start-column="34" selection-end-line="43" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/Manage/List.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1897">
+              <caret line="191" column="7" selection-start-line="191" selection-start-column="7" selection-end-line="191" selection-end-column="7" />
               <folding>
-                <element signature="e#374#375#0" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#i#0;n#a#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#xblock#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#4185#4189#0#HTML" expanded="true" />
+                <element signature="e#4189#4193#0#HTML" expanded="true" />
+                <element signature="e#4283#4287#0#HTML" expanded="true" />
+                <element signature="e#4287#4291#0#HTML" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/Manage/SDList.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="19" column="42" lean-forward="true" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -206,9 +188,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="spring-beans.schema" />
-        <option value="Jsp File" />
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
+        <option value="jsf" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -219,6 +202,8 @@
       <find>del</find>
       <find>GetSession</find>
       <find>SessionMgr.releaseConnect(sf, hs);</find>
+      <find>form</find>
+      <find>fonts</find>
     </findStrings>
     <replaceStrings>
       <replace>SessionMgr</replace>
@@ -237,28 +222,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/dao/Supply.java" />
-        <option value="$PROJECT_DIR$/src/spring/controller/ExhibitionController.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/js/listbase.js" />
-        <option value="$PROJECT_DIR$/src/dao/SessionMgr.java" />
-        <option value="$PROJECT_DIR$/src/dao/AO.java" />
-        <option value="$PROJECT_DIR$/web/index.jsp" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/footer.jsp" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
-        <option value="$PROJECT_DIR$/src/dao/OrderDAO.java" />
-        <option value="$PROJECT_DIR$/src/dao/ProductDAO.java" />
-        <option value="$PROJECT_DIR$/src/dao/ImageDAO.java" />
-        <option value="80bcada0-a82a-415c-bc26-37ba50dd934c/schema/service_platform_db/table/product.sql" />
-        <option value="$PROJECT_DIR$/src/po/Product.java" />
-        <option value="$PROJECT_DIR$/src/po/Product.hbm.xml" />
-        <option value="$PROJECT_DIR$/src/dao/CollectionDAO.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/ProductDetail.jsp" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/js/product.js" />
-        <option value="$PROJECT_DIR$/src/dao/UserDAO.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/SearchList.jsp" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/seacher.jsp" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/demo.html" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml" />
         <option value="$PROJECT_DIR$/src/spring/controller/UeditorController.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/js/ueditor.config.js" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/demo.jsp" />
@@ -283,11 +246,33 @@
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/News.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/NewsDetail.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/Product.jsp" />
-        <option value="$PROJECT_DIR$/src/spring/controller/LoginController.java" />
         <option value="$PROJECT_DIR$/src/hibernate.cfg.xml" />
         <option value="$PROJECT_DIR$/web/WEB-INF/js/productPage.js" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/Order.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/css/base.css" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/js/xadmin.js" />
+        <option value="$PROJECT_DIR$/src/spring/controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/ManageIndex.xhtml" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/ManageWelcome.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/ManageIndex.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/ManageLogin.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/css/xadmin.css" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/Manage/ManageWelcome.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/css/code.css" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/css/laydate.css" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/css/font.css" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/Manage/ManageLogin.jsp" />
+        <option value="$PROJECT_DIR$/src/dao/SupplyDemandDAO.java" />
+        <option value="$PROJECT_DIR$/src/dao/AO.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/Manage/List.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/Manage/ManageIndex.jsp" />
+        <option value="$PROJECT_DIR$/src/spring/controller/ManageLoinController.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/jsp/Manage/SDList.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/js/mobile.js" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/js/laydate.js" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/js/layui.js" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/css/layui.css" />
       </list>
     </option>
   </component>
@@ -305,9 +290,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="236" />
-    <option name="y" value="110" />
-    <option name="width" value="978" />
+    <option name="x" value="248" />
+    <option name="width" value="1098" />
     <option name="height" value="788" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -357,6 +341,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -391,29 +376,7 @@
               <item name="CulturalInnoServicePlatform" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CulturalInnoServicePlatform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CulturalInnoServicePlatform" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CulturalInnoServicePlatform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CulturalInnoServicePlatform" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CulturalInnoServicePlatform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CulturalInnoServicePlatform" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="wangEditor.js" type="620a8d5e:NestingTreeNode" />
+              <item name="jsp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CulturalInnoServicePlatform" type="b2602c69:ProjectViewProjectNode" />
@@ -421,13 +384,13 @@
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
               <item name="jsp" type="462c0819:PsiDirectoryNode" />
+              <item name="Manage" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -436,9 +399,9 @@
     <property name="JPA.DatabaseSchemaImportDialog" value="80bcada0-a82a-415c-bc26-37ba50dd934c" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545189573070" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545478867088" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ueditor1_4_3_3-utf8-jsp/utf8-jsp/jsp/lib/ueditor-1.1.2.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Libraries" />
@@ -447,20 +410,21 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\yhy\作业\软件工程A\课设\CulturalInnoServicePlatform\web\WEB-INF" />
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\yhy\作业\软件工程A\课设\CulturalInnoServicePlatform\web\WEB-INF\js" />
-      <recent name="C:\Users\user0\IdeaProjects\CulturalInnoServicePlatform\src" />
-      <recent name="C:\Users\user0\IdeaProjects\CulturalInnoServicePlatform\src\spring" />
+      <recent name="C:\Users\user0\IdeaProjects\CulturalInnoServicePlatform\lib" />
+      <recent name="C:\Users\user0\IdeaProjects\CulturalInnoServicePlatform\src\dao" />
     </key>
     <key name="ImportMappingsDialog.RecentPackages">
       <recent name="po" />
       <recent name="" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\yhy\作业\软件工程A\课设\CulturalInnoServicePlatform\web\WEB-INF\jsp\Manage" />
+      <recent name="E:\yhy\作业\软件工程A\课设\CulturalInnoServicePlatform\web\WEB-INF" />
       <recent name="E:\yhy\作业\软件工程A\课设\CulturalInnoServicePlatform\web\WEB-INF\js" />
-      <recent name="C:\Users\user0\IdeaProjects\CulturalInnoServicePlatform\lib" />
-      <recent name="C:\Users\user0\IdeaProjects\CulturalInnoServicePlatform\src\dao" />
+      <recent name="C:\Users\user0\IdeaProjects\CulturalInnoServicePlatform\src" />
+      <recent name="C:\Users\user0\IdeaProjects\CulturalInnoServicePlatform\src\spring" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -603,7 +567,9 @@
       <workItem from="1545052255736" duration="10380000" />
       <workItem from="1545144718155" duration="2654000" />
       <workItem from="1545189341391" duration="195000" />
-      <workItem from="1545216498226" duration="3955000" />
+      <workItem from="1545216498226" duration="4783000" />
+      <workItem from="1545269355092" duration="1304000" />
+      <workItem from="1545459635452" duration="15041000" />
     </task>
     <task id="LOCAL-00001" summary="v1.2  魔改SessionMgr 测试通过UserInfoDAO  UserDAO order表改为ordertable表">
       <created>1544595344168</created>
@@ -623,7 +589,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="169027000" />
+    <option name="totallyTimeSpent" value="186200000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -638,7 +604,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7790974" visible="true" weight="0.22163388" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7790974" visible="true" weight="0.16187595" />
       <window_info id="Structure" order="1" sideWeight="0.2209026" side_tool="true" weight="0.2065053" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -650,9 +616,9 @@
       <window_info anchor="bottom" id="Spring" order="0" weight="0.32839838" />
       <window_info anchor="bottom" id="Terminal" order="1" weight="0.32786885" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.30983606" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.18032786" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.34262297" />
       <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="5" weight="0.3622951" />
+      <window_info active="true" anchor="bottom" id="Messages" order="5" visible="true" weight="0.3622951" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32786885" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" weight="0.32885906" />
       <window_info anchor="bottom" id="Database Changes" order="8" weight="0.32885906" />
@@ -667,14 +633,14 @@
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" id="Maven Projects" order="2" weight="0.32956952" />
-      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.18381241" />
+      <window_info anchor="right" id="Database" order="3" weight="0.18381241" />
       <window_info anchor="right" id="Palette&#9;" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette" order="6" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="7" type="SLIDING" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
       <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.32956952" />
-      <window_info anchor="right" id="Maven" order="10" />
+      <window_info anchor="right" id="Maven" order="10" weight="0.32980332" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -682,7 +648,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="v1.2  魔改SessionMgr 测试通过UserInfoDAO  UserDAO order表改为ordertable表" />
-    <option name="LAST_COMMIT_MESSAGE" value="v1.2  魔改SessionMgr 测试通过UserInfoDAO  UserDAO order表改为ordertable表" />
+    <MESSAGE value="准备写后台管理端页面，配置模板js、css文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="准备写后台管理端页面，配置模板js、css文件" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
@@ -734,163 +701,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/js/ueditor.config.js" />
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/js/wangEditor.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-330" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/js/wangEditor.min.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/demo.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="20" column="10" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://80bcada0-a82a-415c-bc26-37ba50dd934c/schema/service_platform_db/table/news">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/NewsDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="90" column="22" selection-start-line="90" selection-start-column="22" selection-end-line="90" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/spring-web-4.3.18.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="123" selection-start-line="123" selection-end-line="123" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/ExhibitionDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="194" selection-start-line="194" selection-end-line="194" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/spring/controller/SearchController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1110">
-          <caret line="94" column="27" selection-start-line="94" selection-start-column="19" selection-end-line="94" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/spring/controller/UeditorController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="34" column="1" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/spring/controller/SDController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="55" column="47" selection-start-line="55" selection-start-column="43" selection-end-line="55" selection-end-column="47" />
-          <folding>
-            <element signature="e#477#478#0" expanded="true" />
-            <element signature="e#507#508#0" expanded="true" />
-            <element signature="e#553#554#0" expanded="true" />
-            <element signature="e#591#592#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/js/page.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-244">
-          <caret line="13" column="53" lean-forward="true" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../CulturalInnoServicePlatform-master/web/WEB-INF/jsp/headder.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="45" column="6" lean-forward="true" selection-start-line="39" selection-end-line="45" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/spring/controller/ProductController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="289" column="26" lean-forward="true" selection-start-line="287" selection-start-column="8" selection-end-line="289" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/spring/controller/ExhibitionController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1215">
-          <caret line="85" column="9" lean-forward="true" selection-start-line="85" selection-start-column="9" selection-end-line="85" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../CulturalInnoServicePlatform-master/web/WEB-INF/jsp/News.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="119" column="67" selection-start-line="119" selection-start-column="34" selection-end-line="119" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/ExhibitionDetail.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="27" column="37" lean-forward="true" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/Exhibition.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="36" column="85" selection-start-line="36" selection-start-column="85" selection-end-line="36" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/po/News.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="12" column="25" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/headder.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="43" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/spring/controller/CollectionController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1935">
-          <caret line="150" column="63" selection-start-line="150" selection-start-column="34" selection-end-line="150" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/po/Order.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="14" column="24" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/js/base.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
@@ -934,13 +744,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="14" column="27" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/AO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="24" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -1003,30 +806,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/SupplyAndDemand.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="46" column="33" selection-start-line="46" selection-start-column="33" selection-end-line="46" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/po/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="e#374#375#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/hibernate.cfg.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="88" selection-start-line="6" selection-start-column="88" selection-end-line="6" selection-end-column="88" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/dao/SessionMgr.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-76">
@@ -1045,67 +824,257 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/SupplyDemandDetail.jsp">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/js/product.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-67">
-          <caret line="21" column="38" lean-forward="true" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
+        <state relative-caret-position="750">
+          <caret line="50" column="13" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/js/product.js">
+    <entry file="file://$PROJECT_DIR$/src/spring/controller/MessageController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="50" column="13" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
+        <state relative-caret-position="855">
+          <caret line="78" selection-start-line="78" selection-end-line="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/css/base.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2340">
+          <caret line="156" column="16" selection-start-line="156" selection-start-column="16" selection-end-line="156" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/js/productPage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="194" column="16" lean-forward="true" selection-start-line="194" selection-start-column="16" selection-end-line="194" selection-end-column="16" />
+        <state relative-caret-position="315">
+          <caret line="194" column="16" selection-start-line="194" selection-start-column="16" selection-end-line="194" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/SupplyDemandDetail.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hibernate.cfg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="88" selection-start-line="6" selection-start-column="88" selection-end-line="6" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/po/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="e#374#375#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../DataBase-崔晓辉/2018课设/DAO示例框架.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/js/xadmin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3000">
+          <caret line="200" lean-forward="true" selection-start-line="200" selection-end-line="200" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/js/layui.all.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="61" lean-forward="true" selection-start-line="2" selection-start-column="61" selection-end-line="2" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/Login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="457">
+          <caret line="40" column="24" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/ManageIndex.xhtml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/Manage/ManageWelcome.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#fieldset#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="63" lean-forward="true" selection-start-line="19" selection-start-column="63" selection-end-line="19" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/css/laydate.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6711" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/css/xadmin.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="51" column="8" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/css/font.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="10" lean-forward="true" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/css/code.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dao/SupplyDemandDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="542" column="9" lean-forward="true" selection-start-line="542" selection-start-column="9" selection-end-line="542" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/SupplyAndDemand.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="30" column="66" lean-forward="true" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dao/AO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="17" column="28" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/spring/controller/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="101" column="25" lean-forward="true" selection-start-line="101" selection-start-column="25" selection-end-line="101" selection-end-column="25" />
+        <state relative-caret-position="195">
+          <caret line="69" column="67" lean-forward="true" selection-start-line="69" selection-start-column="67" selection-end-line="69" selection-end-column="67" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/spring/controller/MessageController.java">
+    <entry file="jar://$PROJECT_DIR$/lib/spring-web-4.3.18.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="61">
-          <caret line="78" selection-start-line="78" selection-end-line="78" />
+        <state relative-caret-position="125">
+          <caret line="117" selection-start-line="117" selection-end-line="117" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/Login.jsp">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/Manage/List.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+        <state relative-caret-position="1897">
+          <caret line="191" column="7" selection-start-line="191" selection-start-column="7" selection-end-line="191" selection-end-column="7" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#a#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#xblock#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#4185#4189#0#HTML" expanded="true" />
+            <element signature="e#4189#4193#0#HTML" expanded="true" />
+            <element signature="e#4283#4287#0#HTML" expanded="true" />
+            <element signature="e#4287#4291#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/Order.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="50" column="46" selection-start-line="50" selection-start-column="46" selection-end-line="50" selection-end-column="46" />
+        <state relative-caret-position="22">
+          <caret line="43" column="34" lean-forward="true" selection-start-line="43" selection-start-column="34" selection-end-line="43" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/Manage/SDList.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="19" column="42" lean-forward="true" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/spring/controller/ManageLoinController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1266">
+          <caret line="93" selection-start-line="93" selection-end-line="93" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#390#391#0" expanded="true" />
+            <element signature="e#420#421#0" expanded="true" />
+            <element signature="e#466#467#0" expanded="true" />
+            <element signature="e#504#505#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/css/base.css">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/js/mobile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="175" column="17" lean-forward="true" selection-start-line="175" selection-start-column="17" selection-end-line="175" selection-end-column="17" />
+        <state relative-caret-position="-1155" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/js/laydate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/js/layui.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="87" column="82" lean-forward="true" selection-start-line="87" selection-start-column="82" selection-end-line="87" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/Manage/ManageIndex.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="20" column="46" lean-forward="true" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/Manage/ManageLogin.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="56" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
+          <folding>
+            <element signature="n#style#0;n#input#2;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/css/layui.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="62" column="19" selection-start-line="62" selection-start-column="19" selection-end-line="62" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/font/iconfont.svg">
+      <provider selected="true" editor-type-id="images" />
     </entry>
   </component>
   <component name="masterDetails">
