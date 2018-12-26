@@ -94,7 +94,7 @@
                     </a>
                     <ul class="sub-menu">
                         <li>
-                            <a _href="order-list.html">
+                            <a _href="toList?listName=Order">
                                 <i class="iconfont">&#xe6a7;</i>
                                 <cite>订单列表</cite>
                             </a>
@@ -126,7 +126,7 @@
                     </a>
                     <ul class="sub-menu">
                         <li>
-                            <a _href="exhibition-list.html">    <!-- 类似订单列表(order-list.html) -->
+                            <a _href="toList?listName=Exh">    <!-- 类似订单列表(order-list.html) -->
                                 <i class="iconfont">&#xe6a7;</i>
                                 <cite>展会列表</cite>
                             </a>
@@ -142,7 +142,7 @@
                     </a>
                     <ul class="sub-menu">
                         <li>
-                            <a _href="news-list.html">    <!-- 类似订单列表(order-list.html) -->
+                            <a _href="toList?listName=News">    <!-- 类似订单列表(order-list.html) -->
                                 <i class="iconfont">&#xe6a7;</i>
                                 <cite>资讯列表</cite>
                             </a>
@@ -158,7 +158,7 @@
                     </a>
                     <ul class="sub-menu">
                         <li>
-                            <a _href="product-list.html">    <!-- 类似订单列表(order-list.html) -->
+                            <a _href="toList?listName=Product">    <!-- 类似订单列表(order-list.html) -->
                                 <i class="iconfont">&#xe6a7;</i>
                                 <cite>产品列表</cite>
                             </a>

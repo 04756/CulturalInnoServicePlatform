@@ -1,8 +1,8 @@
 <%--
   Created by IntelliJ IDEA.
   User: JY
-  Date: 2018/12/22
-  Time: 16:12
+  Date: 2018/12/26
+  Time: 18:40
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -71,35 +71,35 @@
             <th>
                 <div class="layui-unselect header layui-form-checkbox" lay-skin="primary"><i class="layui-icon">&#xe605;</i></div>
             </th>
-            <th>编号</th>
-            <th>标题</th>
-            <th>发布时间</th>
-            <th>详细描述</th>
-            <th>审核状态</th>
+            <th>订单编号</th>
+            <th>商品名称</th>
+            <th>商品单价</th>
+            <th>购买数量</th>
+            <th>实际支付价格</th>
             <th >操作</th>
         </tr>
         </thead>
 
         <!-- 列表开头 -->
         <tbody>
-            <c:forEach items="${list}" var="per">
-                <tr>
-                    <td>
-                        <div class="layui-unselect layui-form-checkbox" lay-skin="primary" data-id='2'><i class="layui-icon">&#xe605;</i></div>
-                    </td>
-                    <td>${per.first}</td>
-                    <td>${per.second}</td>
-                    <td>${per.third}</td>
-                    <td>${per.fourth}</td>
-                    <td>${per.fifth}</td>
-                    <td class="td-manage">
-                        <a onclick="member_stop(this,'10001')" href="javascript:;"  title="启用">
-                            <i class="layui-icon">&#xe601;</i></a>
-                        <a title="删除" onclick="member_del(this,'要删除的id')" href="javascript:;">
-                            <i class="layui-icon">&#xe640;</i></a>
-                    </td>
-                </tr>
-            </c:forEach>
+        <c:forEach items="${list}" var="per">
+            <tr>
+                <td>
+                    <div class="layui-unselect layui-form-checkbox" lay-skin="primary" data-id='2'><i class="layui-icon">&#xe605;</i></div>
+                </td>
+                <td>${per.first}</td>
+                <td>${per.second}</td>
+                <td>${per.third}</td>
+                <td>${per.fourth}</td>
+                <td>${per.fifth}</td>
+                <td class="td-manage">
+                    <a onclick="member_stop(this,'10001')" href="javascript:;"  title="启用">
+                        <i class="layui-icon">&#xe601;</i></a>
+                    <a title="删除" onclick="member_del(this,'要删除的id')" href="javascript:;">
+                        <i class="layui-icon">&#xe640;</i></a>
+                </td>
+            </tr>
+        </c:forEach>
         </tbody>
         <!-- 列表结尾 -->
 
@@ -114,67 +114,6 @@
     </div>
 
 </div>
-<script>
-    layui.use('laydate', function(){
-        var laydate = layui.laydate;
-
-        //执行一个laydate实例
-        laydate.render({
-            elem: '#start' //指定元素
-        });
-
-        //执行一个laydate实例
-        laydate.render({
-            elem: '#end' //指定元素
-        });
-    });
-
-    /*用户-停用*/
-    function member_stop(obj,id){
-        layer.confirm('确认要停用吗？',function(index){
-
-            if($(obj).attr('title')=='启用'){
-
-                //发异步把用户状态进行更改
-                $(obj).attr('title','停用')
-                $(obj).find('i').html('&#xe62f;');
-
-                $(obj).parents("tr").find(".td-status").find('span').addClass('layui-btn-disabled').html('已停用');
-                layer.msg('已停用!',{icon: 5,time:1000});
-
-            }else{
-                $(obj).attr('title','启用')
-                $(obj).find('i').html('&#xe601;');
-
-                $(obj).parents("tr").find(".td-status").find('span').removeClass('layui-btn-disabled').html('已启用');
-                layer.msg('已启用!',{icon: 5,time:1000});
-            }
-
-        });
-    }
-
-    /*用户-删除*/
-    function member_del(obj,id){
-        layer.confirm('确认要删除吗？',function(index){
-            //发异步删除数据
-            $(obj).parents("tr").remove();
-            layer.msg('已删除!',{icon:1,time:1000});
-        });
-    }
-
-
-
-    function delAll (argument) {
-
-        var data = tableCheck.getData();
-
-        layer.confirm('确认要删除吗？'+data,function(index){
-            //捉到所有被选中的，发异步进行删除
-            layer.msg('删除成功', {icon: 1});
-            $(".layui-form-checked").not('.header').parents('tr').remove();
-        });
-    }
-</script>
 <script>var _hmt = _hmt || []; (function() {
     var hm = document.createElement("script");
     hm.src = "https://hm.baidu.com/hm.js?b393d153aeb26b46e9431fabaf0f6190";

@@ -9,8 +9,6 @@ import po.*;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
-import java.util.ArrayList;
-import java.util.List;
 
 @Controller
 @RequestMapping(value = "/Manage")
@@ -75,28 +73,6 @@ public class ManageLoinController {
             model.addAttribute("productNumbers", new ProductDAO().getAllProducts().size());
         }
         return new ModelAndView("ManageWelcome", "command", this);
-    }
-
-    @RequestMapping(value = "/toList", method = RequestMethod.GET)
-    public String initListPage(@RequestParam("listName")String listName, HttpServletRequest request, HttpSession session, Model model){
-        User user = (User)request.getSession().getAttribute("currentUser");
-//        if(user.getType() != 0) {
-            //AO存储：id、title、y
-            switch (listName) {
-                case "SD":
-                    List<SupplyDemand> sdList = new SupplyDemandDAO().getUserSD(user.getUserId());
-                    List<AO> list = new ArrayList<AO>();
-                    for (SupplyDemand i : sdList) {
-                        AO temp = new AO(i.getSdId(), i.getTitle(), i.getStartTime().toString(), i.getEndTime().toString(), i.getHits().toString(), "", "");
-                        list.add(temp);
-                    }
-                    model.addAttribute("list", list);
-                    return "Manage/SDList";
-                case "News" :
-                    break;
-            }
-//        }
-        return "List";
     }
 
 }
