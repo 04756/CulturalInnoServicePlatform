@@ -114,6 +114,23 @@ public class SDController {
         //return new SupplyDemandDAO().addDemand(temp);
     }
 
+    @RequestMapping(value = "/Manage/deleteSD.action")
+    @ResponseBody
+    public SDController deleteSD(@RequestBody String json, HttpServletRequest request){
+        try {
+            if (new SupplyDemandDAO().delSD(new Gson().fromJson(json, AO.class).getFirst()))
+                this.message = "Delete Success!";
+            else
+                this.message = "Delete Fail!";
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }finally {
+            return this;
+        }
+    }
+
     @RequestMapping(value = "/delSupplyDemand.action", method = RequestMethod.POST)
     @ResponseBody
     public SDController deSupplyDemand(@RequestBody String json , HttpServletRequest request){

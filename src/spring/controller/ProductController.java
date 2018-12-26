@@ -350,21 +350,20 @@ public class ProductController {
         }
     }
 
-    @RequestMapping(value = "/delProduct.action", method = RequestMethod.POST)
+    @RequestMapping(value = "/Manage/deleteProduct.action")
     @ResponseBody
-    public ProductController delProduct(@RequestBody String json , HttpServletRequest request){
-        Product temp = new Gson().fromJson(json, Product.class);
-        try
-        {
-            if(new ProductDAO().delProduct(temp.getProId()))
-                this.setMessage("删除成功");
+    public ProductController deleteProduct(@RequestBody String json, HttpServletRequest request){
+        try {
+            if (new ProductDAO().delProduct(new Gson().fromJson(json, AO.class).getFirst()))
+                this.message = "Delete Success!";
             else
-                this.setMessage("删除失败");
-            return this;
+                this.message = "Delete Fail!";
         }
         catch (Exception e)
         {
-            return null;
+            e.printStackTrace();
+        }finally {
+            return this;
         }
     }
 

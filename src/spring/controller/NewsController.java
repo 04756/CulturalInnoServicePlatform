@@ -123,6 +123,23 @@ public class NewsController {
         }
     }
 
+    @RequestMapping(value = "/Manage/deleteNew.action")
+    @ResponseBody
+    public NewsController deleteNew(@RequestBody String json, HttpServletRequest request){
+        try {
+            if (new NewsDAO().delNews(new Gson().fromJson(json, AO.class).getFirst()))
+                this.message = "Delete Success!";
+            else
+                this.message = "Delete Fail!";
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }finally {
+            return this;
+        }
+    }
+
     @ModelAttribute("pageNewsList")
     @RequestMapping(value = "/getNewByPage.action")
     @ResponseBody

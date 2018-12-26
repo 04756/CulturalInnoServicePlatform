@@ -34,6 +34,8 @@ public class ManageListController {
                     list.add(temp);
                 }
                 model.addAttribute("list", list);
+                request.setAttribute("listType", "SD");
+                request.setAttribute("listNum", list.size());
                 return "Manage/SDList";
             case "News" :
                 List<News> newsList = new NewsDAO().getNewsByUserId(user.getUserId());
@@ -43,6 +45,8 @@ public class ManageListController {
                     list.add(temp);
                 }
                 model.addAttribute("list", list);
+                model.addAttribute("listType", "News");
+                model.addAttribute("listNum", list.size());
                 return "Manage/List";
             case "Exh" :
                 List<Exhibition> exList = new ExhibitionDAO().getExhibitionByUserId(user.getUserId());
@@ -52,6 +56,8 @@ public class ManageListController {
                     list.add(temp);
                 }
                 model.addAttribute("list", list);
+                model.addAttribute("listType", "Exhibition");
+                model.addAttribute("listNum", list.size());
                 return "Manage/List";
             case "Product" :
                 List<Product> proList = new ProductDAO().getUserProducts(user.getUserId());
@@ -61,6 +67,8 @@ public class ManageListController {
                     list.add(temp);
                 }
                 model.addAttribute("list", list);
+                model.addAttribute("listType", "Product");
+                model.addAttribute("listNum", list.size());
                 return "Manage/ProList";
             case "Order" :
                 List<Order> orderList = new OrderDAO().getUserOrders(user.getUserId());
@@ -71,6 +79,8 @@ public class ManageListController {
                     list.add(temp);
                 }
                 model.addAttribute("list", list);
+                request.setAttribute("listType", "Order");
+                request.setAttribute("listNum", list.size());
                 return "Manage/OrderList";
         }
 

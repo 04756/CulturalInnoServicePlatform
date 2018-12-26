@@ -62,6 +62,25 @@ $(document).ready(function(){
         });
     }
 
+    function deleteRecord(node, actionURL){
+        var temp = {
+            first : $(node).parent().parent().children(".id").text()
+        }
+        $.ajax({
+            type : "POST",
+            contentType : 'application/json;charset=UTF-8',
+            url : actionURL,
+            data : JSON.stringify(temp),
+            dataType : 'json',
+            success : function(data){
+                alert(data.message);
+            },
+            error : function(){
+                alert("error");
+            }
+        });
+    }
+
     $("#search").click(function () {
         var temp = {
             first : $("#selectType option:selected").val(),
@@ -77,6 +96,23 @@ $(document).ready(function(){
             content : $("#messageContent").val()
         }
         publishMessage(temp);
+    });
+
+    $(".deleteButton").click(function (){
+        switch ($("#listType").text()) {
+            case "News":
+                deleteRecord(this, "deleteNew.action");
+                break;
+            case "Exhibition":
+                deleteRecord(this, "deleteExhibition.action");
+                break;
+            case "SD":
+                deleteRecord(this, "deleteSD.action");
+                break;
+            case "Product":
+                deleteRecord(this, "deleteProduct.action");
+                break;
+        }
     });
 
 });

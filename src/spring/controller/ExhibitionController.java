@@ -115,6 +115,23 @@ public class ExhibitionController {
        }
     }
 
+    @RequestMapping(value = "/Manage/deleteExhibition.action")
+    @ResponseBody
+    public ExhibitionController deleteExhibition(@RequestBody String json, HttpServletRequest request){
+        try {
+            if (new ExhibitionDAO().delExhibition(new Gson().fromJson(json, AO.class).getFirst()))
+                this.message = "Delete Success!";
+            else
+                this.message = "Delete Fail!";
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }finally {
+            return this;
+        }
+    }
+
     @RequestMapping(value = "/getUserExhibition.action", method = RequestMethod.POST)
     @ResponseBody
     public List getUserExhibition(@RequestBody String json){

@@ -87,16 +87,12 @@
                 <td>
                     <div class="layui-unselect layui-form-checkbox" lay-skin="primary" data-id='2'><i class="layui-icon">&#xe605;</i></div>
                 </td>
-                <td>${per.first}</td>
+                <td class="id">${per.first}</td>
                 <td>${per.second}</td>
                 <td>${per.third}</td>
                 <td>${per.fourth}</td>
                 <td>${per.fifth}</td>
                 <td class="td-manage">
-                    <a onclick="member_stop(this,'10001')" href="javascript:;"  title="启用">
-                        <i class="layui-icon">&#xe601;</i></a>
-                    <a title="删除" onclick="member_del(this,'要删除的id')" href="javascript:;">
-                        <i class="layui-icon">&#xe640;</i></a>
                 </td>
             </tr>
         </c:forEach>

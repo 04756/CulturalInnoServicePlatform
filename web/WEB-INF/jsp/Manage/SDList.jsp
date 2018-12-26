@@ -24,6 +24,7 @@
     <script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="../js/layui.js" charset="utf-8"></script>
     <script type="text/javascript" src="../js/xadmin.js"></script>
+    <script type="text/javascript" src="../js/base.js"></script>
     <!-- 让IE8/9支持媒体查询，从而兼容栅格 -->
     <!--[if lt IE 9]>
     <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
@@ -66,7 +67,7 @@
 
     <xblock>
         <button class="layui-btn layui-btn-danger" onclick="delAll()"><i class="layui-icon"></i>批量删除</button>
-        <span class="x-right" style="line-height:40px">共有数据：3 条</span>
+        <span class="x-right" style="line-height:40px"><span id="listType"><c:out value="${listType}"/></span>共有数据：<c:out value = "${listNum}"/></span>
     </xblock>
     <table class="layui-table">
         <thead>
@@ -100,10 +101,7 @@
                 <td class="td-status">
                     <span class="layui-btn layui-btn-normal layui-btn-mini">删除</span></td>
                 <td class="td-manage">
-                    <a onclick="member_stop(this,'10001')" href="javascript:;"  title="启用">
-                        <i class="layui-icon">&#xe601;</i></a>
-                        <a title="删除" onclick="member_del(this,'要删除的id')" href="javascript:;">
-                            <i class="layui-icon">&#xe640;</i></a>
+                    <span class="layui-btn layui-btn-normal layui-btn-mini deleteButton">删除</span>
                 </td>
             </tr>
         </c:forEach>
@@ -122,12 +120,6 @@
 
 </div>
 
-<script>var _hmt = _hmt || []; (function() {
-    var hm = document.createElement("script");
-    hm.src = "https://hm.baidu.com/hm.js?b393d153aeb26b46e9431fabaf0f6190";
-    var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(hm, s);
-})();</script>
 </body>
 
 </html>
