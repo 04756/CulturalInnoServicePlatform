@@ -307,8 +307,9 @@ public class ExhibitionDAO
         getSession();
         try
         {
-            validatedExhibition.setIsPass((byte)1);
-            hs.update(validatedExhibition);
+            Query q=hs.createQuery("update Exhibition set isPass='1' where exId=?1");
+            q.setParameter(1,validatedExhibition.getExId());
+            q.executeUpdate();
 
             releaseSession();
 

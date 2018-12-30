@@ -33,11 +33,11 @@ public class LoginController {
     }
 
     @RequestMapping(value = "login.action",method = RequestMethod.POST)
-    public String validateLogin(@ModelAttribute("user")User user, HttpServletRequest request,HttpSession session, Model model)
+    public String validateLogin(@ModelAttribute("user")User user, HttpServletRequest request,HttpSession session, Model model) throws Exception
     {
         System.out.println(user.getUserId());
 
-        session.setAttribute("currentUser",user);
+        session.setAttribute("currentUser",new UserDAO().getUser(user.getUserId()));
         UserDAO ud = new UserDAO();
         int displayNum=6;
         try

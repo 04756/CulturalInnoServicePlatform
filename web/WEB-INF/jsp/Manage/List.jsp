@@ -45,22 +45,16 @@
 <div class="x-body">
     <div class="layui-row">
 
-        <form class="layui-form layui-col-md12 x-so">
-            <input class="layui-input" placeholder="开始时间" name="start">
-            <input class="layui-input" placeholder="结束时间" name="end">
-
+        <div class="layui-form layui-col-md12 x-so">
+            <input type="text" name="keyword"  placeholder="请输入搜索编号" autocomplete="off" class="layui-input">
             <div class="layui-input-inline">
-                <select name="contrller">
-                    <option>查询方式</option>
-                    <option>发布者ID</option>
-                    <option>资讯ID</option>
-                    <option>资讯名称</option>
+                <select name="contrller" id="selectMethod">
+                    <option value="MH">模糊</option>
+                    <option>精确</option>
                 </select>
             </div>
-
-            <input type="text" name="username"  placeholder="请输入搜索编号" autocomplete="off" class="layui-input">
-            <button class="layui-btn"  lay-submit="" lay-filter="sreach"><i class="layui-icon">&#xe615;</i></button>
-        </form>
+            <button id="manageSearch" class="layui-btn"  lay-submit="" lay-filter="sreach"><i class="layui-icon">&#xe615;</i></button>
+        </div>
     </div>
 
     <xblock>
@@ -97,6 +91,9 @@
                     <td>${per.fifth}</td>
                     <td class="td-manage">
                         <span class="layui-btn layui-btn-normal layui-btn-mini deleteButton">删除</span>
+                        <c:if test="${sessionScope.currentUser.type == '15'}">
+                            <span class="layui-btn layui-btn-normal layui-btn-mini checkButton">审核</span>
+                        </c:if>
                     </td>
                 </tr>
             </c:forEach>

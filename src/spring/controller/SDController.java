@@ -150,16 +150,16 @@ public class SDController {
     }
 
     //暂时未确定
-//    @RequestMapping(value = "/passSD.action", method = RequestMethod.POST)
-//    @ResponseBody
-//    public SDController passSD(@RequestBody String json , HttpServletRequest request){
-//        SupplyDemand temp = new Gson().fromJson(json, SupplyDemand.class);
-//        if(new SupplyDemandDAO().setAsPass())
-//            this.setMessage("删除成功");
-//        else
-//            this.setMessage("删除失败");
-//        return this;
-//    }
+    @RequestMapping(value = "/passSD.action", method = RequestMethod.POST)
+    @ResponseBody
+    public SDController passSD(@RequestBody String json , HttpServletRequest request) throws Exception {
+        SupplyDemand temp = new Gson().fromJson(json, SupplyDemand.class);
+        if(new SupplyDemandDAO().setAsPass(temp))
+            this.setMessage("删除成功");
+        else
+            this.setMessage("删除失败");
+        return this;
+    }
 
 
 }

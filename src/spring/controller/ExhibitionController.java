@@ -196,8 +196,8 @@ public class ExhibitionController {
         Exhibition temp = new Gson().fromJson(json, Exhibition.class);
         try
         {
-            if (new ProductDAO().setAsPass(temp.getExId()))
-                this.setMessage("审核成功");
+            if (new ExhibitionDAO().setAsPass(temp))
+                this.setMessage("审核成功Success");
             else
                 this.setMessage("审核失败");
             return this;
