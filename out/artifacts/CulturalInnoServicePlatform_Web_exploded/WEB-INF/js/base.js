@@ -125,6 +125,7 @@ $(document).ready(function(){
             dataType : 'json',
             success : function(data){
                 alert(data.message);
+                window.location.href = window.location.href;
             },
             error : function(){
                 alert("error");
