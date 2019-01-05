@@ -773,58 +773,6 @@ public class SupplyDemandDAO
 //        return null;
     }
 
-//    /**
-//     * 测试通过
-//     * @param validatedSupply
-//     * @return
-//     */
-//    public Boolean setAsPass(Supply validatedSupply) throws Exception
-//    {
-//        getSession();
-//        try
-//        {
-//            validatedSupply.setIsPass((byte)1);
-//            SupplyDemand sd=validatedSupply.toSupplyDemand();
-//            hs.update(sd);
-//
-//            releaseSession();
-//
-//            return true;
-//        }
-//        catch (Exception e)
-//        {
-//            releaseSession(hs);
-//            throw e;
-//        }
-////        return false;
-//    }
-
-//    /**
-//     * 测试通过
-//     * @param validatedDemand
-//     * @return
-//     */
-//    public Boolean setAsPass(Demand validatedDemand) throws Exception
-//    {
-//        getSession();
-//        try
-//        {
-//            validatedDemand.setIsPass((byte)1);
-//            SupplyDemand sd=validatedDemand.toSupplyDemand();
-//            hs.update(sd);
-//
-//            releaseSession();
-//
-//            return true;
-//        }
-//        catch(Exception e)
-//        {
-//            releaseSession(hs);
-//            throw e;
-//        }
-////        return null;
-//    }
-
     //是否可以替换上面两个函数？
     public Boolean setAsPass(SupplyDemand validatedSD) throws Exception
     {
