@@ -42,72 +42,10 @@
             height: 90%;
         }
 
-        .product {
-            width: 300px;
-            height: 420px;
-            margin-left: 40px;
-            display: inline-block;
-            overflow: hidden;
-        }
-
-        .proDetails {
-            width: 100%;
-            height: 500px;
-            margin-top: 30px;
-            /*	background-color: grey;*/
-            display: block;
-            overflow: hidden;
-        }
-
-        .proTitle {
-            margin-top: 15px;
-            width: 100%;
-            font-size: 20px;
-        }
-
-        .proHitsandSellcount {
-            margin-top: 30px;
-            width: 100%;
-            color: grey;
-            font-size: 13px;
-            height: 30px;
-        }
-
-        .proHits {
-            float: left;
-            margin-left: 10px;
-        }
-
-        .proSellcount {
-            float: right;
-            margin-right: 50px;
-        }
-
-        .proPrice {
-            margin-top: 30px;
-            margin-left: 10px;
-            margin-bottom: 100px;
-            width: 100%;
-            color: red;
-            font-size: 30px;
-            height: 50px;
-        }
-
-        .proButton {
-            margin-top: 28px;
-            margin-left: 30px;
-            width: 100%;
-            height: 25px;
-        }
-
         .proInfo {
             width: 100%;
             height: 25px;
         }
-
-
-
-
         .comments {
             width: 100%;
             height: 30px;
@@ -131,9 +69,9 @@
     <jsp:include page="headder.jsp"/>
 
     <div class="top">
-        <div class="row" style="margin-top: 5px; justify-content: center;">
+        <div class="row" style="margin-top: 5px; margin-bottom: 10px; justify-content: center;">
             <div id="demo" class="carousel slide" data-ride="carousel"
-                 style="width: 380px; display: inline-block; margin-top: 45px;margin-right: 10px;">
+                 style="width: 380px; display: inline-block; margin-top: 45px;margin-right: 50px;">
 
                 <!-- 轮播图片 -->
                 <div class="carousel-inner">
@@ -172,6 +110,7 @@
                     <div class="proButton" role="group" aria-label="Basic example">
                         <button type="button" class="btn btn-outline-danger" data-toggle="modal" data-target="#myModal">立即购买</button>
                         <button id="enshrine" type="button" class="btn btn-danger">收藏</button>
+                        <button type="button" class="btn btn-outline-danger"><a href="communicate?proUserId=${product.userId}" style="color: black;">联系商家</a></button>
                     </div>
 
 
@@ -207,9 +146,9 @@
             <!-- 产品详情  -->
             <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
                  aria-labelledby="nav-home-tab"><br>
-                ${product.info}
-                <div class="commentinfo" style="margin-top: 20px;margin-bottom: 10px;"></div>
                 <h3>商品介绍</h3>
+                <div class="commentinfo" style="margin-top: 20px;margin-bottom: 10px;"></div>
+                ${product.info}
             </div>
 
             <!-- 产品评论  -->

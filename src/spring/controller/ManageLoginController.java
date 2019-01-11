@@ -12,7 +12,7 @@ import javax.servlet.http.HttpSession;
 
 @Controller
 @RequestMapping(value = "/Manage")
-public class ManageLoinController {
+public class ManageLoginController {
 
     private String message;
 
@@ -54,7 +54,7 @@ public class ManageLoinController {
             this.message = "用户名/密码错误";
             model.addAttribute("message",message);
         }
-        return "Login";
+        return "Manage/ManageLogin";
     }
 
     @RequestMapping(value = "ManageWelcome.html")

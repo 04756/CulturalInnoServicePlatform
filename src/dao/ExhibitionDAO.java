@@ -304,12 +304,12 @@ public class ExhibitionDAO
      */
     public boolean setAsPass(Exhibition validatedExhibition) throws Exception
     {
-        getSession();
         try
         {
-            Query q=hs.createQuery("update Exhibition set isPass='1' where exId=?1");
-            q.setParameter(1,validatedExhibition.getExId());
-            q.executeUpdate();
+            validatedExhibition=getExhibitionById(validatedExhibition.getExId());
+            validatedExhibition.setIsPass((byte)1);
+            getSession();
+            hs.update(validatedExhibition);
 
             releaseSession();
 

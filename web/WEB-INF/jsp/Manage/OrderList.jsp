@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: JY
@@ -63,7 +64,7 @@
 
     <xblock>
         <button class="layui-btn layui-btn-danger" onclick="delAll()"><i class="layui-icon"></i>批量删除</button>
-        <span class="x-right" style="line-height:40px">共有数据：3 条</span>
+        <span class="x-right" style="line-height:40px">共有数据：${listNum} 条</span>
     </xblock>
     <table class="layui-table">
         <thead>

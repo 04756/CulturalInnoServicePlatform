@@ -72,7 +72,7 @@
 		<div class="container">
 			<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 llist">
 				<div class="personInfo">
-					<img src="img/login/logo_26.png" data-toggle="modal" data-target="personInfor" id="setPersonalInfo" />
+					<img src="images/login/logo_26.png" data-toggle="modal" data-target="personInfor" id="setPersonalInfo" />
 					<p id="page_nickname">IM体验demo</p>
 				</div>
 				<ul class="nav">
@@ -125,11 +125,11 @@
 						<!--<input type="text" id="searchContact" value="" placeholder="搜索" />-->
 					<!--</div>-->
 					<div class="searchDiv">
-						<input type="text" id="add_chat" value="" placeholder="添加聊天" /><label data-button="addToChat" class="addToChat" style="font-size: 18px; color: #ccc; margin-left: 5px; cursor: pointer;">+</label>
+						<input type="text" id="add_chat" name="addFriend" value="" placeholder="添加聊天" /><label data-button="addToChat" class="addToChat" style="font-size: 18px; color: #ccc; margin-left: 5px; cursor: pointer;">+</label>
 					</div>
 					<!--//消息置顶  新div  增加contact_top的class  或者可自行更名-->
 					<ul class="discuss normal_chat contact_top" >
-						<!--<li class="active"><img src="img/head_portrait/discussion_header/discussio_groups_01.png" />
+						<!--<li class="active"><img src="images/head_portrait/discussion_header/discussio_groups_01.png" />
 							<div>
 								<span class="discuss_name">系统消息</span><span class="noticeQ">908</span>
 							</div>
@@ -138,7 +138,7 @@
 
 					<!--//消息置顶  原div 增加data-list="chat" 属性 或者可自行更名  记=-->
 					<ul class="discuss normal_chat" data-list="chat">
-						<!--<li class="active"><img src="img/head_portrait/discussion_header/discussio_groups_01.png" />
+						<!--<li class="active"><img src="images/head_portrait/discussion_header/discussio_groups_01.png" />
 							<div>
 								<span class="discuss_name">系统消息</span><span class="noticeQ">908</span>
 							</div>
@@ -157,7 +157,7 @@
 			
 			<div class="col-lg-6 chat_group_window rlist" data-window-type="chat" data-chat-with="" data-chat-type="null">
 				<div class="receiver">
-					<img src="img/head_portrait/head_portrait_group/groups_head_portrait_02.png">
+					<img src="images/head_portrait/head_portrait_group/groups_head_portrait_02.png">
 					<span class="name cNickName">欢迎使用容联IM PLUS</span>
 					<span class="isTyping" data-status="isTyping"></span>
 					<span class="img video right" data-voip="video"></span>
@@ -169,7 +169,7 @@
 						<div class="historyTime">2016.05.29</div>
 						<div class="oneTextR" data-msgid="80099B72EA2B8B194BA90D93F6285628|7">
 							<p></p>
-							<img src="img/head_portrait/head_portrait_group/groups_head_portrait_02.png" class="left">
+							<img src="images/head_portrait/head_portrait_group/groups_head_portrait_02.png" class="left">
 							<div id="" class="dialog">
 								<span class="sjx"></span>
 								<pre class="contentText">此窗口为展示窗口，请勿操作！</pre>
@@ -196,7 +196,7 @@
 				<div class="receiver">
 				</div>
 				<div class="videoPhone">
-					<img src="img/toux.png" alt="" />
+					<img src="images/toux.png" alt="" />
 					<p class="name"></p>
 					<p></p>
 					<span></span>
@@ -210,7 +210,7 @@
 			<div class="callmsg_alert col-lg-3">
 				<!--<div class="audioAline">
 					<div class="imgDiv">
-						<img src="img/voipcall.png">
+						<img src="images/voipcall.png">
 					</div>
 					<div class="audioDiv">
 						<p class="name">系统</p><span class="color6060">777邀请你加入群组朝阳群众</span>
@@ -239,7 +239,7 @@
 				<div class="modal-content">
 					<div class="modal-header">
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-						<h4 class="modal-title"><b class="preGroup">群组：</b><b class="preTao">讨论组：</b><span data-group="gname" contenteditable="true" data-replace="groupname"></span><img src="img/chang.png" /></h4>
+						<h4 class="modal-title"><b class="preGroup">群组：</b><b class="preTao">讨论组：</b><span data-group="gname" contenteditable="true" data-replace="groupname"></span><img src="images/chang.png" /></h4>
 						<h4 class="gpre"><b class="preGroup">群ID：</b><b class="preTao">讨论组ID：</b><b data-show="gid"></b></h4>
 					</div>
 					<div class="modal-body">
@@ -268,7 +268,7 @@
 							<li class="modal-right">
 								<ul class="card_group" data-group-rule="0">
 									<!--<li class="normal_menmber">
-										<img src="img/head_portrait/headerX40.png">
+										<img src="images/head_portrait/headerX40.png">
 										<p class="cg_name">你不好，朋友</p>
 										<button class="kick">踢出</button>
 										<button class="banned">禁言</button>
@@ -291,18 +291,18 @@
 				<div class="modal-content">
 					<div class="modal-header">
 						<!--<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>-->
-						<h4 class="modal-title"><img src="img/login/logo_26.png" width="20px"/>IM体验Demo</h4>
-						<img src="img/login/logo_26.png" class="loginImg" />
+						<h4 class="modal-title"><img src="images/login/logo_26.png" width="20px"/>IM体验Demo</h4>
+						<img src="images/login/logo_26.png" class="loginImg" />
 					</div>
 					<div class="modal-body">
 						<div class="login1">
 							<div class="form-group">
-								<input type="text" class="input-sm" id="loginByPhone" placeholder="输入手机号" maxlength="64" oninput="IM.checkLoginNum(this)" value="" autofocus>
+								<input type="text" name="loginUser" class="input-sm" id="loginByPhone" placeholder="输入手机号" maxlength="64" oninput="IM.checkLoginNum(this)" value="" autofocus>
 							</div>
 							<div class="error">
 								对不起，您输入的账号不合法
 							</div>
-							<button type="button" class="btn login" onclick="IM.Do_login(this)">登陆</button>
+							<button type="button" class="btn login phoneLogin" onclick="IM.Do_login(this)">登陆</button>
 						</div>
 
 						<div class="login2">
@@ -526,6 +526,14 @@
 		<script type="text/javascript">	
 
 			$(function() {
+
+               $("input[name='loginUser']").val(${username});
+               alert("${username}");
+               $(".phoneLogin").click();
+                $("input[name='addFriend']").val(${proUserId});
+                alert("${proUserId}");
+               $(".addToChat").click();
+
 				$('li:has(.contacts)').click(function(){
 					if ($(document).width()< 740){
 						$('.contact_list').css('visibility','visible');
@@ -597,7 +605,7 @@
 					};
 				});
 			});
-			$("#login").modal("toggle");
+			// $("#login").modal("toggle");
 
 			function hide_show(show, hide_1, hide_2) {
 				

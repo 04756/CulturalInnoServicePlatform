@@ -48,7 +48,7 @@
             <li class="layui-nav-item">
                 <a href="javascript:;">admin</a>
                 <dl class="layui-nav-child"> <!-- 二级菜单 -->
-                    <dd><a onclick="x_admin_show('个人信息','http://www.baidu.com')">个人信息</a></dd>
+                    <dd><a href="/getUserInfo.action">个人信息</a></dd>
                     <dd><a onclick="x_admin_show('切换帐号','http://www.baidu.com')">切换帐号</a></dd>
                     <dd><a href="ManageLogin.html">退出</a></dd>
                 </dl>
@@ -115,6 +115,12 @@
                                 <cite>供求列表</cite>
                             </a>
                         </li>
+                        <li>
+                            <a _href="editEssay">    <!-- 增加供求 -->
+                                <i class="iconfont">&#xe6a7;</i>
+                                <cite>增加供求</cite>
+                            </a>
+                        </li>
                     </ul>
                 </li>
 
@@ -129,6 +135,12 @@
                             <a _href="toList?listName=Exh">    <!-- 类似订单列表(order-list.html) -->
                                 <i class="iconfont">&#xe6a7;</i>
                                 <cite>展会列表</cite>
+                            </a>
+                        </li>
+                        <li>
+                            <a _href="editEssay">    <!-- 增加展会 -->
+                                <i class="iconfont">&#xe6a7;</i>
+                                <cite>增加展会</cite>
                             </a>
                         </li>
                     </ul>
@@ -147,6 +159,12 @@
                                 <cite>资讯列表</cite>
                             </a>
                         </li>
+                        <li>
+                            <a _href="editEssay">    <!-- 增加资讯 -->
+                                <i class="iconfont">&#xe6a7;</i>
+                                <cite>增加资讯</cite>
+                            </a>
+                        </li>
                     </ul>
                 </li>
 
@@ -161,6 +179,12 @@
                             <a _href="toList?listName=Product">    <!-- 类似订单列表(order-list.html) -->
                                 <i class="iconfont">&#xe6a7;</i>
                                 <cite>产品列表</cite>
+                            </a>
+                        </li>
+                        <li>
+                            <a _href="editProduct">    <!-- 增加产品 -->
+                                <i class="iconfont">&#xe6a7;</i>
+                                <cite>增加产品</cite>
                             </a>
                         </li>
                     </ul>
@@ -236,23 +260,7 @@
             </ul>
         </div>
     </div>
-    <!-- <div class="x-slide_left"></div> -->
-    <!-- 左侧菜单结束 -->
-    <!-- 右侧主体开始 -->
-    <div class="page-content">
-        <div class="layui-tab tab" lay-filter="xbs_tab" lay-allowclose="false">
-            <ul class="layui-tab-title">
-                <li class="home"><i class="layui-icon">&#xe68e;</i>我的桌面</li>
-            </ul>
-            <div class="layui-tab-content">
-                <div class="layui-tab-item layui-show">
-                    <iframe src='./welcome.html' frameborder="0" scrolling="yes" class="x-iframe"></iframe>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- <div class="x-slide_left"></div> -->
-    <!-- 左侧菜单结束 -->
+
     <!-- 右侧主体开始 -->
     <div class="page-content">
         <div class="layui-tab tab" lay-filter="xbs_tab" lay-allowclose="false">

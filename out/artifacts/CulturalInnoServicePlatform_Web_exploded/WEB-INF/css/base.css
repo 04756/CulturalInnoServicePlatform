@@ -119,13 +119,18 @@ ul#lists > listOuter > li > a{
 }
 
 /*产品list css*/
-.product{
-    width: 200px;
-    height: 300px;
-    margin-right: 10px;
+.indexProduct{
+    width: 300px;
     margin-top: 30px;
     display: inline-block;
-    overflow: hidden;
+}
+.product{
+    width: 300px;
+    /*height: 300px;*/
+    margin-right: 20px;
+    margin-top: 30px;
+    display: inline-block;
+    /*overflow: hidden;*/
 }
 .productImg{
     width: 100%;
@@ -135,9 +140,46 @@ ul#lists > listOuter > li > a{
     width: 100%;
     height: 150px;
 }
-.productTitle{
-    margin-top: 8px;
-    margin-bottom: 8px;
+
+.proTitle {
+    margin-top: 15px;
+    width: 100%;
+    font-size: 20px;
+}
+
+.proHitsandSellcount {
+    margin-top: 30px;
+    width: 100%;
+    color: grey;
+    font-size: 13px;
+    /*height: 30px;*/
+}
+
+.proHits {
+    float: left;
+    margin-left: 10px;
+}
+
+.proSellcount {
+    float: right;
+    margin-right: 50px;
+}
+
+.proPrice {
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-bottom: 100px;
+    width: 100%;
+    color: red;
+    font-size: 30px;
+    height: 50px;
+}
+
+.proButton {
+    /*margin-top: 28px;*/
+    /*margin-left: 30px;*/
+    width: 100%;
+    /*height: 25px;*/
 }
 .productInfo{
     font-size: 13px;

@@ -93,7 +93,7 @@
                 <td>${per.fifth}</td>
                 <td>${per.sixth}</td>
                 <td class="td-status">
-                    <span class="layui-btn layui-btn-normal layui-btn-mini">删除</span>
+                    <span class="layui-btn layui-btn-normal layui-btn-mini deleteButton">删除</span>
                     <c:if test="${sessionScope.currentUser.type == '15'}">
                         <span class="layui-btn layui-btn-normal layui-btn-mini checkButton">审核</span>
                     </c:if>

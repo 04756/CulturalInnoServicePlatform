@@ -10,13 +10,17 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.baidu.ueditor.ActionEnter;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.portlet.ModelAndView;
+import po.User;
 
 @Controller
 public class CommunicateController {
 
     @RequestMapping("/communicate")
-    public ModelAndView config(HttpServletRequest request, HttpServletResponse response) {
+    public ModelAndView config(@RequestParam("proUserId") String proUserId, HttpServletRequest request, HttpServletResponse response) {
+        request.setAttribute("username",((User)request.getSession().getAttribute("currentUser")).getUserId());
+        request.setAttribute("proUserId",proUserId);
         return new ModelAndView("Communicate");
     }
 }
