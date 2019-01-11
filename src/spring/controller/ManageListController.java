@@ -104,6 +104,35 @@ public class ManageListController {
                 request.setAttribute("listType", "Order");
                 request.setAttribute("listNum", list.size());
                 return "Manage/OrderList";
+            case "Message" :
+                List<Message> messageList = new MessageDAO().getUserMessage(user.getUserId());
+                list = new ArrayList<AO>();
+                for (Message i : messageList) {
+                    AO temp = new AO();
+                    temp.setFirst(i.getMesId());
+                    temp.setSecond(i.getContent());
+                    temp.setThird(i.getEstablishTime().toString());
+                    temp.setFourth(i.getOriginType());
+                    switch (i.getOriginType()){
+                        case "news":
+                            temp.setFifth(new NewsDAO().getNewsById(i.getOriginId()).getTitle());
+                            break;
+                        case "exhibition" :
+                            temp.setFifth(new ExhibitionDAO().getExhibitionById(i.getOriginId()).getTheme());
+                            break;
+                        case "sd" :
+                            temp.setFifth(new SupplyDemandDAO().getSDById(i.getOriginId()).getTitle());
+                            break;
+                        default:
+                            temp.setFifth(new ProductDAO().getProducById(i.getOriginId()).getProName());
+                    }
+                    list.add(temp);
+                }
+                model.addAttribute("list", list);
+                request.setAttribute("listType", "Message");
+                request.setAttribute("listNum", list.size());
+                return "Manage/MessageList";
+
         }
 
         return "List";

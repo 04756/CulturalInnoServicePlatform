@@ -165,7 +165,7 @@
                         <li>
                             <a _href="toList?listName=Message">    <!-- 类似订单列表(order-list.html) -->
                                 <i class="iconfont">&#xe6a7;</i>
-                                <cite>产品列表</cite>
+                                <cite>留言列表</cite>
                             </a>
                         </li>
                     </ul>

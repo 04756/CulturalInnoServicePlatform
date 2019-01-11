@@ -34,21 +34,6 @@ $(document).ready(function(){
     function manageSearch(temp) {
         var s_url = "../search.action";
 
-        // var aurl = "";
-        // if($("#selectType option:selected").val() == "Exhibition"){
-        //     aurl = "getExhibitionInfo?exhiId=";
-        // }
-        // else if($("#selectType option:selected").val() == "News") {
-        //     aurl = "getNewsById?newsId=";
-        // }
-        // else if($("#selectType option:selected").val() == "SD"){
-        //     aurl = "getSDInfo?sdId=?";
-        // }
-        // else if($("#selectType option:selected").val() == "PRODUCT"){
-        //     aurl = "getProductById?productId=";
-        // }
-
-
         $.ajax({
             type : "POST",
             contentType : 'application/json;charset=UTF-8',
@@ -155,11 +140,13 @@ $(document).ready(function(){
     $("#publishMessage").click(function () {
         var temp = {
             originId : $("#oid").text(),
-            content : $("#messageContent").val()
+            content : $("#messageContent").val(),
+            originType : $("#essayType").text()
         }
         publishMessage(temp);
     });
 
+    //删除按钮点击方法
     $(".deleteButton").click(function (){
         switch ($("#listType").text()) {
             case "News":
@@ -174,9 +161,13 @@ $(document).ready(function(){
             case "PRODUCT":
                 deleteRecord(this, "deleteProduct.action");
                 break;
+            case "Message" :
+                deleteRecord(this, "../delMessage.action");
+                break;
         }
     });
 
+    //审核按钮点击方法
     $(".checkButton").click(function (){
         switch ($("#listType").text()) {
             case "News":
@@ -204,6 +195,27 @@ $(document).ready(function(){
                 passEssay(temp, "../passProduct.action");
                 break;
         }
+    });
+
+    $(".updateMessage").click(function () {
+        var temp = {
+            mesId : $(this).parent().parent().children(".id").text(),
+            content : $(this).parent().parent().children(".messagecontent").children("textarea").val()
+        }
+        $.ajax({
+            type : "POST",
+            contentType : 'application/json;charset=UTF-8',
+            url : "../updateMessage.action",
+            data : JSON.stringify(temp),
+            dataType : 'json',
+            success : function(data){
+                alert(data.message);
+                window.location.href = window.location.href;
+            },
+            error : function(){
+                alert("error");
+            }
+        });
     });
 
 });

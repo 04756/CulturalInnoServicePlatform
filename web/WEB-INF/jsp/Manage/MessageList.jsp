@@ -47,16 +47,7 @@
 <div class="x-body">
     <div class="layui-row">
 
-        <div class="layui-form layui-col-md12 x-so">
-            <input type="text" name="keyword"  placeholder="请输入搜索编号" autocomplete="off" class="layui-input">
-            <div class="layui-input-inline">
-                <select name="contrller" id="selectMethod">
-                    <option value="ME">模糊</option>
-                    <option>精确</option>
-                </select>
-            </div>
-            <button id="manageSearch" class="layui-btn"  lay-submit="" lay-filter="sreach"><i class="layui-icon">&#xe615;</i></button>
-        </div>
+
     </div>
 
     <xblock>
@@ -86,12 +77,13 @@
                     <div class="layui-unselect layui-form-checkbox" lay-skin="primary" data-id='2'><i class="layui-icon">&#xe605;</i></div>
                 </td>
                 <td class="id">${per.first}</td>
-                <td>${per.second}</td>
+                <td class="messagecontent"><textarea style="height: 80px;width: 220px;">${per.second}</textarea></td>
                 <td>${per.third}</td>
                 <td>${per.fourth}</td>
                 <td>${per.fifth}</td>
                 <td class="td-status">
-                    <span class="layui-btn layui-btn-normal layui-btn-mini deleteButton">删除</span>
+                    <span class="layui-btn layui-btn-normal layui-btn-mini deleteButton" style="margin-left: 10px;">删除</span>
+                    <span class="layui-btn layui-btn-normal layui-btn-mini updateMessage" style="margin-top:  5px;">更新</span>
                 </td>
             </tr>
         </c:forEach>
