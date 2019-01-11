@@ -1,12 +1,14 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: YHY
-  Date: 2018/12/22
-  Time: 16:12
+  Date: 2019/1/11
+  Time: 22:42
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<!-- 留言 -->
+
 <!DOCTYPE html>
 <html>
 
@@ -34,9 +36,9 @@
 <div class="x-nav">
       <span class="layui-breadcrumb">
         <a href="">首页</a>
-        <a href="">资讯管理</a>
+        <a href="">供求管理</a>
         <a>
-          <cite>资讯列表</cite></a>
+          <cite>供求列表</cite></a>
       </span>
     <a class="layui-btn layui-btn-small" style="line-height:1.6em;margin-top:3px;float:right" href="javascript:location.replace(location.href);" title="刷新">
         <i class="layui-icon" style="line-height:30px">ဂ</i></a>
@@ -49,7 +51,7 @@
             <input type="text" name="keyword"  placeholder="请输入搜索编号" autocomplete="off" class="layui-input">
             <div class="layui-input-inline">
                 <select name="contrller" id="selectMethod">
-                    <option value="MH">模糊</option>
+                    <option value="ME">模糊</option>
                     <option>精确</option>
                 </select>
             </div>
@@ -61,42 +63,38 @@
         <button class="layui-btn layui-btn-danger" onclick="delAll()"><i class="layui-icon"></i>批量删除</button>
         <span class="x-right" style="line-height:40px"><span id="listType"><c:out value="${listType}"/></span>共有数据：<c:out value = "${listNum}"/></span>
     </xblock>
-
     <table class="layui-table">
         <thead>
         <tr>
             <th>
                 <div class="layui-unselect header layui-form-checkbox" lay-skin="primary"><i class="layui-icon">&#xe605;</i></div>
             </th>
-            <th>编号</th>
-            <th>标题</th>
-            <th>发布时间</th>
-            <th>点击量</th>
-            <th>审核状态</th>
-            <th >操作</th>
+            <th class="id">留言id</th>
+            <th>留言内容</th>
+            <th>留言时间</th>
+            <th>留言的文章类型</th>
+            <th>留言的文章标题</th>
+            <th>删除</th>
         </tr>
         </thead>
 
         <!-- 列表开头 -->
         <tbody>
-            <c:forEach items="${list}" var="per">
-                <tr>
-                    <td>
-                        <div class="layui-unselect layui-form-checkbox" lay-skin="primary" data-id='2'><i class="layui-icon">&#xe605;</i></div>
-                    </td>
-                    <td class="id">${per.first}</td>
-                    <td>${per.second}</td>
-                    <td>${per.third}</td>
-                    <td>${per.fourth}</td>
-                    <td>${per.fifth}</td>
-                    <td class="td-manage">
-                        <span class="layui-btn layui-btn-normal layui-btn-mini deleteButton">删除</span>
-                        <c:if test="${sessionScope.currentUser.type == '15'}">
-                            <span class="layui-btn layui-btn-normal layui-btn-mini checkButton">审核</span>
-                        </c:if>
-                    </td>
-                </tr>
-            </c:forEach>
+        <c:forEach items="${list}" var="per">
+            <tr>
+                <td>
+                    <div class="layui-unselect layui-form-checkbox" lay-skin="primary" data-id='2'><i class="layui-icon">&#xe605;</i></div>
+                </td>
+                <td class="id">${per.first}</td>
+                <td>${per.second}</td>
+                <td>${per.third}</td>
+                <td>${per.fourth}</td>
+                <td>${per.fifth}</td>
+                <td class="td-status">
+                    <span class="layui-btn layui-btn-normal layui-btn-mini deleteButton">删除</span>
+                </td>
+            </tr>
+        </c:forEach>
         </tbody>
         <!-- 列表结尾 -->
 
@@ -111,6 +109,7 @@
     </div>
 
 </div>
+
 </body>
 
 </html>

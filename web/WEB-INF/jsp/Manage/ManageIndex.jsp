@@ -1,6 +1,6 @@
 <%--
   Created by IntelliJ IDEA.
-  User: JY
+  User: YHY
   Date: 2018/12/22
   Time: 14:47
   To change this template use File | Settings | File Templates.
@@ -155,7 +155,23 @@
                     </ul>
                 </li>
 
+                <li>
+                    <a href="javascript:;">
+                        <i class="iconfont">&#xe6f4;</i>
+                        <cite>留言管理</cite>
+                        <i class="iconfont nav_right">&#xe697;</i>
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a _href="toList?listName=Message">    <!-- 类似订单列表(order-list.html) -->
+                                <i class="iconfont">&#xe6a7;</i>
+                                <cite>产品列表</cite>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
 
+                <c:if test="${sessionScope.currentUser.type == 15}">
                 <li>
                     <a href="javascript:;">
                         <i class="iconfont">&#xe726;</i>
@@ -171,6 +187,7 @@
                         </li>
                     </ul>
                 </li>
+                </c:if>
 
             </ul>
         </div>
