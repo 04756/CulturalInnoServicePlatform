@@ -1,4 +1,25 @@
 $(function () {
+
+    //分配权限弹窗
+    $("#apart").click(function () {
+        var ans = prompt("请输入用户id","");
+        var type;
+        if(isNaN(ans)){
+            type = prompt("请输入分配的权限代号：");
+            if(isNaN(type) && parseInt(type))
+                Authorize(ans,type);
+        }
+    });
+
+    //分配ajax方法
+    function Authorize(userid, usertype){
+        var temp = {
+            userId : userid,
+            type : usertype
+        }
+        $.post()
+    }
+
     //加载弹出层
     layui.use(['form','element'],
         function() {
