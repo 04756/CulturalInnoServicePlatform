@@ -210,4 +210,23 @@ public class UserDAO
         return false;
     }
 
+    public boolean updateUserCompetence(String userId, int type)  throws Exception
+    {
+        try
+        {
+            getSession();
+
+            User user=(User)hs.get(User.class,userId);
+            user.setType(type);
+            hs.update(user);
+            releaseSession();
+            return true;
+        }
+        catch(Exception e)
+        {
+            releaseSession(hs);
+            throw e;
+        }
+    }
+
 }

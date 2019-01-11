@@ -35,7 +35,7 @@ public class ManageLoginController {
     {
         System.out.println(user.getUserId());
 
-        session.setAttribute("currentUser",user);
+
         UserDAO ud = new UserDAO();
         int displayNum=6;
         try
@@ -43,6 +43,8 @@ public class ManageLoginController {
             if( ud.validateUser(user.getUserId(),user.getPassword()) )
             {
                 this.message="登录成功";
+                user = ud.getUser(user.getUserId());
+                session.setAttribute("currentUser",user);
                 model.addAttribute("message",message);
 
                 return "Manage/ManageIndex";
@@ -60,7 +62,7 @@ public class ManageLoginController {
     @RequestMapping(value = "ManageWelcome.html")
     public ModelAndView initManageWelcomPage(HttpServletRequest request, HttpSession session, Model model) throws Exception{
         User user = (User)request.getSession().getAttribute("currentUser");
-        if(user.getType() != 0) {
+        if(user.getType() >= 16) {
             model.addAttribute("sdNumbers", new SupplyDemandDAO().getUserSD(user.getUserId()).size());
             model.addAttribute("newsNumbers", new NewsDAO().getNewsByUserId(user.getUserId()).size());
             model.addAttribute("exhibitionNumbers", new ExhibitionDAO().getExhibitionByUserId(user.getUserId()).size());

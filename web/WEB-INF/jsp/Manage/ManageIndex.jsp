@@ -6,6 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!doctype html>
 <html lang="en">
 <head>
@@ -34,14 +35,13 @@
         </div>
         <ul class="layui-nav right" lay-filter="">
             <li class="layui-nav-item">
-                <a href="javascript:;">admin</a>
+                <a href="javascript:;">${sessionScope.currentUser.userId}</a>
                 <dl class="layui-nav-child"> <!-- 二级菜单 -->
                     <dd><a href="/getUserInfo.action">个人信息</a></dd>
-                    <dd><a onclick="x_admin_show('切换帐号','http://www.baidu.com')">切换帐号</a></dd>
+                    <dd><a href="ManageLogin.html">切换帐号</a></dd>
                     <dd><a href="ManageLogin.html">退出</a></dd>
                 </dl>
             </li>
-            <li class="layui-nav-item to-index"><a href="/">管理首页</a></li>
         </ul>
 
     </div>
@@ -51,29 +51,6 @@
     <div class="left-nav">
         <div id="side-nav">
             <ul id="nav">
-                <li>
-                    <a href="javascript:;">
-                        <i class="iconfont">&#xe6b8;</i>
-                        <cite>用户管理</cite>
-                        <i class="iconfont nav_right">&#xe697;</i>
-                    </a>
-                    <ul class="sub-menu">
-                        <li>
-                            <a _href="member-list.html">
-                                <i class="iconfont">&#xe6a7;</i>
-                                <cite>用户列表/管理</cite>
-
-                            </a>
-                        </li>
-                        <li>
-                            <a _href="member-del.html">
-                                <i class="iconfont">&#xe6a7;</i>
-                                <cite>用户删除/恢复</cite>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-
                 <li>
                     <a href="javascript:;">
                         <i class="iconfont">&#xe698;</i>
@@ -187,10 +164,10 @@
                     </a>
                     <ul class="sub-menu">
                         <li>
-                            <a id="apart">
+                            <div id="apart">
                                 <i class="iconfont">&#xe6a7;</i>
                                 <cite>权限分配</cite>
-                            </a>
+                            </div>
                         </li>
                     </ul>
                 </li>

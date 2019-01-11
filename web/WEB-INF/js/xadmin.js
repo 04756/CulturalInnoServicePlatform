@@ -4,10 +4,13 @@ $(function () {
     $("#apart").click(function () {
         var ans = prompt("请输入用户id","");
         var type;
-        if(isNaN(ans)){
+        if(ans.trim() != ""){
             type = prompt("请输入分配的权限代号：");
-            if(isNaN(type) && parseInt(type))
+            if(!isNaN(type) && parseInt(type))
                 Authorize(ans,type);
+        }
+        else{
+            alert("请输入用户id！")
         }
     });
 
@@ -17,7 +20,19 @@ $(function () {
             userId : userid,
             type : usertype
         }
-        $.post()
+        $.ajax({
+            type : "POST",
+            contentType : 'application/json;charset=UTF-8',
+            url : "Authorize",
+            data : JSON.stringify(temp),
+            dataType : 'json',
+            success : function(data){
+                alert(data.message);
+            },
+            error : function(){
+                alert("error");
+            }
+        });
     }
 
     //加载弹出层
