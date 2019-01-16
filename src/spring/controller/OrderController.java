@@ -79,17 +79,4 @@ public class OrderController {
         return  "Order";
     }
 
-
-    @ModelAttribute("pageOrderList")
-    @RequestMapping(value = "/getOrderByPage.action")
-    @ResponseBody
-    public List getOrderByPage(@RequestBody String json){
-        //第一个参数存用户id，第二个参数存page
-        //AO temp = new Gson().fromJson(json, AO.class);
-        //List t = new OrderDAO().getOrdersByPage(temp.getFirst(),Integer.parseInt(temp.getSecond()));
-        //return t;
-        return null;
-    }
-
-
 }

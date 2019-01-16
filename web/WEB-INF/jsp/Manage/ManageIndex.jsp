@@ -38,8 +38,10 @@
                 <a href="javascript:;">${sessionScope.currentUser.userId}</a>
                 <dl class="layui-nav-child"> <!-- 二级菜单 -->
                     <dd><a href="/getUserInfo.action">个人信息</a></dd>
-                    <dd><a href="ManageLogin.html">切换帐号</a></dd>
-                    <dd><a href="ManageLogin.html">退出</a></dd>
+                    <dd><a href="goToEditPasswd">修改密码</a> </dd>
+                    <dd><a href="ManageLogin.html?flag=''">切换帐号</a></dd>
+                    <dd><a href="ManageLogin.html?flag=''">退出</a></dd>
+
                 </dl>
             </li>
         </ul>
@@ -102,12 +104,14 @@
                                 <cite>展会列表</cite>
                             </a>
                         </li>
+                        <c:if test="${sessionScope.currentUser.type != 32}">
                         <li>
                             <a _href="editEssay">    <!-- 增加展会 -->
                                 <i class="iconfont">&#xe6a7;</i>
                                 <cite>增加展会</cite>
                             </a>
                         </li>
+                        </c:if>
                     </ul>
                 </li>
 
@@ -124,15 +128,17 @@
                                 <cite>资讯列表</cite>
                             </a>
                         </li>
+                        <c:if test="${sessionScope.currentUser.type != 32}">
                         <li>
                             <a _href="editEssay">    <!-- 增加资讯 -->
                                 <i class="iconfont">&#xe6a7;</i>
                                 <cite>增加资讯</cite>
                             </a>
                         </li>
+                        </c:if>
                     </ul>
                 </li>
-
+                <c:if test="${sessionScope.currentUser.type != 32}">
                 <li>
                     <a href="javascript:;">
                         <i class="iconfont">&#xe6f4;</i>
@@ -154,6 +160,7 @@
                         </li>
                     </ul>
                 </li>
+                </c:if>
 
                 <li>
                     <a href="javascript:;">

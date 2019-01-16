@@ -5,7 +5,7 @@
   Time: 15:04
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java"  pageEncoding="UTF-8" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -19,17 +19,36 @@
     <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
     <script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function ()
+        {
+            $("#loginForm").attr("action","");
+            $("#phone").blur(function ()
+            {
+                var phone=$("#phone").val();
+                var phoneCri=/^[\d]{3,11}$/;
+                if(phoneCri.test(phone))
+                {
+                    $("#loginForm").attr("action","/login.action");
+                    $("#invalidPhone").css("display","none");
+                }
+                else
+                    $("#invalidPhone").css("display","block");
+            });
+        })
+    </script>
 </head>
 <body style="background-color: #eee;">
 <div class="container">
     <div style="width: 500px;height:400px;margin-top: 130px;margin-left: auto;margin-right:auto ;background-color: white;padding:90px;opacity: 0.8;border-radius: 5%;padding-top: 30px;">
         <h2>Login</h2>
         <hr/>
-        ${message}
-        <form style="width: 300px;" method="post" action="login.action">
+        ${sessionScope.loginMessage}
+        <form style="width: 300px;" method="post" action="/login.action" id="loginForm">
             <div class="form-group">
-                <label for="email">Phone:</label>
-                <input type="text" class="form-control" name="userId" id="email" placeholder="Enter Phone">
+                <label for="phone">Phone:</label>
+                <input type="text" class="form-control" name="userId" id="phone" placeholder="Enter Phone">
+                <p class="help-block" style="color: crimson;display: none" id="invalidPhone">电话号码格式错误</p>
             </div>
             <div class="form-group">
                 <label for="pwd">Password:</label>
@@ -40,7 +59,8 @@
                     <input class="form-check-input" type="checkbox"> Remember me
                 </label>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+            <a href="/Register.html" style="color: #979797;margin-left: 20px;">注册</a>
         </form>
     </div>
 </div>

@@ -195,7 +195,8 @@ $(document).ready(function(){
         if(ans){
             var temp = {
                 originId : $(node).parent().parent().children(".proId").text(),
-                content : ans
+                content : ans,
+                originType : "product"
             }
             commentProduct(temp);
         }

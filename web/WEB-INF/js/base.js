@@ -4,6 +4,20 @@ $(document).ready(function(){
         var s_url = "search.action";
         $("#lists").empty();
 
+        var aurl = "";
+        if($("#selectType option:selected").val() == "Exhibition"){
+            aurl = "getExhibitionInfo?exhiId=";
+        }
+        else if($("#selectType option:selected").val() == "News") {
+            aurl = "getNewsById?newsId=";
+        }
+        else if($("#selectType option:selected").val() == "SD"){
+            aurl = "getSDInfo?sdId=?";
+        }
+        else if($("#selectType option:selected").val() == "PRODUCT"){
+            aurl = "getProductById?productId=";
+        }
+
         $.ajax({
             type : "POST",
             contentType : 'application/json;charset=UTF-8',
@@ -11,18 +25,20 @@ $(document).ready(function(){
             data : JSON.stringify(temp),
             dataType : 'json',
             success : function(data){
-                for (var i = 0; i < data.length; ++i){
-                    var str = "<div class='listOuter'>" +
-                        "                        <li>\n" +
-                        "                            <a href='"+aurl+data[i].third+
-                        "' style=\"color: black;\">\n" +
-                        data[i].first+
-                        "                                <div class=\"subTitle\"> "+data[i].second+
-                        "</div>\n" +
-                        "                            </a>\n" +
-                        "                        </li>\n" +
-                        "                    </div>";
-                $("#lists").append(str);
+                for (var i = 0; i < data.length; ++i) {
+                    if (data[i].fifth == 1) {
+                        var str = "<div class='listOuter'>" +
+                            "                        <li>\n" +
+                            "                            <a href='" + aurl + data[i].third +
+                            "' style=\"color: black;\">\n" +
+                            data[i].first +
+                            "                                <div class=\"subTitle\"> " + data[i].second +
+                            "</div>\n" +
+                            "                            </a>\n" +
+                            "                        </li>\n" +
+                            "                    </div>";
+                        $("#lists").append(str);
+                    }
                 }
             },
             error : function(){
@@ -75,6 +91,7 @@ $(document).ready(function(){
             dataType : 'json',
             success : function(data){
                 alert(data.message);
+                window.location.href = window.location.href;
             },
             error : function(){
                 alert("error");
@@ -94,6 +111,7 @@ $(document).ready(function(){
             dataType : 'json',
             success : function(data){
                 alert(data.message);
+                member_del(node);
             },
             error : function(){
                 alert("error");
@@ -113,6 +131,22 @@ $(document).ready(function(){
                 window.location.href = window.location.href;
             },
             error : function(){
+                alert("error");
+            }
+        });
+    }
+
+    function enshrineEssay(temp){
+        $.ajax({
+            type : "POST",
+            contentType : 'application/json;charset=UTF-8',
+            url : 'addToCollection.action',
+            data : JSON.stringify(temp),
+            dataType : 'json',
+            success : function(data){
+                alert(data.message);
+            },
+            error : function() {
                 alert("error");
             }
         });
@@ -217,5 +251,77 @@ $(document).ready(function(){
             }
         });
     });
+
+    $(".editBtn").click(function ()
+    {
+        var essayId;
+        var essayType;
+        switch($("#listType").text())
+        {
+            case "News":
+                essayId=$(this).parent().parent().children(".id").text();
+                essayType="News";
+                break;
+            case "Exhibition":
+                essayId=$(this).parent().parent().children(".id").text();
+                essayType="Exh";
+                break;
+            case "SD":
+                essayId = $(this).parent().parent().children(".id").text();
+                essayType="SD";
+                break;
+            case "PRODUCT":
+                essayId = $(this).parent().parent().children(".id").text();
+                essayType="Product";
+                break;
+        }
+        window.location.href="goToEdit?essayIdAndType="+essayId+" "+essayType;
+
+    });
+
+    $("#enshrineSD").click(function () {
+        var temp = {
+            originId : $("#oid").text(),
+            originType : "supplydemand"
+        }
+        enshrineEssay(temp);
+    });
+
+    $("#enshrineNews").click(function () {
+        var temp = {
+            originId : $("#oid").text(),
+            originType : "news"
+        }
+        enshrineEssay(temp);
+    });
+
+    $("#enshrineExh").click(function () {
+        var temp = {
+            originId : $("#oid").text(),
+            originType : "exhibition"
+        }
+        enshrineEssay(temp);
+    });
+
+    layui.use('laydate', function(){
+        var laydate = layui.laydate;
+
+        //执行一个laydate实例
+        laydate.render({
+            elem: '#start' //指定元素
+        });
+
+        //执行一个laydate实例
+        laydate.render({
+            elem: '#end' //指定元素
+        });
+    });
+
+    /*用户-删除*/
+    function member_del(obj){
+        $(obj).parents("tr").remove();
+    }
+
+
 
 });

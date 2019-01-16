@@ -9,6 +9,7 @@ import po.*;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
+import java.io.File;
 
 @Controller
 @RequestMapping(value = "/Manage")
@@ -24,10 +25,14 @@ public class ManageLoginController {
         this.message = message;
     }
 
-    @RequestMapping(value = "/ManageLogin.html")
-    public ModelAndView initManageLogin(HttpServletRequest request){
+    @RequestMapping(value = "/ManageLogin.html", method = RequestMethod.GET)
+    public String initManageLogin(@RequestParam("flag")String flag, HttpServletRequest request, HttpSession session){
         request.setAttribute("message",message);
-        return new ModelAndView("ManageLogin","command",this);
+        if(session.getAttribute("currentUser")!=null && flag.equals("in"))
+        {
+            return "Manage/ManageIndex";
+        }
+        return"Manage/ManageLogin";
     }
 
     @RequestMapping(value = "login.action",method = RequestMethod.POST)
@@ -75,6 +80,51 @@ public class ManageLoginController {
             model.addAttribute("productNumbers", new ProductDAO().getAllProducts().size());
         }
         return new ModelAndView("ManageWelcome", "command", this);
+    }
+
+    @RequestMapping(value = "delPortrait")
+    public ModelAndView delPortrait(HttpServletRequest request,HttpSession session,Model model)
+    {
+        User u=(User)session.getAttribute("currentUser");
+        try
+        {
+            ImageDAO iDAO = new ImageDAO();
+            Image i = iDAO.getFirstImageOfOriginId(u.getUserId());
+            String location = i.getStoreLocation();
+            File portrait = new File("C:\\Users\\user0\\IdeaProjects\\CulturalInnoServicePlatform\\web\\WEB-INF\\images\\portrait\\" + location.substring(location.lastIndexOf('/') + 1));
+            if (portrait.exists() && portrait.isFile())
+                portrait.delete();
+            iDAO.deleteImage(u.getUserId());
+            return new ModelAndView("ManageWelcome", "command", this);
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+        return new ModelAndView("ManageLogin","command",this);
+    }
+
+    @RequestMapping(value = "editPasswd")
+    @ResponseBody
+    public ManageLoginController editPasswd(String userId,String password,HttpSession session)
+    {
+        try
+        {
+            new UserDAO().updatePasswd(userId,password);
+            this.setMessage("密码修改成功");
+            return this;
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
+    @RequestMapping(value = "goToEditPasswd")
+    public String goToEditPasswd()
+    {
+        return "Manage/EditPasswd";
     }
 
 }

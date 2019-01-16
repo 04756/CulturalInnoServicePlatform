@@ -229,4 +229,22 @@ public class UserDAO
         }
     }
 
+    public boolean updatePasswd(String userId,String passwd) throws Exception
+    {
+        try
+        {
+            getSession();
+            Query q=hs.createQuery("update User set password=?1 where userId=?2");
+            q.setParameter(1,passwd);
+            q.setParameter(2,userId);
+            q.executeUpdate();
+            releaseSession();
+            return true;
+        }
+        catch(Exception e)
+        {
+            throw e;
+        }
+    }
+
 }

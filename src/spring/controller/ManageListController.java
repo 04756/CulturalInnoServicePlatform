@@ -6,6 +6,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import po.*;
 
 import javax.servlet.http.HttpServletRequest;
@@ -37,7 +38,7 @@ public class ManageListController {
 
                list = new ArrayList<AO>();
                 for (SupplyDemand i : sdList) {
-                    AO temp = new AO(i.getSdId(), i.getTitle(), i.getStartTime().toString(), i.getEndTime().toString(), i.getHits().toString(), "", "");
+                    AO temp = new AO(i.getSdId(), i.getTitle(), i.getStartTime().toString(), i.getEndTime().toString(), i.getHits().toString(), i.getIsPass()+"", "");
                     list.add(temp);
                 }
                 model.addAttribute("list", list);
@@ -105,7 +106,11 @@ public class ManageListController {
                 request.setAttribute("listNum", list.size());
                 return "Manage/OrderList";
             case "Message" :
-                List<Message> messageList = new MessageDAO().getUserMessage(user.getUserId());
+                List<Message> messageList;
+                if(user.getType()==15)
+                    messageList = new MessageDAO().getAll();
+                else
+                    messageList = new MessageDAO().getUserMessage(user.getUserId());
                 list = new ArrayList<AO>();
                 for (Message i : messageList) {
                     AO temp = new AO();
@@ -136,6 +141,91 @@ public class ManageListController {
         }
 
         return "List";
+    }
+
+    @RequestMapping(value="goToEdit")
+    public String goToEdit(String essayIdAndType, HttpServletRequest request)
+    {
+        String[] strs=essayIdAndType.split(" ");
+        String essayId=strs[0];
+        String essayType=strs[1];
+        AO essay=null;
+        try
+        {
+            switch(essayType)
+            {
+                case "News":
+                    News n=new NewsDAO().getNewsById(essayId);
+                    essay=new AO(n.getTitle(),n.getContent(),n.getNewsId());
+                    break;
+                case "Exh":
+                    Exhibition e=new ExhibitionDAO().getExhibitionById(essayId);
+                    essay=new AO(e.getTheme(),e.getContent(),e.getExId());
+                    break;
+                case "SD":
+                    SupplyDemand sd=new SupplyDemandDAO().getSDById(essayId);
+                    essay=new AO(sd.getTitle(),sd.getContent(),sd.getSdId());
+                    break;
+                case "Product":
+                    Product p=new ProductDAO().getProducById(essayId);
+                    essay=new AO(p.getProName(),p.getInfo(),p.getProId());
+                    break;
+            }
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+            return "Login";
+        }
+        request.setAttribute("essay",essay);
+        request.setAttribute("essayType",essayType);
+        return "Manage/editEssay";
+    }
+
+    @RequestMapping(value = "editEssay",method = RequestMethod.POST)
+    @ResponseBody
+    public String editEssay(String essayTitle,String essayContent,String essayId,String essayType)
+    {
+        try
+        {
+            switch(essayType)
+            {
+                case "News":
+                    NewsDAO nDAO=new NewsDAO();
+                    News n=nDAO.getNewsById(essayId);
+                    n.setTitle(essayTitle);
+                    n.setContent(essayContent);
+                    nDAO.update(n);
+                    break;
+                case "Exh":
+                    ExhibitionDAO eDAO=new ExhibitionDAO();
+                    Exhibition e=eDAO.getExhibitionById(essayId);
+                    e.setTheme(essayTitle);
+                    e.setContent(essayContent);
+                    eDAO.update(e);
+                    break;
+                case "SD":
+                    SupplyDemandDAO sdDAO=new SupplyDemandDAO();
+                    SupplyDemand sd=sdDAO.getSDById(essayId);
+                    sd.setTitle(essayTitle);
+                    sd.setContent(essayContent);
+                    sdDAO.update(sd);
+                    break;
+                case "Product":
+                    ProductDAO pDAO=new ProductDAO();
+                    Product p=pDAO.getProducById(essayId);
+                    p.setProName(essayTitle);
+                    p.setInfo(essayContent);
+                    pDAO.update(p);
+                    break;
+            }
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+            return "update failed";
+        }
+        return "update success";
     }
 
 }

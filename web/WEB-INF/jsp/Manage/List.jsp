@@ -94,6 +94,7 @@
                         <c:if test="${sessionScope.currentUser.type == '15'}">
                             <span class="layui-btn layui-btn-normal layui-btn-mini checkButton">审核</span>
                         </c:if>
+                        <span class="layui-btn layui-btn-normal layui-btn-mini editBtn">编辑</span>
                     </td>
                 </tr>
             </c:forEach>

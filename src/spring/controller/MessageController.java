@@ -85,23 +85,11 @@ public class MessageController {
             else
                 this.setMessage("fail");
 
-            MessageDAO mDAO = new MessageDAO();
-            UserInfoDAO uiDAO=new UserInfoDAO();
-            List<Message> mList = mDAO.getMessageById(temp.getOriginId(),-1);
-            List<AO> umList = new ArrayList<>();//存储用户名和留言
-            for (Message m : mList)
-            {
-                UserInfo ui = uiDAO.getUserInfo(m.getUserId());
-                AO a = new AO();
-                a.setFirst(ui.getNickName());
-                a.setSecond(m.getContent());
-                umList.add(a);
-            }
-            request.setAttribute("umList", umList);
             return this;
         }
         catch(Exception e)
         {
+            e.printStackTrace();
             return null;
         }
     }

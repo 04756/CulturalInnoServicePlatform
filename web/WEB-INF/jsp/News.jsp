@@ -25,6 +25,7 @@
         <div style="width: 1100px;justify-content: center;margin:0 auto;margin-top: 80px;border: 1px solid #eee;">
             <ul id="lists" class="essayList">
                 <c:forEach items="${allNewsList}" var="news">
+                    <c:if test="${news.isPass == 1}">
                     <div class="listOuter">
                         <li>
                             <a href="getNewsById?newsId=${news.newsId}" style="color: black;">
@@ -36,7 +37,7 @@
                         </li>
                             <%--<hr style="border: 0.5px solid #eee;padding-top：13px;margin-bottom: -3px;">--%>
                     </div>
-
+                    </c:if>
                 </c:forEach>
             </ul>
         </div>

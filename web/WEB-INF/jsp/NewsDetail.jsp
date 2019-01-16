@@ -27,7 +27,10 @@
 <div class="container-fluid">
     <jsp:include page="headder.jsp"/>
     <div style="margin: 0 auto;margin-left:auto;width: 1200px;margin-top: 30px;">
-        <div style="display: block;text-align: center;"><h2>${news.title}</h2></div>
+        <div style="display: block;text-align: center;">
+            <h2>${news.title}</h2>
+            <div id="enshrineNews">收藏</div>
+        </div>
         <div style="display: block;">
             <div class="essayInfo"  style="display: block;text-align: center;">
                 <small>发布人:${userInfo.nickName}</small>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp

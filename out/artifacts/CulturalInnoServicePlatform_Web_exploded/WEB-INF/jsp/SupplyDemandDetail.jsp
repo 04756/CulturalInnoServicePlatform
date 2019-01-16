@@ -45,6 +45,7 @@
             <span class="input-group-text">留言</span>
         </div>
         <div id="oid" style="display: none">${sd.sdId}</div>
+        <div id="essayType" style="display: none">sd</div>
         <textarea class="form-control" aria-label="With textarea" id="messageContent"></textarea>
         <button class="btn btn-light" id="publishMessage">发表留言</button>
     </div>

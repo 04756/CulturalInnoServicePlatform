@@ -5,7 +5,6 @@ import dao.*;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -14,7 +13,6 @@ import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.portlet.ModelAndView;
 import po.*;
 
-import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
@@ -248,7 +246,7 @@ public class UploadController
 
     @RequestMapping(value = "savePortrait",method = RequestMethod.POST,produces = "application/json;charset=utf-8")
     @ResponseBody
-    public Object savePortrait(@RequestParam() MultipartFile file, HttpServletRequest request,HttpServletResponse response,HttpSession session)
+    public Object savePortrait(MultipartFile file, HttpServletRequest request,HttpServletResponse response,HttpSession session)
     {
         User u=(User)session.getAttribute("currentUser");
         if(u==null)

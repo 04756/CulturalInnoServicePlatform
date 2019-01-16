@@ -2,7 +2,6 @@ package spring.controller;
 
 import com.google.gson.Gson;
 import dao.UserDAO;
-import javafx.geometry.Pos;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;

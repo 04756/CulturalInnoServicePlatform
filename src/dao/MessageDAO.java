@@ -247,4 +247,21 @@ public class MessageDAO
             throw e;
         }
     }
+
+    public List<Message> getAll() throws Exception
+    {
+        getSession();
+        try
+        {
+            Query q=hsession.createQuery("from Message");
+            List<Message> ml=q.list();
+            releaseSession();
+            return ml;
+        }
+        catch(Exception e)
+        {
+            releaseSession(hsession);
+            throw e;
+        }
+    }
 }

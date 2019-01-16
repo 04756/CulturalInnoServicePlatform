@@ -102,36 +102,20 @@ public class CollectionController{
                                 a.setFifth(c.getOriginId());
                                 supplyInfoList.add(a);
                             }
-//                            else
-//                            {
-////                                demandCollList.add(c);
-//                                Demand d=sdDAO.getDemandById(c.getOriginId());
-//                                AO a=new AO();
-//                                a.setFirst(d.getTitle());
-//                                a.setSecond(df.format(d.getStartTime()));
-//                                a.setThird(df.format(d.getEndTime()));
-//                                a.setFourth(df.format(c.getEstablishTime()));
-//                                a.setFifth(c.getOriginId());
-//                                demandInfoList.add(a);
-//                            }
 
             }
-//            model.addAttribute("exhiList",exhiCollList);
-//            model.addAttribute("newsList",newsCollList);
-//            model.addAttribute("productList",productCollList);
-//            model.addAttribute("supplyList",supplyCollList);
-//            model.addAttribute("demandList",demandCollList);
+
             model.addAttribute("exhiInfoList",exhiInfoList);
             model.addAttribute("newsInfoList",newsInfoList);
             model.addAttribute("productInfoList",productInfoList);
             model.addAttribute("supplyInfoList",supplyInfoList);
-//            model.addAttribute("demandInfoList",demandInfoList);
+
             return "Collection";
         }
         catch (Exception e)
         {
             e.printStackTrace();
-            return null;
+            return "Login";
         }
     }
 
@@ -142,7 +126,7 @@ public class CollectionController{
 
         try
         {
-            Collection coll = new CollectionDAO().addToCollection(new Gson().fromJson(json, Collection.class));
+            Collection coll = new Gson().fromJson(json, Collection.class);
             User user = (User)request.getSession().getAttribute("currentUser");
             coll.setUserId(user.getUserId());
             Date dnow = new Date();
@@ -157,7 +141,8 @@ public class CollectionController{
         }
         catch(Exception e)
         {
-            return null;
+            this.message = "请登录！";
+            return this;
         }
     }
 
